@@ -1,0 +1,16 @@
+check brown out voltage and set fuse bits. set 101 for 2.9v max. 111 for dissabled.
+10mhz is max safe standard frequency. page 369
+CKSEL[3:1] 011 
+CKSEL[3:0] 0111
+SUT[1:0]11
+Reset (WDR) instruction
+WDTON 0 unprogrammed 1 programmed
+if wont program. Button next to the change device button.
+
+L 0x67
+H 0xD9
+E 0x07
+
+
+
+
