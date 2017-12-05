@@ -16,13 +16,13 @@ class Stopwatch
 //variables
 public:
 static long msSinceTimerStart;
-long GetMs();
-void Reset();
 protected:
 private :
 long startMs;
 //functions
 public:
+long GetMs();
+void Reset();
 	Stopwatch();
 	~Stopwatch();
 	Stopwatch( const Stopwatch &c );

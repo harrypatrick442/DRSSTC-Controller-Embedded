@@ -71,18 +71,7 @@ void Endpoint::Run(){
 							}
 						}
 					}
-					//UART::GetInstance().SendMessage(type, strlen(type));
 				}
-
-				//on=!on;
-				//if(!on){
-				//Leds::Main::SetGreen();
-				//}
-				//else
-				//Leds::Main::SetBlue();
-				
-				//Document d;
-				//d.Parse(message->buffer);
 			}
 		}
 		delete messages;

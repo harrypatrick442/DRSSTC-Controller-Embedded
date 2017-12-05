@@ -31,26 +31,20 @@ void Ticker::Add(Ticker::Callback  callback, TickerDelay tickerDelay){
 		TIMSK0 |= (1 << OCIE0A);
 		sei();
 		initialized=true;
-}
+	}
 	if(tickerDelay==TenMillisecond){
-		//if(std::find(Ticker::tickerCallbacksMilliseconds.begin(), Ticker::tickerCallbacksMilliseconds.end(), callback) == tickerCallbacksMilliseconds.end()) {
-	if(!Ticker::tickerCallbacksMilliseconds.contains(callback)){
-			Ticker::tickerCallbacksMilliseconds.push_back(callback);}
+		if(!Ticker::tickerCallbacksMilliseconds.contains(callback)){
+		Ticker::tickerCallbacksMilliseconds.push_back(callback);}
 	}
 	else
-	//if(std::find(tickerCallbacksSeconds.begin(), tickerCallbacksSeconds.end(), callback)==tickerCallbacksSeconds.end())
-		
-		if(!Ticker::tickerCallbacksSeconds.contains(callback))tickerCallbacksSeconds.push_back(callback);
+	if(!Ticker::tickerCallbacksSeconds.contains(callback))tickerCallbacksSeconds.push_back(callback);
 }
 ISR(TIMER0_COMPA_vect)
 {
-cli();
-//UART::Send('a');
-//UART::Send('0'+Ticker::tickerCallbacksMilliseconds.size());
+	cli();
 	for(int i=0; i<Ticker::tickerCallbacksMilliseconds.size(); i++)
 	{
-		//UART::Send('b');
 		Ticker::tickerCallbacksMilliseconds[i]();
-}
-sei();
+	}
+	sei();
 }
