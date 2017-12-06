@@ -10,6 +10,6 @@
 #define __IGETERRORS_H__
 #include "ErrorMessages.h"
 class IGetErrors{ 
-public:virtual ErrorMessages GetErrors()=0;
+public:virtual ErrorMessages* GetErrors()=0;
 };
 #endif //__IGETERRORS_H__

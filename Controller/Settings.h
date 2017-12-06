@@ -13,11 +13,12 @@
 #include "ISetTemperatureMax.h"
 #include "IGetPower.h"
 #include "ISetPower.h"
+#include "IGetFanSpeedMin.h"
 #define TEMPERATURE_MAX_MAX 125
 #define TEMPERTURE_MAX_MIN 40
 #define POWER_MIN 30
 #define POWER_MAX 1500
-class Settings:public  IGetTemperatureMax, public  ISetTemperatureMax, public  IGetPower, public  ISetPower
+class Settings:public  IGetTemperatureMax, public  ISetTemperatureMax, public  IGetPower, public  ISetPower, public IGetFanSpeedMin
 {
 //variables
 public:
@@ -25,6 +26,7 @@ protected:
 private:
 uint8_t temperatureMax=119;
 uint16_t power=10;
+uint16_t fanSpeedMin=1000;
 static Settings _Singleton;
 
 //functions
@@ -33,6 +35,8 @@ static  Settings& GetInstance();
 uint8_t GetTemperatureMax();//degrees c
 void SetTemperatureMax(uint8_t t);//degrees c
 uint16_t GetPower();//watts
+uint16_t GetFanSpeedMin();
+void SetFanSpeedMin(uint16_t value);
 void SetPower(uint16_t t);//watts
 protected:
 private:

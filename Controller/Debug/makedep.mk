@@ -8,6 +8,12 @@ EEPROM.cpp
 
 Endpoint.cpp
 
+ErrorMessage.cpp
+
+ErrorMessages.cpp
+
+Fans.cpp
+
 i2cmaster.S
 
 jsmn.cpp
@@ -27,6 +33,8 @@ Settings.cpp
 Stopwatch.cpp
 
 SystemCheck.cpp
+
+TC654.cpp
 
 Temperatures.cpp
 

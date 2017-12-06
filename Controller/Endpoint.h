@@ -28,6 +28,7 @@ class Endpoint
 	IGetMessages* iGetMessages;
 	ISendMessage* iSendMessage;
 	ISetTemperatureMax* iSetTemperatureMax;
+
 	IGetTemperatureMax* iGetTemperatureMax;
 	ISetPower* iSetPower;
 	IGetPower* iGetPower;

@@ -10,26 +10,28 @@
 #define __Fans_H__
 #include "IGetFanInfo.h"
 #include "IFans.h"
-
+#include "IGetErrors.h"
+#include "IGetFanSpeedMin.h"
 class Fans:
-public IFans
+public   IFans
 {
 	//variables
 	public:
 	protected:
 	private:
+	ErrorMessages* errorMessages;
 	static Fans _Singleton;
 	IGetFanInfo** iGetFanInfos;
 	unsigned char nIGetFanInfos;
+	IGetFanSpeedMin * iGetFanSpeedMin;
 	//functions
 	public:
 	static  Fans& GetInstance();
-	void SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos);
+	void SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin* iGetFanSpeedMin);
 	bool GetFansWorkingCorrectly();
-	ErrorMessage GetErrors();
+	ErrorMessages* GetErrors();
 	protected:
 	private:
-	void Initialize ();
 	void operator=(Fans const&) = delete; // Don't implement
 
 };

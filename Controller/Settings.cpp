@@ -56,6 +56,9 @@ void Settings::SetTemperatureMax(uint8_t a){
 uint16_t Settings::GetPower(){
 	return power;
 }
+uint16_t Settings::GetFanSpeedMin(){
+	return fanSpeedMin;
+}
 void Settings::SetPower(uint16_t a){
 	CapPower(a);
 	eeprom_write_word(&ADDRESS_POWER, a);

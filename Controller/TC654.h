@@ -6,13 +6,12 @@
 */
 
 
-#ifndef __Fans_H__
-#define __Fans_H__
+#ifndef __TC654_H__
+#define __TC654_H__
 #include "IGetFanInfo.h"
 #include "IFans.h"
 
-class TC654:
-public IGetFanInfo
+class TC654
 {
 	//variables
 	public:
@@ -31,27 +30,31 @@ public IGetFanInfo
 	const char VER_ID_ADDRESS=0x08;
 	unsigned char F1PPR;
 	unsigned char F2PPR;
-	Fan fan1;
-	Fan fan2;	//functions
+	//functions
 	public:
 	class Status{
+		private:
+		char value;
 		public:
 		Status(char value);
 		bool GetF1F();
 		bool GetF2F();
 		bool GetR1CO();
 		bool GetR2CO();
-	}
+	};
 	class Fan:public IGetFanInfo{
 		public:
 		const char* name;
-		typedef unsigned char (CallbackGetRPM*)(bool& successful);
+				TC654* tc654;
+		typedef unsigned char (                                  TC654::*CallbackGetRPM)(bool& successful);
 		CallbackGetRPM callbackGetRPM;
-		Fan(CallbackGetRPM callbackGetRRPM, char name);
+		Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, char* name);
 		const char* GetName();
 		uint16_t GetFanSpeed(bool& successful);
-	};
-	TC654::TC654(char F1PPR, char F2PPR);
+};
+Fan fan1;
+Fan fan2;
+	TC654(char F1PPR, char F2PPR);
 	unsigned char GetRPM1(bool& successful);
 	unsigned char GetRPM2(bool& successful);
 	unsigned char GetFanFault1(bool& successful);
@@ -61,16 +64,16 @@ public IGetFanInfo
 	unsigned char GetDutyCycle(bool& successful);
 	void SetDutyCycle(bool& successful, unsigned char value);
 	Status GetStatus(bool& successful);
-	IGetFanInfo& GetIGetFan1Info();
-	IGetFanInfo& GetIGetFan2Info();
+	IGetFanInfo* GetIGetFan1Info();
+	IGetFanInfo* GetIGetFan2Info();
 	~TC654();
 
 	protected:
 	private:
 	void WriteConfigurationRegister(bool& successful, char configuration);
 	void WriteRegister(bool& successful, char address, char value);
-	void ReadConfigurationRegister(bool& successful);
-	void ReadRegister(bool& successful, char address);
+	unsigned char ReadConfigurationRegister(bool& successful);
+	unsigned char ReadRegister(bool& successful, char address);
 	void Configure(bool& successful);
 
 };

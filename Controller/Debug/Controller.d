@@ -25,8 +25,10 @@ Controller.d Controller.o: .././Controller.cpp \
  .././Stopwatch.h .././UART.h .././Messages.h .././Message.h \
  .././IGetMessages.h .././ISendMessage.h .././Settings.h \
  .././IGetTemperatureMax.h .././ISetTemperatureMax.h .././IGetPower.h \
- .././ISetPower.h .././Leds.h .././Endpoint.h .././ISystemCheck.h \
- .././ITemperatures.h .././Temperatures.h
+ .././ISetPower.h .././IGetFanSpeedMin.h .././Leds.h .././Endpoint.h \
+ .././ISystemCheck.h .././ITemperatures.h .././Temperatures.h \
+ .././TC654.h .././IGetFanInfo.h .././IGetFanSpeed.h .././IFans.h \
+ .././IGetErrors.h .././ErrorMessages.h .././ErrorMessage.h .././Fans.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -106,6 +108,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 .././ISetPower.h:
 
+.././IGetFanSpeedMin.h:
+
 .././Leds.h:
 
 .././Endpoint.h:
@@ -115,3 +119,19 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 .././ITemperatures.h:
 
 .././Temperatures.h:
+
+.././TC654.h:
+
+.././IGetFanInfo.h:
+
+.././IGetFanSpeed.h:
+
+.././IFans.h:
+
+.././IGetErrors.h:
+
+.././ErrorMessages.h:
+
+.././ErrorMessage.h:
+
+.././Fans.h:

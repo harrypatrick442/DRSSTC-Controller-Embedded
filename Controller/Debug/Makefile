@@ -40,6 +40,9 @@ C_SRCS +=  \
 ../Controller.cpp \
 ../EEPROM.cpp \
 ../Endpoint.cpp \
+../ErrorMessage.cpp \
+../ErrorMessages.cpp \
+../Fans.cpp \
 ../jsmn.cpp \
 ../Leds.cpp \
 ../LM75.cpp \
@@ -49,6 +52,7 @@ C_SRCS +=  \
 ../Settings.cpp \
 ../Stopwatch.cpp \
 ../SystemCheck.cpp \
+../TC654.cpp \
 ../Temperatures.cpp \
 ../Ticker.cpp \
 ../tiny-json.cpp \
@@ -66,6 +70,9 @@ OBJS +=  \
 Controller.o \
 EEPROM.o \
 Endpoint.o \
+ErrorMessage.o \
+ErrorMessages.o \
+Fans.o \
 i2cmaster.o \
 jsmn.o \
 Leds.o \
@@ -76,6 +83,7 @@ Outputs.o \
 Settings.o \
 Stopwatch.o \
 SystemCheck.o \
+TC654.o \
 Temperatures.o \
 Ticker.o \
 tiny-json.o \
@@ -85,6 +93,9 @@ OBJS_AS_ARGS +=  \
 Controller.o \
 EEPROM.o \
 Endpoint.o \
+ErrorMessage.o \
+ErrorMessages.o \
+Fans.o \
 i2cmaster.o \
 jsmn.o \
 Leds.o \
@@ -95,6 +106,7 @@ Outputs.o \
 Settings.o \
 Stopwatch.o \
 SystemCheck.o \
+TC654.o \
 Temperatures.o \
 Ticker.o \
 tiny-json.o \
@@ -104,6 +116,9 @@ C_DEPS +=  \
 Controller.d \
 EEPROM.d \
 Endpoint.d \
+ErrorMessage.d \
+ErrorMessages.d \
+Fans.d \
 i2cmaster.d \
 jsmn.d \
 Leds.d \
@@ -114,6 +129,7 @@ Outputs.d \
 Settings.d \
 Stopwatch.d \
 SystemCheck.d \
+TC654.d \
 Temperatures.d \
 Ticker.d \
 tiny-json.d \
@@ -123,6 +139,9 @@ C_DEPS_AS_ARGS +=  \
 Controller.d \
 EEPROM.d \
 Endpoint.d \
+ErrorMessage.d \
+ErrorMessages.d \
+Fans.d \
 i2cmaster.d \
 jsmn.d \
 Leds.d \
@@ -133,6 +152,7 @@ Outputs.d \
 Settings.d \
 Stopwatch.d \
 SystemCheck.d \
+TC654.d \
 Temperatures.d \
 Ticker.d \
 tiny-json.d \
@@ -152,6 +172,14 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
 
 
 

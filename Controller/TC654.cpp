@@ -5,7 +5,7 @@
 * Author: SoftwareEngineer
 */
 #include "i2cmaster.h"
-#include "LM75.h"
+#include "TC654.h"
 #include "IGetFanInfo.h"
 #include <avr/interrupt.h>
 // default constructor
@@ -15,35 +15,37 @@ TC654::Status::Status(char value):value(value){
 bool TC654::Status::GetF1F(){
 	return ((value&0x01))>0;
 }
-TC654::Status::GetF2F(){
+bool TC654::Status::GetF2F(){
 	return ((value&0x02)>>1)>0;
 }
-TC654::Status::GetR1CO(){
+bool TC654::Status::GetR1CO(){
 	return ((value&0x08)>>3)>0;
 }
-TC654::Status::GetR2CO(){
-	return ((value&0x10)>>4)>0);
-}
-TC654::Fan::Fan(CallbackGetRPM callbackGetRRPM, char name):name(name), callbackGetRPM(callbackGetRPM){
-
-}
+bool TC654::Status::GetR2CO(){
+	return ((value&0x10)>>4)>0;}
+TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, char* name):name(name), callbackGetRPM(callbackGetRPM), tc654(tc654){}
 
 
 const char* TC654::Fan::GetName(){
 return name;
 }
 uint16_t TC654::Fan::GetFanSpeed(bool& successful){
-	return callbackGetRPM(successful)*50;
+	return	
+		(tc654->*(callbackGetRPM))(successful)*50;
 }
 
 
 
-TC654::TC654(char F1PPR, char F2PPR)
+unsigned char TC654::GetRPM1(bool& successful){
+	return ReadRegister(successful, RPM1_ADDRESS);
+}
+unsigned char TC654::GetRPM2(bool& successful){
+	return ReadRegister(successful, RPM2_ADDRESS);
+}
+TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, "tc654_2"))
 {
 	this->F1PPR=(0x0f&F1PPR)<<2;
 	this->F2PPR=(0x0f&F2PPR)<<6;
-	fan1 = Fan(&GetRPM1, "tc654_1");
-	fan2 = Fan(&GetRPM2, "tc654_2");
 } //TC654
 void TC654::WriteConfigurationRegister(bool& successful, char configuration){
 	WriteRegister(successful, CONFIG_ADDRESS, configuration);
@@ -57,16 +59,16 @@ void TC654::WriteRegister(bool& successful, char address, char value){
 		i2c_stop();
 		return;
 	}
-	char r=i2c_write(value);
+	r=i2c_write(value);
 	i2c_stop();
 	if(r!=0){
 		successful=false;
 	}
 }
-void TC654::ReadConfigurationRegister(bool& successful){
+unsigned char TC654::ReadConfigurationRegister(bool& successful){
 	return ReadRegister(successful, CONFIG_ADDRESS);
 }
-void TC654::ReadRegister(bool& successful, char address){
+unsigned char TC654::ReadRegister(bool& successful, char address){
 	i2c_start_wait(ADDRESS_WRITE);
 	char r=i2c_write(address);
 	if(r!=0){
@@ -74,7 +76,7 @@ void TC654::ReadRegister(bool& successful, char address){
 		i2c_stop();
 		return 0;
 	}
-	char r=i2c_rep_start(ADDRESS_READ);
+	r=i2c_rep_start(ADDRESS_READ);
 	if(r!=0){
 		successful=false;
 		i2c_stop();
@@ -91,15 +93,8 @@ void TC654::Configure(bool& successful){
 	{
 		char r = ReadConfigurationRegister(successful);
 		if(successful)
-		for(char i=0; i<8; i++)
-		if(r[i]!=configuration[i])successful = false;
+		if(r!=configuration)successful = false;
 	}
-}
-unsigned char TC654::GetRPM1(bool& successful){
-	return ReadRegister(successful, RPM1_ADDRESS);
-}
-unsigned char TC654::GetRPM2(bool& successful){
-	return ReadRegister(successful, RPM2_ADDRESS);
 }
 unsigned char TC654::GetFanFault1(bool& successful){
 	return ReadRegister(successful, FAN_FAULT1_ADDRESS);
@@ -122,11 +117,11 @@ void TC654::SetDutyCycle(bool& successful, unsigned char value){
 TC654::Status TC654::GetStatus(bool& successful){
 	return Status(ReadRegister(successful, STATUS_ADDRESS));
 }
-IGetFanInfo& TC654::GetIGetFan1Info(){
-	return fan1;	
+IGetFanInfo* TC654::GetIGetFan1Info(){
+	return &fan1;	
 }
-IGetFanInfo& TC654::GetIGetFan2Info(){
-	return fan2;
+IGetFanInfo* TC654::GetIGetFan2Info(){
+	return &fan2;
 }
 // default destructor
 TC654::~TC654()

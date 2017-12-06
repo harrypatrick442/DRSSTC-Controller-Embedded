@@ -10,6 +10,7 @@
 uint8_t eeprom_read_byte1(uint16_t addr);
 
 /*assumes s is a proper null terminated string*/
+
 void eeprom_write_string(uint16_t addr, char *s);
 
 /* read a string of len characters maximum starting at addr. 

@@ -9,12 +9,27 @@
 #include <avr/io.h>
 #include "Fans.h"
 
-// default constructor
-Fans::Fans()
+Fans& Fans::GetInstance(){
+	
+}void Fans::SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin*iGetFanSpeedMin)
 {
-} //Outputs
+this->iGetFanInfos=iGetFanInfos;
+this->nIGetFanInfos=nIGetFanInfos;
+this->iGetFanSpeedMin = iGetFanSpeedMin;
 
-// default destructor
-Fans::~Fans()
-{
-} //~Fans
+}
+bool Fans::GetFansWorkingCorrectly(){
+	bool working=true;
+	for(char i=0; i<nIGetFanInfos; i++    ){
+		IGetFanInfo* iGetFanInfo = iGetFanInfos[i];
+		bool successful=true;
+		uint16_t speed = iGetFanInfo->GetFanSpeed(successful);
+		if(speed)
+		{
+			
+		}
+	}
+}
+ErrorMessages* Fans::GetErrors(){
+	
+}
