@@ -21,19 +21,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   8 .debug_aranges 00000558  00000000  00000000  000023b0  2**3
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   000082d9  00000000  00000000  00002908  2**0
+  9 .debug_info   00008529  00000000  00000000  00002908  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 00002a3e  00000000  00000000  0000abe1  2**0
+ 10 .debug_abbrev 00002a7b  00000000  00000000  0000ae31  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   00002712  00000000  00000000  0000d61f  2**0
+ 11 .debug_line   0000278d  00000000  00000000  0000d8ac  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  00000c34  00000000  00000000  0000fd34  2**2
+ 12 .debug_frame  00000c70  00000000  00000000  0001003c  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    0000274d  00000000  00000000  00010968  2**0
+ 13 .debug_str    000027dd  00000000  00000000  00010cac  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    000035ca  00000000  00000000  000130b5  2**0
+ 14 .debug_loc    000036e2  00000000  00000000  00013489  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_ranges 000005a8  00000000  00000000  0001667f  2**0
+ 15 .debug_ranges 000005a8  00000000  00000000  00016b6b  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1207,8 +1207,8 @@ static inline int64_t json_getInteger( json_t const* property ) {
      6fa:	08 95       	ret
 
 000006fc <_ZN4Fans11GetInstanceEv>:
-#include <avr/io.h>
-#include "Fans.h"
+#include "FanSpeedException.h"
+#include "CommunicationException.h"
 
 Fans& Fans::GetInstance(){
 	
@@ -1369,10 +1369,10 @@ LM75::LM75(char address, char* name):name(name)
      7c0:	08 95       	ret
 
 000007c2 <_ZN7MessageC1EPKcj>:
-*
 * Created: 09/10/2017 13:01:34
 * Author: SoftwareEngineer
 */
+#include <stdlib.h>
 #include "Message.h"
 Message::Message(const char* bufferIn, unsigned int lengthIn):length(lengthIn), buffer(bufferIn){
      7c2:	fc 01       	movw	r30, r24

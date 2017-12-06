@@ -13,7 +13,7 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
                               Ticker.o (__do_global_dtors)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                              Ticker.o (malloc)
+                              Fans.o (malloc)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
                               Endpoint.o (atol)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
@@ -59,6 +59,23 @@ Discarded input sections
 
  .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 CommunicationException.o
+ .data          0x00000000        0x0 CommunicationException.o
+ .bss           0x00000000        0x0 CommunicationException.o
+ .text._ZN22CommunicationExceptionC2EPKc
+                0x00000000       0x1e CommunicationException.o
+ .text._ZN22CommunicationExceptionD2Ev
+                0x00000000        0x6 CommunicationException.o
+ .debug_info    0x00000000      0x207 CommunicationException.o
+ .debug_abbrev  0x00000000      0x116 CommunicationException.o
+ .debug_loc     0x00000000       0xda CommunicationException.o
+ .debug_aranges
+                0x00000000       0x28 CommunicationException.o
+ .debug_ranges  0x00000000       0x18 CommunicationException.o
+ .debug_line    0x00000000       0x9a CommunicationException.o
+ .debug_str     0x00000000      0x2d3 CommunicationException.o
+ .comment       0x00000000       0x31 CommunicationException.o
+ .debug_frame   0x00000000       0x48 CommunicationException.o
  .text          0x00000000        0x0 Controller.o
  .data          0x00000000        0x0 Controller.o
  .bss           0x00000000        0x0 Controller.o
@@ -86,48 +103,66 @@ Discarded input sections
  .text          0x00000000        0x0 Endpoint.o
  .data          0x00000000        0x0 Endpoint.o
  .bss           0x00000000        0x0 Endpoint.o
- .text          0x00000000        0x0 ErrorMessage.o
- .data          0x00000000        0x0 ErrorMessage.o
- .bss           0x00000000        0x0 ErrorMessage.o
- .text._ZN12ErrorMessageC2EPc
-                0x00000000        0x8 ErrorMessage.o
- .text._ZN12ErrorMessageD2Ev
-                0x00000000        0x2 ErrorMessage.o
- .debug_info    0x00000000      0x18d ErrorMessage.o
- .debug_abbrev  0x00000000       0xf2 ErrorMessage.o
+ .text          0x00000000        0x0 Exception.o
+ .data          0x00000000        0x0 Exception.o
+ .bss           0x00000000        0x0 Exception.o
+ .text._ZN9ExceptionC2Ev
+                0x00000000        0x2 Exception.o
+ .text._ZN9ExceptionD2Ev
+                0x00000000        0x2 Exception.o
+ .debug_info    0x00000000      0x17d Exception.o
+ .debug_abbrev  0x00000000       0xd1 Exception.o
  .debug_aranges
-                0x00000000       0x28 ErrorMessage.o
- .debug_ranges  0x00000000       0x18 ErrorMessage.o
- .debug_line    0x00000000       0x6b ErrorMessage.o
- .debug_str     0x00000000      0x26d ErrorMessage.o
- .comment       0x00000000       0x31 ErrorMessage.o
- .debug_frame   0x00000000       0x34 ErrorMessage.o
- .text          0x00000000        0x0 ErrorMessages.o
- .data          0x00000000        0x0 ErrorMessages.o
- .bss           0x00000000        0x0 ErrorMessages.o
- .text._ZN13ErrorMessagesC2EP12ErrorMessagej
-                0x00000000        0x8 ErrorMessages.o
- .text._ZN13ErrorMessagesD2Ev
-                0x00000000        0x2 ErrorMessages.o
- .debug_info    0x00000000      0x1fd ErrorMessages.o
- .debug_abbrev  0x00000000       0xf2 ErrorMessages.o
+                0x00000000       0x28 Exception.o
+ .debug_ranges  0x00000000       0x18 Exception.o
+ .debug_line    0x00000000       0x5f Exception.o
+ .debug_str     0x00000000      0x26c Exception.o
+ .comment       0x00000000       0x31 Exception.o
+ .debug_frame   0x00000000       0x34 Exception.o
+ .text          0x00000000        0x0 Exceptions.o
+ .data          0x00000000        0x0 Exceptions.o
+ .bss           0x00000000        0x0 Exceptions.o
+ .text._ZN10ExceptionsC2EPP9Exceptionj
+                0x00000000        0xc Exceptions.o
+ .text._ZN10ExceptionsD2Ev
+                0x00000000        0xc Exceptions.o
+ .debug_info    0x00000000      0x22d Exceptions.o
+ .debug_abbrev  0x00000000      0x118 Exceptions.o
+ .debug_loc     0x00000000       0x36 Exceptions.o
  .debug_aranges
-                0x00000000       0x28 ErrorMessages.o
- .debug_ranges  0x00000000       0x18 ErrorMessages.o
- .debug_line    0x00000000       0x7f ErrorMessages.o
- .debug_str     0x00000000      0x29f ErrorMessages.o
- .comment       0x00000000       0x31 ErrorMessages.o
- .debug_frame   0x00000000       0x34 ErrorMessages.o
+                0x00000000       0x28 Exceptions.o
+ .debug_ranges  0x00000000       0x18 Exceptions.o
+ .debug_line    0x00000000       0x7c Exceptions.o
+ .debug_str     0x00000000      0x29c Exceptions.o
+ .comment       0x00000000       0x31 Exceptions.o
+ .debug_frame   0x00000000       0x34 Exceptions.o
  .group         0x00000000        0x8 Fans.o
  .text          0x00000000        0x0 Fans.o
  .data          0x00000000        0x0 Fans.o
  .bss           0x00000000        0x0 Fans.o
- .text._ZN4Fans23GetFansWorkingCorrectlyEv
-                0x00000000       0x6c Fans.o
- .text._ZN4Fans9GetErrorsEv
+ .text._ZN4Fans13GetExceptionsEv
                 0x00000000        0x2 Fans.o
+ .text._ZN4Fans23GetFansWorkingCorrectlyEv
+                0x00000000      0x1a0 Fans.o
  .rodata._ZTV4Fans
                 0x00000000        0x8 Fans.o
+ .text          0x00000000        0x0 FanSpeedException.o
+ .data          0x00000000        0x0 FanSpeedException.o
+ .bss           0x00000000        0x0 FanSpeedException.o
+ .text._ZN17FanSpeedExceptionC2EPKcjj
+                0x00000000        0x6 FanSpeedException.o
+ .text._ZN17FanSpeedExceptionD2Ev
+                0x00000000        0x6 FanSpeedException.o
+ .debug_info    0x00000000      0x267 FanSpeedException.o
+ .debug_abbrev  0x00000000      0x112 FanSpeedException.o
+ .debug_loc     0x00000000       0xbe FanSpeedException.o
+ .debug_aranges
+                0x00000000       0x28 FanSpeedException.o
+ .debug_ranges  0x00000000       0x18 FanSpeedException.o
+ .debug_line    0x00000000       0xec FanSpeedException.o
+ .debug_str     0x00000000      0x336 FanSpeedException.o
+ .comment       0x00000000       0x31 FanSpeedException.o
+ .debug_frame   0x00000000       0x34 FanSpeedException.o
  .data          0x00000000        0x0 i2cmaster.o
  .bss           0x00000000        0x0 i2cmaster.o
  .text          0x00000000        0x0 jsmn.o
@@ -185,6 +220,25 @@ Discarded input sections
                 0x00000000        0x4 Outputs.o
  .text._ZN7Outputs2PB2_56SetLowEv
                 0x00000000        0x4 Outputs.o
+ .text          0x00000000        0x0 PassFailCleanup.o
+ .data          0x00000000        0x0 PassFailCleanup.o
+ .bss           0x00000000        0x0 PassFailCleanup.o
+ .text._ZN15PassFailCleanupC2EP10Exceptions
+                0x00000000        0xa PassFailCleanup.o
+ .text._ZN15PassFailCleanupC2Ev
+                0x00000000        0x8 PassFailCleanup.o
+ .text._ZN15PassFailCleanupD2Ev
+                0x00000000       0x26 PassFailCleanup.o
+ .debug_info    0x00000000      0x319 PassFailCleanup.o
+ .debug_abbrev  0x00000000      0x146 PassFailCleanup.o
+ .debug_loc     0x00000000       0x65 PassFailCleanup.o
+ .debug_aranges
+                0x00000000       0x30 PassFailCleanup.o
+ .debug_ranges  0x00000000       0x20 PassFailCleanup.o
+ .debug_line    0x00000000       0xc4 PassFailCleanup.o
+ .debug_str     0x00000000      0x34c PassFailCleanup.o
+ .comment       0x00000000       0x31 PassFailCleanup.o
+ .debug_frame   0x00000000       0x50 PassFailCleanup.o
  .group         0x00000000        0x8 Settings.o
  .text          0x00000000        0x0 Settings.o
  .data          0x00000000        0x0 Settings.o
@@ -282,6 +336,23 @@ Discarded input sections
                 0x00000000        0xa TC654.o
  .text._ZN5TC654D2Ev
                 0x00000000        0x2 TC654.o
+ .text          0x00000000        0x0 TC654Exception.o
+ .data          0x00000000        0x0 TC654Exception.o
+ .bss           0x00000000        0x0 TC654Exception.o
+ .text._ZN14TC654ExceptionC2Ev
+                0x00000000        0x6 TC654Exception.o
+ .text._ZN14TC654ExceptionD2Ev
+                0x00000000        0x6 TC654Exception.o
+ .debug_info    0x00000000      0x211 TC654Exception.o
+ .debug_abbrev  0x00000000       0xf1 TC654Exception.o
+ .debug_loc     0x00000000       0x4c TC654Exception.o
+ .debug_aranges
+                0x00000000       0x28 TC654Exception.o
+ .debug_ranges  0x00000000       0x18 TC654Exception.o
+ .debug_line    0x00000000       0x84 TC654Exception.o
+ .debug_str     0x00000000      0x2eb TC654Exception.o
+ .comment       0x00000000       0x31 TC654Exception.o
+ .debug_frame   0x00000000       0x34 TC654Exception.o
  .group         0x00000000        0x8 Temperatures.o
  .text          0x00000000        0x0 Temperatures.o
  .data          0x00000000        0x0 Temperatures.o
@@ -495,12 +566,14 @@ Linker script and memory map
 
 Address of section .data set to 0x800100
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD CommunicationException.o
 LOAD Controller.o
 LOAD EEPROM.o
 LOAD Endpoint.o
-LOAD ErrorMessage.o
-LOAD ErrorMessages.o
+LOAD Exception.o
+LOAD Exceptions.o
 LOAD Fans.o
+LOAD FanSpeedException.o
 LOAD i2cmaster.o
 LOAD jsmn.o
 LOAD Leds.o
@@ -508,10 +581,12 @@ LOAD LM75.o
 LOAD Message.o
 LOAD Messages.o
 LOAD Outputs.o
+LOAD PassFailCleanup.o
 LOAD Settings.o
 LOAD Stopwatch.o
 LOAD SystemCheck.o
 LOAD TC654.o
+LOAD TC654Exception.o
 LOAD Temperatures.o
 LOAD Ticker.o
 LOAD tiny-json.o
@@ -1241,141 +1316,141 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x82d9
+.debug_info     0x00000000     0x8529
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_info    0x000005f4     0x1067 Controller.o
  .debug_info    0x0000165b      0xd0f Endpoint.o
- .debug_info    0x0000236a      0x4ec Fans.o
- .debug_info    0x00002856       0xba i2cmaster.o
- .debug_info    0x00002910      0x378 Leds.o
- .debug_info    0x00002c88      0x6c7 LM75.o
- .debug_info    0x0000334f      0x1a7 Message.o
- .debug_info    0x000034f6      0x2ac Messages.o
- .debug_info    0x000037a2      0x311 Outputs.o
- .debug_info    0x00003ab3      0xbcf Settings.o
- .debug_info    0x00004682     0x134a TC654.o
- .debug_info    0x000059cc      0x4d9 Temperatures.o
- .debug_info    0x00005ea5      0x8ea Ticker.o
- .debug_info    0x0000678f      0xea2 tiny-json.o
- .debug_info    0x00007631      0x94b UART.o
- .debug_info    0x00007f7c       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
- .debug_info    0x00008028       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
- .debug_info    0x000080d4       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_info    0x00008180       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
- .debug_info    0x0000822c       0xad C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .debug_info    0x0000236a      0x73c Fans.o
+ .debug_info    0x00002aa6       0xba i2cmaster.o
+ .debug_info    0x00002b60      0x378 Leds.o
+ .debug_info    0x00002ed8      0x6c7 LM75.o
+ .debug_info    0x0000359f      0x1a7 Message.o
+ .debug_info    0x00003746      0x2ac Messages.o
+ .debug_info    0x000039f2      0x311 Outputs.o
+ .debug_info    0x00003d03      0xbcf Settings.o
+ .debug_info    0x000048d2     0x134a TC654.o
+ .debug_info    0x00005c1c      0x4d9 Temperatures.o
+ .debug_info    0x000060f5      0x8ea Ticker.o
+ .debug_info    0x000069df      0xea2 tiny-json.o
+ .debug_info    0x00007881      0x94b UART.o
+ .debug_info    0x000081cc       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_info    0x00008278       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_info    0x00008324       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_info    0x000083d0       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_info    0x0000847c       0xad C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
 
-.debug_abbrev   0x00000000     0x2a3e
+.debug_abbrev   0x00000000     0x2a7b
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_abbrev  0x000005a2      0x366 Controller.o
  .debug_abbrev  0x00000908      0x3c8 Endpoint.o
- .debug_abbrev  0x00000cd0      0x270 Fans.o
- .debug_abbrev  0x00000f40       0x14 i2cmaster.o
- .debug_abbrev  0x00000f54      0x10f Leds.o
- .debug_abbrev  0x00001063      0x261 LM75.o
- .debug_abbrev  0x000012c4      0x102 Message.o
- .debug_abbrev  0x000013c6      0x141 Messages.o
- .debug_abbrev  0x00001507      0x128 Outputs.o
- .debug_abbrev  0x0000162f      0x322 Settings.o
- .debug_abbrev  0x00001951      0x372 TC654.o
- .debug_abbrev  0x00001cc3      0x2d4 Temperatures.o
- .debug_abbrev  0x00001f97      0x32d Ticker.o
- .debug_abbrev  0x000022c4      0x34c tiny-json.o
- .debug_abbrev  0x00002610      0x3ca UART.o
- .debug_abbrev  0x000029da       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
- .debug_abbrev  0x000029ee       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
- .debug_abbrev  0x00002a02       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_abbrev  0x00002a16       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
- .debug_abbrev  0x00002a2a       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .debug_abbrev  0x00000cd0      0x2ad Fans.o
+ .debug_abbrev  0x00000f7d       0x14 i2cmaster.o
+ .debug_abbrev  0x00000f91      0x10f Leds.o
+ .debug_abbrev  0x000010a0      0x261 LM75.o
+ .debug_abbrev  0x00001301      0x102 Message.o
+ .debug_abbrev  0x00001403      0x141 Messages.o
+ .debug_abbrev  0x00001544      0x128 Outputs.o
+ .debug_abbrev  0x0000166c      0x322 Settings.o
+ .debug_abbrev  0x0000198e      0x372 TC654.o
+ .debug_abbrev  0x00001d00      0x2d4 Temperatures.o
+ .debug_abbrev  0x00001fd4      0x32d Ticker.o
+ .debug_abbrev  0x00002301      0x34c tiny-json.o
+ .debug_abbrev  0x0000264d      0x3ca UART.o
+ .debug_abbrev  0x00002a17       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_abbrev  0x00002a2b       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_abbrev  0x00002a3f       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_abbrev  0x00002a53       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_abbrev  0x00002a67       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
 
-.debug_line     0x00000000     0x2712
+.debug_line     0x00000000     0x278d
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_line    0x00000133      0x267 Controller.o
  .debug_line    0x0000039a      0x2a7 Endpoint.o
- .debug_line    0x00000641      0x15f Fans.o
- .debug_line    0x000007a0      0x34b i2cmaster.o
- .debug_line    0x00000aeb      0x152 Leds.o
- .debug_line    0x00000c3d      0x17c LM75.o
- .debug_line    0x00000db9       0x70 Message.o
- .debug_line    0x00000e29       0xce Messages.o
- .debug_line    0x00000ef7      0x121 Outputs.o
- .debug_line    0x00001018      0x2b9 Settings.o
- .debug_line    0x000012d1      0x462 TC654.o
- .debug_line    0x00001733      0x172 Temperatures.o
- .debug_line    0x000018a5      0x342 Ticker.o
- .debug_line    0x00001be7      0x5a8 tiny-json.o
- .debug_line    0x0000218f      0x2fe UART.o
- .debug_line    0x0000248d       0x7a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
- .debug_line    0x00002507       0x67 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
- .debug_line    0x0000256e       0x9e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_line    0x0000260c       0x5b C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
- .debug_line    0x00002667       0xab C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .debug_line    0x00000641      0x1da Fans.o
+ .debug_line    0x0000081b      0x34b i2cmaster.o
+ .debug_line    0x00000b66      0x152 Leds.o
+ .debug_line    0x00000cb8      0x17c LM75.o
+ .debug_line    0x00000e34       0x70 Message.o
+ .debug_line    0x00000ea4       0xce Messages.o
+ .debug_line    0x00000f72      0x121 Outputs.o
+ .debug_line    0x00001093      0x2b9 Settings.o
+ .debug_line    0x0000134c      0x462 TC654.o
+ .debug_line    0x000017ae      0x172 Temperatures.o
+ .debug_line    0x00001920      0x342 Ticker.o
+ .debug_line    0x00001c62      0x5a8 tiny-json.o
+ .debug_line    0x0000220a      0x2fe UART.o
+ .debug_line    0x00002508       0x7a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_line    0x00002582       0x67 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_line    0x000025e9       0x9e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_line    0x00002687       0x5b C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_line    0x000026e2       0xab C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
 
-.debug_frame    0x00000000      0xc34
+.debug_frame    0x00000000      0xc70
  *(.debug_frame)
  .debug_frame   0x00000000       0x34 Controller.o
  .debug_frame   0x00000034      0x13c Endpoint.o
- .debug_frame   0x00000170       0x78 Fans.o
- .debug_frame   0x000001e8       0x94 Leds.o
- .debug_frame   0x0000027c       0x80 LM75.o
- .debug_frame   0x000002fc       0x34 Message.o
- .debug_frame   0x00000330       0x6c Messages.o
- .debug_frame   0x0000039c       0xc4 Outputs.o
- .debug_frame   0x00000460      0x13c Settings.o
- .debug_frame   0x0000059c      0x21c TC654.o
- .debug_frame   0x000007b8       0x88 Temperatures.o
- .debug_frame   0x00000840      0x130 Ticker.o
- .debug_frame   0x00000970      0x15c tiny-json.o
- .debug_frame   0x00000acc      0x168 UART.o
+ .debug_frame   0x00000170       0xb4 Fans.o
+ .debug_frame   0x00000224       0x94 Leds.o
+ .debug_frame   0x000002b8       0x80 LM75.o
+ .debug_frame   0x00000338       0x34 Message.o
+ .debug_frame   0x0000036c       0x6c Messages.o
+ .debug_frame   0x000003d8       0xc4 Outputs.o
+ .debug_frame   0x0000049c      0x13c Settings.o
+ .debug_frame   0x000005d8      0x21c TC654.o
+ .debug_frame   0x000007f4       0x88 Temperatures.o
+ .debug_frame   0x0000087c      0x130 Ticker.o
+ .debug_frame   0x000009ac      0x15c tiny-json.o
+ .debug_frame   0x00000b08      0x168 UART.o
 
-.debug_str      0x00000000     0x274d
+.debug_str      0x00000000     0x27dd
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_str     0x00000208      0xd8e Controller.o
                                 0xede (size before relaxing)
  .debug_str     0x00000f96      0x205 Endpoint.o
                                 0x8f4 (size before relaxing)
- .debug_str     0x0000119b      0x1d1 Fans.o
-                                0x4b0 (size before relaxing)
- .debug_str     0x0000136c       0xc2 Leds.o
+ .debug_str     0x0000119b      0x268 Fans.o
+                                0x566 (size before relaxing)
+ .debug_str     0x00001403       0xc2 Leds.o
                                 0x3bd (size before relaxing)
- .debug_str     0x0000142e      0x261 LM75.o
+ .debug_str     0x000014c5      0x261 LM75.o
                                 0x52a (size before relaxing)
- .debug_str     0x0000168f       0x60 Message.o
+ .debug_str     0x00001726       0x60 Message.o
                                 0x22b (size before relaxing)
- .debug_str     0x000016ef       0x5f Messages.o
+ .debug_str     0x00001786       0x5f Messages.o
                                 0x2ac (size before relaxing)
- .debug_str     0x0000174e       0x68 Outputs.o
+ .debug_str     0x000017e5       0x68 Outputs.o
                                 0x377 (size before relaxing)
- .debug_str     0x000017b6      0x5cb Settings.o
+ .debug_str     0x0000184d      0x5cb Settings.o
                                 0x8ce (size before relaxing)
- .debug_str     0x00001d81      0x144 TC654.o
+ .debug_str     0x00001e18      0x144 TC654.o
                                 0x928 (size before relaxing)
- .debug_str     0x00001ec5      0x1c9 Temperatures.o
+ .debug_str     0x00001f5c      0x1c9 Temperatures.o
                                 0x4fa (size before relaxing)
- .debug_str     0x0000208e      0x360 Ticker.o
+ .debug_str     0x00002125      0x359 Ticker.o
                                 0x614 (size before relaxing)
- .debug_str     0x000023ee      0x1c4 tiny-json.o
+ .debug_str     0x0000247e      0x1c4 tiny-json.o
                                 0x48e (size before relaxing)
- .debug_str     0x000025b2      0x19b UART.o
+ .debug_str     0x00002642      0x19b UART.o
                                 0x625 (size before relaxing)
 
-.debug_loc      0x00000000     0x35ca
+.debug_loc      0x00000000     0x36e2
  *(.debug_loc)
  .debug_loc     0x00000000       0x8f Controller.o
  .debug_loc     0x0000008f      0x5c6 Endpoint.o
- .debug_loc     0x00000655      0x10f Fans.o
- .debug_loc     0x00000764      0x1a1 LM75.o
- .debug_loc     0x00000905       0x36 Message.o
- .debug_loc     0x0000093b      0x1aa Messages.o
- .debug_loc     0x00000ae5      0x304 Settings.o
- .debug_loc     0x00000de9      0xa04 TC654.o
- .debug_loc     0x000017ed      0x1de Temperatures.o
- .debug_loc     0x000019cb      0x431 Ticker.o
- .debug_loc     0x00001dfc     0x1219 tiny-json.o
- .debug_loc     0x00003015      0x5b5 UART.o
+ .debug_loc     0x00000655      0x227 Fans.o
+ .debug_loc     0x0000087c      0x1a1 LM75.o
+ .debug_loc     0x00000a1d       0x36 Message.o
+ .debug_loc     0x00000a53      0x1aa Messages.o
+ .debug_loc     0x00000bfd      0x304 Settings.o
+ .debug_loc     0x00000f01      0xa04 TC654.o
+ .debug_loc     0x00001905      0x1de Temperatures.o
+ .debug_loc     0x00001ae3      0x431 Ticker.o
+ .debug_loc     0x00001f14     0x1219 tiny-json.o
+ .debug_loc     0x0000312d      0x5b5 UART.o
 
 .debug_macinfo
  *(.debug_macinfo)

@@ -8,8 +8,8 @@
 
 #ifndef __IGETERRORS_H__
 #define __IGETERRORS_H__
-#include "ErrorMessages.h"
-class IGetErrors{ 
-public:virtual ErrorMessages* GetErrors()=0;
+#include "Exceptions.h"
+class IGetExceptions{ 
+public:virtual Exceptions* GetExceptions()=0;
 };
 #endif //__IGETERRORS_H__

@@ -28,7 +28,8 @@ Controller.d Controller.o: .././Controller.cpp \
  .././ISetPower.h .././IGetFanSpeedMin.h .././Leds.h .././Endpoint.h \
  .././ISystemCheck.h .././ITemperatures.h .././Temperatures.h \
  .././TC654.h .././IGetFanInfo.h .././IGetFanSpeed.h .././IFans.h \
- .././IGetErrors.h .././ErrorMessages.h .././ErrorMessage.h .././Fans.h
+ .././IGetExceptions.h .././Exceptions.h .././Exception.h \
+ .././PassFailCleanup.h .././Fans.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -128,10 +129,12 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 .././IFans.h:
 
-.././IGetErrors.h:
+.././IGetExceptions.h:
 
-.././ErrorMessages.h:
+.././Exceptions.h:
 
-.././ErrorMessage.h:
+.././Exception.h:
+
+.././PassFailCleanup.h:
 
 .././Fans.h:

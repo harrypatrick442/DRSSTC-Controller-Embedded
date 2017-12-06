@@ -37,22 +37,26 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../CommunicationException.cpp \
 ../Controller.cpp \
 ../EEPROM.cpp \
 ../Endpoint.cpp \
-../ErrorMessage.cpp \
-../ErrorMessages.cpp \
+../Exception.cpp \
+../Exceptions.cpp \
 ../Fans.cpp \
+../FanSpeedException.cpp \
 ../jsmn.cpp \
 ../Leds.cpp \
 ../LM75.cpp \
 ../Message.cpp \
 ../Messages.cpp \
 ../Outputs.cpp \
+../PassFailCleanup.cpp \
 ../Settings.cpp \
 ../Stopwatch.cpp \
 ../SystemCheck.cpp \
 ../TC654.cpp \
+../TC654Exception.cpp \
 ../Temperatures.cpp \
 ../Ticker.cpp \
 ../tiny-json.cpp \
@@ -67,12 +71,14 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+CommunicationException.o \
 Controller.o \
 EEPROM.o \
 Endpoint.o \
-ErrorMessage.o \
-ErrorMessages.o \
+Exception.o \
+Exceptions.o \
 Fans.o \
+FanSpeedException.o \
 i2cmaster.o \
 jsmn.o \
 Leds.o \
@@ -80,22 +86,26 @@ LM75.o \
 Message.o \
 Messages.o \
 Outputs.o \
+PassFailCleanup.o \
 Settings.o \
 Stopwatch.o \
 SystemCheck.o \
 TC654.o \
+TC654Exception.o \
 Temperatures.o \
 Ticker.o \
 tiny-json.o \
 UART.o
 
 OBJS_AS_ARGS +=  \
+CommunicationException.o \
 Controller.o \
 EEPROM.o \
 Endpoint.o \
-ErrorMessage.o \
-ErrorMessages.o \
+Exception.o \
+Exceptions.o \
 Fans.o \
+FanSpeedException.o \
 i2cmaster.o \
 jsmn.o \
 Leds.o \
@@ -103,22 +113,26 @@ LM75.o \
 Message.o \
 Messages.o \
 Outputs.o \
+PassFailCleanup.o \
 Settings.o \
 Stopwatch.o \
 SystemCheck.o \
 TC654.o \
+TC654Exception.o \
 Temperatures.o \
 Ticker.o \
 tiny-json.o \
 UART.o
 
 C_DEPS +=  \
+CommunicationException.d \
 Controller.d \
 EEPROM.d \
 Endpoint.d \
-ErrorMessage.d \
-ErrorMessages.d \
+Exception.d \
+Exceptions.d \
 Fans.d \
+FanSpeedException.d \
 i2cmaster.d \
 jsmn.d \
 Leds.d \
@@ -126,22 +140,26 @@ LM75.d \
 Message.d \
 Messages.d \
 Outputs.d \
+PassFailCleanup.d \
 Settings.d \
 Stopwatch.d \
 SystemCheck.d \
 TC654.d \
+TC654Exception.d \
 Temperatures.d \
 Ticker.d \
 tiny-json.d \
 UART.d
 
 C_DEPS_AS_ARGS +=  \
+CommunicationException.d \
 Controller.d \
 EEPROM.d \
 Endpoint.d \
-ErrorMessage.d \
-ErrorMessages.d \
+Exception.d \
+Exceptions.d \
 Fans.d \
+FanSpeedException.d \
 i2cmaster.d \
 jsmn.d \
 Leds.d \
@@ -149,10 +167,12 @@ LM75.d \
 Message.d \
 Messages.d \
 Outputs.d \
+PassFailCleanup.d \
 Settings.d \
 Stopwatch.d \
 SystemCheck.d \
 TC654.d \
+TC654Exception.d \
 Temperatures.d \
 Ticker.d \
 tiny-json.d \
@@ -172,6 +192,14 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
+
+
+
+
+
+
 
 
 

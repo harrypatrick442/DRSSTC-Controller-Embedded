@@ -4,6 +4,7 @@
 * Created: 09/10/2017 13:01:34
 * Author: SoftwareEngineer
 */
+#include <stdlib.h>
 #include "Message.h"
 Message::Message(const char* bufferIn, unsigned int lengthIn):length(lengthIn), buffer(bufferIn){
 	

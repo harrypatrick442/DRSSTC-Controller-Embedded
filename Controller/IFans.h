@@ -8,8 +8,9 @@
 
 #ifndef __IFANS_H__
 #define __IFANS_H__
-#include "IGetErrors.h"
-class          IFans:   public IGetErrors { 
-public:virtual  bool GetFansWorkingCorrectly()=0;
+#include "IGetExceptions.h"
+#include "PassFailCleanup.h"
+class          IFans:   public IGetExceptions { 
+public:virtual  PassFailCleanup GetFansWorkingCorrectly()=0;
 };
 #endif //__IFANS_H__

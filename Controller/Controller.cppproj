@@ -206,6 +206,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CommunicationException.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CommunicationException.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Controller.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -221,22 +227,28 @@
     <Compile Include="Endpoint.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="ErrorMessage.cpp">
+    <Compile Include="Exception.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="ErrorMessage.h">
+    <Compile Include="Exception.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="ErrorMessages.cpp">
+    <Compile Include="Exceptions.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="ErrorMessages.h">
+    <Compile Include="Exceptions.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Fans.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Fans.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FanSpeedException.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FanSpeedException.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="i2cmaster.h">
@@ -251,7 +263,7 @@
     <Compile Include="IFans.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="IGetErrors.h">
+    <Compile Include="IGetExceptions.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="IGetFanInfo.h">
@@ -332,6 +344,12 @@
     <Compile Include="Outputs.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="PassFailCleanup.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PassFailCleanup.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Settings.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -354,6 +372,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="TC654.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TC654Exception.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TC654Exception.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Temperatures.cpp">

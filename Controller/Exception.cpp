@@ -7,14 +7,14 @@
 
 
 #include <avr/io.h>
-#include "ErrorMessage.h"
+#include "Exception.h"
 
 // default constructor
-ErrorMessage::ErrorMessage(char* message):message(message)
+Exception::Exception()
 {
 } //Outputs
 
 // default destructor
-ErrorMessage::~ErrorMessage()
+Exception::~Exception()
 {
 } //~Fans

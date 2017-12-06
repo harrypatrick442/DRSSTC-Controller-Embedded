@@ -8,7 +8,6 @@
 
 #ifndef __MESSAGE_H__
 #define __MESSAGE_H__
-#include <stdlib.h>
 
 class Message{
 public:

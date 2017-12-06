@@ -6,22 +6,24 @@
 */
 
 
-#ifndef __ERRORMESSAGE_H__
-#define __ERRORMESSAGE_H__
-
-class ErrorMessage
+#ifndef __EXCEPTION_H__
+#define __EXCEPTION_H__
+class Exception
 {
 	//variables
 	public:
-	const char* message;
 	protected:
 	private:
 	//functions
 	public:
-	ErrorMessage(char* message);
-	~ErrorMessage();
+	Exception();
+	~Exception();
+	const char* ToString();
 	protected:
 	private:
 }; //Outputs
 
-#endif __ERRORMESSAGE_H__
+#endif __EXCEPTION_H__
+
+
+

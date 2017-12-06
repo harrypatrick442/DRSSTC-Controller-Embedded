@@ -123,6 +123,7 @@ IGetFanInfo* TC654::GetIGetFan1Info(){
 IGetFanInfo* TC654::GetIGetFan2Info(){
 	return &fan2;
 }
+
 // default destructor
 TC654::~TC654()
 {
