@@ -21,7 +21,7 @@ void Endpoint::Run(){
 	if(messages!=NULL){
 		if(messages->length>0)
 		{
-			Leds::Main::SetBlue();
+			Leds::Main::SetGreen();
 			for(int i=0; i<messages->length; i++){
 				Message* message = messages->messages[i];
 				json_t pool[64];
@@ -81,13 +81,13 @@ void Endpoint::Run(){
 void Endpoint::GetPower(){
 	uint16_t power = iGetPower->GetPower();
 	char buf[30];
-	sprintf(buf,"{\"type\":\"power\",\"power\":%04d}",power);
+	snprintf(buf,30,"{\"type\":\"power\",\"power\":%04d}",power);
 	iSendMessage->SendMessage(buf, 29);
 }
 void Endpoint::GetTemperatureMax(){
 	uint8_t temperatureMax = iGetTemperatureMax->GetTemperatureMax();
 	char buf[49];
-	sprintf(buf,"{\"type\":\"temperature_max\",\"temperature_max\":%03d}",temperatureMax);
+	snprintf(buf,49,"{\"type\":\"temperature_max\",\"temperature_max\":%03d}",temperatureMax);
 iSendMessage->SendMessage(buf, 48);}
 
 void Endpoint::GetMaxTemperature(){
@@ -96,5 +96,5 @@ void Endpoint::GetMaxTemperature(){
 	if(successful){
 		Leds::Main::SetRed();
 		char buf[45];
-		sprintf(buf,"{\"type\":\"max_temperature\",\"temperature\":%03d}",temperature);
+		snprintf(buf,45,"{\"type\":\"max_temperature\",\"temperature\":%03d}",temperature);
 	iSendMessage->SendMessage(buf, 44);}}

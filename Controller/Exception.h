@@ -18,7 +18,7 @@ class Exception
 	public:
 	Exception();
 	~Exception();
-	const char* ToString();
+	virtual const char* ToString();
 	protected:
 	private:
 }; //Outputs

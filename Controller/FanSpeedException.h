@@ -18,7 +18,7 @@ class FanSpeedException:public Exception
 	public:
 	FanSpeedException( const char* name, uint16_t actualSpeed, uint16_t minSpeedRequired);
 	~FanSpeedException();
-	const char* ToString();
+	virtual const char* ToString();
 	protected:
 	private:
 }; //Outputs

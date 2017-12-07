@@ -43,7 +43,7 @@ PassFailCleanup<Exceptions*> Fans::GetFansWorkingCorrectly(){
 			}
 			else
 			{
-					exceptions->Add(new CommunicationException(iGetFanInfo->GetName()));
+					exceptions->Add(new CommunicationException("TC654"));
 			}
 		}
 		else

@@ -18,3 +18,7 @@ Exception::Exception()
 Exception::~Exception()
 {
 } //~Fans
+
+const char* Exception::ToString(){
+
+}

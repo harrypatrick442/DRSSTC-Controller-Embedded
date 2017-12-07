@@ -16,11 +16,12 @@ class CommunicationException:public Exception
 	protected:
 	private:
 	const char* deviceName;
+	char* message;
 	//functions
 	public:
 	CommunicationException(const char* deviceName);
 	~CommunicationException();
-	const char* ToString();
+	virtual const char* ToString();
 	protected:
 	private:
 }; //Outputs

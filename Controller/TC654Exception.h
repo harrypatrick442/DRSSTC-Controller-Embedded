@@ -23,7 +23,7 @@ class TC654Exception:public Exception
 	public:
 	TC654Exception(const char* name,  Type  type);
 	~TC654Exception();
-	const char* ToString();
+	virtual const char* ToString();
 	protected:
 	private:
 }; //Outputs
