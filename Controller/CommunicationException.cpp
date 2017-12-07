@@ -1,5 +1,5 @@
 /*
-* Outputs.cpp
+* CommunicationException.cpp
 *
 * Created: 08/10/2017 12:15:44
 * Author: SoftwareEngineer
@@ -11,15 +11,14 @@
 #include <stdlib.h>
 #include "CommunicationException.h"
 
-// default constructor
 CommunicationException::CommunicationException(const char* deviceName):deviceName(deviceName)
 {
-} //Outputs
+}
 
-// default destructor
 CommunicationException::~CommunicationException()
 {
-} //~Fans
+	if(message!=NULL) delete message;
+}
 const char* CommunicationException::ToString(){
 
 	if(message==NULL){

@@ -1,5 +1,5 @@
 /* 
-* IGETFANSPEED.h
+* IGetFanSpeed.h
 *
 * Created: 09/10/2017 13:01:34
 * Author: SoftwareEngineer

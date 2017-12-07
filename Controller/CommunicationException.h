@@ -1,5 +1,5 @@
 /*
-* Outputs.h
+* CommunicationException.h
 *
 * Created: 08/10/2017 12:15:44
 * Author: SoftwareEngineer

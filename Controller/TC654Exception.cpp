@@ -29,20 +29,20 @@ const char* TC654Exception::ToString(){
 		size_t totalLength;
 		switch(type){
 			case Fault:
-		 totalLength = strlen(name)+57;
+			totalLength = strlen(name)+57;
 			message=(char*)malloc(sizeof(char)*totalLength);
 			if(message!=NULL){
-			snprintf(message,totalLength, "%s experienced a fault as indicated by its status register", name);
+				snprintf(message,totalLength, "%s experienced a fault as indicated by its status register", name);
 			}
 			break;
 			case CounterOverflow:
-		 totalLength = strlen(name)+68;
+			totalLength = strlen(name)+68;
 			message=(char*)malloc(sizeof(char)*totalLength);
 			if(message!=NULL){
-			snprintf(message,totalLength, "%s experienced a counter overflow as indicated by its status register",name);
+				snprintf(message,totalLength, "%s experienced a counter overflow as indicated by its status register",name);
 			}
 			break;
 		}
-		return message;
 	}
+	return message;
 }

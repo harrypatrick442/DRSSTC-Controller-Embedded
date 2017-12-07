@@ -1,5 +1,5 @@
 /*
-* LM75.cpp
+* Temperatures.cpp
 *
 * Created: 08/10/2017 12:37:23
 * Author: SoftwareEngineer

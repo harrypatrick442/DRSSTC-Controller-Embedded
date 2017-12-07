@@ -14,6 +14,10 @@ class FanSpeedException:public Exception
 	public:
 	protected:
 	private:
+	const char* name;
+	uint16_t actualSpeed;
+	uint16_t minSpeedRequired;
+	char* message;
 	//functions
 	public:
 	FanSpeedException( const char* name, uint16_t actualSpeed, uint16_t minSpeedRequired);
