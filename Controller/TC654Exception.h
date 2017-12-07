@@ -13,11 +13,15 @@ class TC654Exception:public Exception
 {
 	//variables
 	public:
+	typedef enum Type{Fault, CounterOverflow};
 	protected:
 	private:
+	const Type type;
+	const char* name;
+	char* message=NULL;
 	//functions
 	public:
-	TC654Exception();
+	TC654Exception(const char* name,  Type  type);
 	~TC654Exception();
 	const char* ToString();
 	protected:

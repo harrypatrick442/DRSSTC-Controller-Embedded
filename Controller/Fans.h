@@ -30,7 +30,7 @@ public   IFans
 	public:
 	static  Fans& GetInstance();
 	void SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin* iGetFanSpeedMin);
-	PassFailCleanup GetFansWorkingCorrectly();
+	PassFailCleanup<Exceptions*> GetFansWorkingCorrectly();
 	Exceptions* GetExceptions();
 	protected:
 	private:

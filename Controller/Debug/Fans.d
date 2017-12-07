@@ -15,9 +15,10 @@ Fans.d Fans.o: .././Fans.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- .././Fans.h .././IGetFanInfo.h .././IGetFanSpeed.h .././IGetName.h \
- .././IFans.h .././IGetExceptions.h .././Exceptions.h .././Exception.h \
- .././PassFailCleanup.h .././IGetFanSpeedMin.h .././FanSpeedException.h \
+ .././Fans.h .././IGetFanInfo.h .././IGetFanSpeed.h .././ICheck.h \
+ .././PassFailCleanup.h .././Exceptions.h .././simple_vector.h \
+ .././Exception.h .././IGetName.h .././IFans.h .././IGetExceptions.h \
+ .././IGetFanSpeedMin.h .././FanSpeedException.h \
  .././CommunicationException.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
@@ -58,17 +59,21 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 .././IGetFanSpeed.h:
 
+.././ICheck.h:
+
+.././PassFailCleanup.h:
+
+.././Exceptions.h:
+
+.././simple_vector.h:
+
+.././Exception.h:
+
 .././IGetName.h:
 
 .././IFans.h:
 
 .././IGetExceptions.h:
-
-.././Exceptions.h:
-
-.././Exception.h:
-
-.././PassFailCleanup.h:
 
 .././IGetFanSpeedMin.h:
 

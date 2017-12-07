@@ -10,18 +10,21 @@
 #define __EXCEPTIONS_H__
 
 
+#include "simple_vector.h"
 #include "Exception.h"
 class Exceptions
 {
 	//variables
 	public:
-	const unsigned int nExceptions;
-	Exception*const*const exceptions;
+	simple_vector<Exception*>exceptions;
 	protected:
 	private:
 	//functions
 	public:
-	Exceptions(Exception* *const  exceptions, unsigned int nExceptions);
+	void Consume(Exceptions* exceptions);
+	void Add(Exception* exception);
+	unsigned int Count();
+	Exceptions();
 	~Exceptions();
 	protected:
 	private:

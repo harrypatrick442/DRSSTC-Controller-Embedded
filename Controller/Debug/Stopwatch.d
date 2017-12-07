@@ -13,8 +13,7 @@ Stopwatch.d Stopwatch.o: .././Stopwatch.cpp .././Stopwatch.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include-fixed\limits.h \
  ../stl/new ../stl/stl_construct.h ../stl/stl_uninitialized.h \
  ../stl/stl_tempbuf.h ../stl/stl_algo.h ../stl/stl_heap.h \
- .././volatile_vector.h .././Uart.h .././Messages.h .././Message.h \
- .././IGetMessages.h .././ISendMessage.h
+ .././volatile_vector.h
 
 .././Stopwatch.h:
 
@@ -73,13 +72,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 ../stl/stl_heap.h:
 
 .././volatile_vector.h:
-
-.././Uart.h:
-
-.././Messages.h:
-
-.././Message.h:
-
-.././IGetMessages.h:
-
-.././ISendMessage.h:

@@ -1,6 +1,6 @@
 
 
-#include "Uart.h"
+#include <string.h>
 // Minimal class to replace std::vector
 template<typename Data>
 class volatile_vector {

@@ -23,7 +23,7 @@ bool TC654::Status::GetR1CO(){
 }
 bool TC654::Status::GetR2CO(){
 	return ((value&0x10)>>4)>0;}
-TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, char* name):name(name), callbackGetRPM(callbackGetRPM), tc654(tc654){}
+TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck char* name):name(name), callbackGetRPM(callbackGetRPM), callbackCheck(callbackCheck), tc654(tc654){}
 
 
 const char* TC654::Fan::GetName(){
@@ -42,7 +42,15 @@ unsigned char TC654::GetRPM1(bool& successful){
 unsigned char TC654::GetRPM2(bool& successful){
 	return ReadRegister(successful, RPM2_ADDRESS);
 }
-TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, "tc654_2"))
+PassFailCleanup TC654::CheckFan1(){
+	
+}
+PassFailCleanup TC654::CheckFan2(const char* name){
+bool successful=true;
+	Status status = GetStatus(successful);
+	if(status.GetF2F())return new PassFailCleanup(new TC654Exception(name, )));
+}
+TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1,&TC654::CheckFan1, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, &TC654::CheckFan2, "tc654_2"))
 {
 	this->F1PPR=(0x0f&F1PPR)<<2;
 	this->F2PPR=(0x0f&F2PPR)<<6;

@@ -9,7 +9,8 @@
 #ifndef __IGETFANINFO_H__
 #define __IGETFANINFO_H__
 #include "IGetFanSpeed.h"
+#include "ICheck.h"
 #include "IGetName.h"
-class IGetFanInfo:public IGetFanSpeed, public IGetName{ 
+class IGetFanInfo:public IGetFanSpeed, public IGetName, public ICheck{ 
 };
 #endif //__IGETFANINFO_H__

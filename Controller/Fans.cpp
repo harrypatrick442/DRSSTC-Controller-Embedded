@@ -14,40 +14,46 @@
 #include "Fans.h"
 #include "FanSpeedException.h"
 #include "CommunicationException.h"
+#include "Exceptions.h"
+#include "PassFailCleanup.h"
 
 Fans& Fans::GetInstance(){
 	
-}void Fans::SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin*iGetFanSpeedMin)
+} void Fans::SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin*iGetFanSpeedMin)
 {
-this->iGetFanInfos=iGetFanInfos;
-this->nIGetFanInfos=nIGetFanInfos;
-this->iGetFanSpeedMin = iGetFanSpeedMin;
+	this->iGetFanInfos=iGetFanInfos;
+	this->nIGetFanInfos=nIGetFanInfos;
+	this->iGetFanSpeedMin = iGetFanSpeedMin;
 
 }
-PassFailCleanup Fans::GetFansWorkingCorrectly(){
+PassFailCleanup<Exceptions*> Fans::GetFansWorkingCorrectly(){
 	bool working=true;
 	uint16_t minSpeed = iGetFanSpeedMin->GetFanSpeedMin();
-	Exception** const exceptions = (Exception **const)malloc(sizeof(Exception*)*MAX_NUMBER_EXCEPTIONS);
-	unsigned int nException=0;
+	Exceptions* exceptions = new Exceptions();
 	for(char i=0; i<nIGetFanInfos; i++    ){
 		IGetFanInfo* iGetFanInfo = iGetFanInfos[i];
 		bool successful=true;
-		uint16_t speed = iGetFanInfo->GetFanSpeed(successful);
-		if(successful){
-		if(minSpeed>speed){
-		if(nException<MAX_NUMBER_EXCEPTIONS){
-			exceptions[nException]= new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed);
-			nException++;}
+		PassFailCleanup<Exceptions*> passFailCleanup=iGetFanInfo->Check();
+		if(passFailCleanup.successful){
+			uint16_t speed = iGetFanInfo->GetFanSpeed(successful);
+			if(successful){
+				if(minSpeed>speed){
+						exceptions->Add(new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed));
+				}
+			}
+			else
+			{
+					exceptions->Add(new CommunicationException(iGetFanInfo->GetName()));
+			}
 		}
-		}else
+		else
 		{
-		if(nException<MAX_NUMBER_EXCEPTIONS){
-			exceptions[nException]= new CommunicationException(iGetFanInfo->GetName());
-			nException++;}
+			exceptions->Consume(passFailCleanup.payload);
 		}
 	}
-	return (nException>0?PassFailCleanup(new Exceptions(exceptions, nException)):PassFailCleanup());
+if(exceptions->Count()>0){
+return PassFailCleanup<Exceptions*>(exceptions);
 }
-Exceptions* Fans::GetExceptions(){
-	
+delete exceptions; 
+return PassFailCleanup<Exceptions*>();
 }

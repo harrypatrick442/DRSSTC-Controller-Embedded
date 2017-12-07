@@ -260,6 +260,9 @@
     <Compile Include="i2cmaster_constants.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="ICheck.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="IFans.h">
       <SubType>compile</SubType>
     </Compile>
@@ -404,7 +407,7 @@
     <Compile Include="UART.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="vector_old.h">
+    <Compile Include="simple_vector.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="volatile_vector.h">

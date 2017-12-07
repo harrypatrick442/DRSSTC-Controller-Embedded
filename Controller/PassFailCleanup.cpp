@@ -9,17 +9,20 @@
 #include "PassFailCleanup.h"
 
 // failure constructor
-PassFailCleanup::PassFailCleanup(Exceptions* exceptions):exceptions(exceptions), successful(false)
+
+template <class T> PassFailCleanup<T>::PassFailCleanup(T payload):payload(payload), successful(false)
 {
 }
 //successful constructor
-PassFailCleanup::PassFailCleanup():successful(true)
+
+template <class T> PassFailCleanup<T>::PassFailCleanup():successful(true)
 {
 }
 
 // default destructor
-PassFailCleanup::~PassFailCleanup()
+
+template <class T>PassFailCleanup<T>::~PassFailCleanup()
 {
 if(!successful)
-delete exceptions;
+delete payload;
 } //~Fans
