@@ -46,4 +46,4 @@ class Endpoint
 	void GetPower();
 }; //Outputs
 
-#endif __ENDPOINT_H__
+#endif //__ENDPOINT_H__

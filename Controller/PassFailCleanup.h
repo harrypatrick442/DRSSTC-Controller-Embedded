@@ -8,8 +8,8 @@
 
 #ifndef __PASSFAILCLEANUP_H__
 #define __PASSFAILCLEANUP_H__
-
-template <class T>    class PassFailCleanup//cleans up mallocated exceptions once it goes out of scope
+#include <stdlib.h>
+template <class T>   class PassFailCleanup//cleans up mallocated exceptions once it goes out of scope
 {
 	//variables
 	public:
@@ -18,11 +18,22 @@ template <class T>    class PassFailCleanup//cleans up mallocated exceptions onc
 	protected:
 	private:
 	//functions
-	public:PassFailCleanup<T>(T payload);
+	public:
+	PassFailCleanup(T payload):payload(payload), successful(false)
+	{
+	}
 	//successful constructor
-	PassFailCleanup();
+PassFailCleanup():successful(true), payload(NULL)
+	{
+	}
+
 	// default destructor
-	~PassFailCleanup();
+
+	~PassFailCleanup()
+	{
+		if(!successful)
+		delete payload;
+	} //~Fans
 	protected:
 	private:
 }; //Outputs

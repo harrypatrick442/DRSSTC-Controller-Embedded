@@ -23,7 +23,7 @@ class Exception
 	private:
 }; //Outputs
 
-#endif __EXCEPTION_H__
+#endif //__EXCEPTION_H__
 
 
 

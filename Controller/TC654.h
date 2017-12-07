@@ -10,7 +10,7 @@
 #define __TC654_H__
 #include "IGetFanInfo.h"
 #include "IFans.h"
-#include "Exception.h"
+#include "Exceptions.h"
 
 class TC654
 {
@@ -48,7 +48,7 @@ class TC654
 		const char* name;
 		TC654* tc654;
 		typedef unsigned char (TC654::*CallbackGetRPM)(bool& successful);
-		typedef PassFailCleanup<Exception*>(TC654::*CallbackCheck)();
+		typedef PassFailCleanup<Exceptions*>(TC654::*CallbackCheck)(const char* name);
 		CallbackGetRPM callbackGetRPM;
 		CallbackCheck callbackCheck;
 		Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, char* name);
@@ -71,6 +71,8 @@ class TC654
 	IGetFanInfo* GetIGetFan1Info();
 	IGetFanInfo* GetIGetFan2Info();
 	~TC654();
+	PassFailCleanup<Exceptions*> CheckFan1(const char* name);
+	PassFailCleanup<Exceptions*> CheckFan2(const char* name);
 
 	protected:
 	private:
