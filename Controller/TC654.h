@@ -53,7 +53,7 @@ class TC654
 		CallbackCheck callbackCheck;
 		Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, char* name);
 		const char* GetName();
-		uint16_t GetFanSpeed(bool& successful);
+		uint16_t GetFanSpeed(bool& successful, Exceptions& exceptions);
 		void Check(bool& successful, Exceptions& exceptions);
 	};
 	Fan fan1;

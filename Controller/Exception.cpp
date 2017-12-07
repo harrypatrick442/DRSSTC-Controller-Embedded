@@ -6,17 +6,23 @@
 */
 
 
-#include <avr/io.h>
+#include <stdlib.h>
 #include "Exception.h"
 
 // default constructor
 Exception::Exception()
 {
 } //Outputs
+Exception::Exception(const char* message):message(message)
+{
+} //Outputs
 
 // default destructor
 Exception::~Exception()
 {
+if(message!=NULL){
+delete message;
+}
 } //~Fans
 
 const char* Exception::ToString(){

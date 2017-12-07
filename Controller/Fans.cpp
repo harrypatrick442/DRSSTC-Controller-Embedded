@@ -35,18 +35,18 @@ bool Fans::GetFansWorkingCorrectly(Exceptions& exceptions){
 			uint16_t speed = iGetFanInfo->GetFanSpeed(successful, exceptions);
 			if(successful){
 				if(minSpeed>speed){
-						exceptions->Add(new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed));
+						exceptions.Add(new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed));
 				}
 				else
 				return true;
 			}
 			else
 			{
-					exceptions->Add(new CommunicationException("TC654"));
+					exceptions.Add(new CommunicationException("TC654"));
 			}
 		}
 	}
 	if(nIGetFanInfos<=0)
-		exceptions->Add(new Exception("There are no fans"));
+		exceptions.Add(new Exception("There are no fans"));
 	return false;
 }

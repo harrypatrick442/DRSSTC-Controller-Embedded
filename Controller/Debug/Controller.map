@@ -1,0 +1,1585 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              jsmn.o (__tablejump2__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              CommunicationException.o (__do_copy_data)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              Settings.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                              Settings.o (__do_global_ctors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                              Ticker.o (__do_global_dtors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                              CommunicationException.o (malloc)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
+                              Endpoint.o (atol)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              Exceptions.o (memcpy)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                              Endpoint.o (strcmp)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o) (__mulsi_const_10)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+                              CommunicationException.o (snprintf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o) (vfprintf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+                              Settings.o (eeprom_read_byte)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+                              Settings.o (eeprom_read_word)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+                              Settings.o (eeprom_write_byte)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+                              Settings.o (eeprom_write_word)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o) (eeprom_read_blraw)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o) (__prologue_saves__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+__brkval            0x2               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+__flp               0x2               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .group         0x00000000        0x8 CommunicationException.o
+ .text          0x00000000        0x0 CommunicationException.o
+ .data          0x00000000        0x0 CommunicationException.o
+ .bss           0x00000000        0x0 CommunicationException.o
+ .text._ZN22CommunicationExceptionD2Ev
+                0x00000000       0x26 CommunicationException.o
+ .text          0x00000000        0x0 Controller.o
+ .data          0x00000000        0x0 Controller.o
+ .bss           0x00000000        0x0 Controller.o
+ .text          0x00000000        0x0 EEPROM.o
+ .data          0x00000000        0x0 EEPROM.o
+ .bss           0x00000000        0x0 EEPROM.o
+ .text._Z18eeprom_write_byte1jh
+                0x00000000       0x14 EEPROM.o
+ .text._Z17eeprom_read_byte1j
+                0x00000000       0x12 EEPROM.o
+ .text._Z19eeprom_write_stringjPc
+                0x00000000       0x38 EEPROM.o
+ .text._Z18eeprom_read_stringjPci
+                0x00000000       0x42 EEPROM.o
+ .debug_info    0x00000000      0x1a7 EEPROM.o
+ .debug_abbrev  0x00000000      0x101 EEPROM.o
+ .debug_loc     0x00000000      0x1f1 EEPROM.o
+ .debug_aranges
+                0x00000000       0x38 EEPROM.o
+ .debug_ranges  0x00000000       0x28 EEPROM.o
+ .debug_line    0x00000000      0x189 EEPROM.o
+ .debug_str     0x00000000      0x2a8 EEPROM.o
+ .comment       0x00000000       0x31 EEPROM.o
+ .debug_frame   0x00000000       0x88 EEPROM.o
+ .text          0x00000000        0x0 Endpoint.o
+ .data          0x00000000        0x0 Endpoint.o
+ .bss           0x00000000        0x0 Endpoint.o
+ .text._ZN8Endpoint13SendExceptionER9Exception
+                0x00000000        0x2 Endpoint.o
+ .text._ZN8Endpoint14SendExceptionsER10Exceptions
+                0x00000000        0x2 Endpoint.o
+ .group         0x00000000        0x8 Exception.o
+ .text          0x00000000        0x0 Exception.o
+ .data          0x00000000        0x0 Exception.o
+ .bss           0x00000000        0x0 Exception.o
+ .text._ZN9ExceptionC2EPKc
+                0x00000000       0x10 Exception.o
+ .text          0x00000000        0x0 Exceptions.o
+ .data          0x00000000        0x0 Exceptions.o
+ .bss           0x00000000        0x0 Exceptions.o
+ .text._ZN10Exceptions5CountEv
+                0x00000000        0x8 Exceptions.o
+ .text._ZN10Exceptions7ConsumeEPS_
+                0x00000000      0x12a Exceptions.o
+ .group         0x00000000        0x8 Fans.o
+ .text          0x00000000        0x0 Fans.o
+ .data          0x00000000        0x0 Fans.o
+ .bss           0x00000000        0x0 Fans.o
+ .rodata.str1.1
+                0x00000000       0x18 Fans.o
+ .text._ZN4Fans23GetFansWorkingCorrectlyER10Exceptions
+                0x00000000      0x160 Fans.o
+ .rodata._ZTV4Fans
+                0x00000000        0x8 Fans.o
+ .group         0x00000000        0x8 FanSpeedException.o
+ .text          0x00000000        0x0 FanSpeedException.o
+ .data          0x00000000        0x0 FanSpeedException.o
+ .bss           0x00000000        0x0 FanSpeedException.o
+ .rodata.str1.1
+                0x00000000       0x50 FanSpeedException.o
+ .text._ZN17FanSpeedException8ToStringEv
+                0x00000000       0x88 FanSpeedException.o
+ .text._ZN17FanSpeedExceptionC2EPKcjj
+                0x00000000       0x42 FanSpeedException.o
+ .text._ZN17FanSpeedExceptionD2Ev
+                0x00000000       0x26 FanSpeedException.o
+ .rodata._ZTV17FanSpeedException
+                0x00000000        0x6 FanSpeedException.o
+ .debug_info    0x00000000      0x2e2 FanSpeedException.o
+ .debug_abbrev  0x00000000      0x18d FanSpeedException.o
+ .debug_loc     0x00000000      0x2c9 FanSpeedException.o
+ .debug_aranges
+                0x00000000       0x30 FanSpeedException.o
+ .debug_ranges  0x00000000       0x20 FanSpeedException.o
+ .debug_line    0x00000000      0x1a5 FanSpeedException.o
+ .debug_str     0x00000000      0x33e FanSpeedException.o
+ .comment       0x00000000       0x31 FanSpeedException.o
+ .debug_frame   0x00000000       0xc0 FanSpeedException.o
+ .data          0x00000000        0x0 i2cmaster.o
+ .bss           0x00000000        0x0 i2cmaster.o
+ .text          0x00000000        0x0 jsmn.o
+ .data          0x00000000        0x0 jsmn.o
+ .bss           0x00000000        0x0 jsmn.o
+ .text.jsmn_parse
+                0x00000000      0x76e jsmn.o
+ .progmem.gcc_sw_table.jsmn_parse
+                0x00000000       0xa8 jsmn.o
+ .text.jsmn_init
+                0x00000000       0x14 jsmn.o
+ .debug_info    0x00000000      0x593 jsmn.o
+ .debug_abbrev  0x00000000      0x20e jsmn.o
+ .debug_loc     0x00000000      0x91d jsmn.o
+ .debug_aranges
+                0x00000000       0x28 jsmn.o
+ .debug_ranges  0x00000000       0xd8 jsmn.o
+ .debug_line    0x00000000      0x42a jsmn.o
+ .debug_str     0x00000000      0x30b jsmn.o
+ .comment       0x00000000       0x31 jsmn.o
+ .debug_frame   0x00000000       0x94 jsmn.o
+ .text          0x00000000        0x0 Leds.o
+ .data          0x00000000        0x0 Leds.o
+ .bss           0x00000000        0x0 Leds.o
+ .text._ZN4Leds4Main7SetBlueEv
+                0x00000000        0xe Leds.o
+ .text._ZN4Leds4Main9SetYellowEv
+                0x00000000        0xe Leds.o
+ .text._ZN4Leds4Main9SetOrangeEv
+                0x00000000        0xe Leds.o
+ .text._ZN4Leds4Main9SetPurpleEv
+                0x00000000        0xe Leds.o
+ .text._ZN4Leds4Main8SetWhiteEv
+                0x00000000        0xe Leds.o
+ .text._ZN4Leds4Main6SetOffEv
+                0x00000000        0xe Leds.o
+ .group         0x00000000        0x8 LM75.o
+ .text          0x00000000        0x0 LM75.o
+ .data          0x00000000        0x0 LM75.o
+ .bss           0x00000000        0x0 LM75.o
+ .text._ZN4LM75D2Ev
+                0x00000000        0x2 LM75.o
+ .text          0x00000000        0x0 Message.o
+ .data          0x00000000        0x0 Message.o
+ .bss           0x00000000        0x0 Message.o
+ .text          0x00000000        0x0 Messages.o
+ .data          0x00000000        0x0 Messages.o
+ .bss           0x00000000        0x0 Messages.o
+ .text          0x00000000        0x0 Outputs.o
+ .data          0x00000000        0x0 Outputs.o
+ .bss           0x00000000        0x0 Outputs.o
+ .text._ZN7OutputsC2Ev
+                0x00000000        0x2 Outputs.o
+ .text._ZN7OutputsD2Ev
+                0x00000000        0x2 Outputs.o
+ .text._ZN7Outputs2PB2_57SetHighEv
+                0x00000000        0x4 Outputs.o
+ .text._ZN7Outputs2PB2_56SetLowEv
+                0x00000000        0x4 Outputs.o
+ .text._ZN7Outputs2PD2_27SetHighEv
+                0x00000000        0x4 Outputs.o
+ .text          0x00000000        0x0 Cleanup.o
+ .data          0x00000000        0x0 Cleanup.o
+ .bss           0x00000000        0x0 Cleanup.o
+ .debug_info    0x00000000       0x33 Cleanup.o
+ .debug_abbrev  0x00000000       0x26 Cleanup.o
+ .debug_aranges
+                0x00000000       0x18 Cleanup.o
+ .debug_line    0x00000000       0x1a Cleanup.o
+ .debug_str     0x00000000      0x186 Cleanup.o
+ .comment       0x00000000       0x31 Cleanup.o
+ .group         0x00000000        0x8 Settings.o
+ .text          0x00000000        0x0 Settings.o
+ .data          0x00000000        0x0 Settings.o
+ .bss           0x00000000        0x0 Settings.o
+ .text          0x00000000        0x0 Stopwatch.o
+ .data          0x00000000        0x0 Stopwatch.o
+ .bss           0x00000000        0x0 Stopwatch.o
+ .text._ZN9Stopwatch4TickEv
+                0x00000000       0x28 Stopwatch.o
+ .text._ZN9StopwatchC2Ev
+                0x00000000       0x3c Stopwatch.o
+ .text._ZN9StopwatchD2Ev
+                0x00000000        0x2 Stopwatch.o
+ .text._ZN9Stopwatch5GetMsEv
+                0x00000000       0x30 Stopwatch.o
+ .text._ZN9Stopwatch5ResetEv
+                0x00000000       0x1c Stopwatch.o
+ .bss._ZZN9StopwatchC4EvE11initialized
+                0x00000000        0x1 Stopwatch.o
+ .bss._ZN9Stopwatch17msSinceTimerStartE
+                0x00000000        0x4 Stopwatch.o
+ .debug_info    0x00000000      0x36a Stopwatch.o
+ .debug_abbrev  0x00000000      0x25c Stopwatch.o
+ .debug_loc     0x00000000       0xbc Stopwatch.o
+ .debug_aranges
+                0x00000000       0x40 Stopwatch.o
+ .debug_ranges  0x00000000       0x30 Stopwatch.o
+ .debug_line    0x00000000       0xfa Stopwatch.o
+ .debug_str     0x00000000      0x39e Stopwatch.o
+ .comment       0x00000000       0x31 Stopwatch.o
+ .debug_frame   0x00000000       0x7c Stopwatch.o
+ .group         0x00000000        0x8 SystemCheck.o
+ .text          0x00000000        0x0 SystemCheck.o
+ .data          0x00000000        0x0 SystemCheck.o
+ .bss           0x00000000        0x0 SystemCheck.o
+ .text._ZN11SystemCheck10InitializeEv
+                0x00000000        0x2 SystemCheck.o
+ .group         0x00000000        0x8 TC654.o
+ .text          0x00000000        0x0 TC654.o
+ .data          0x00000000        0x0 TC654.o
+ .bss           0x00000000        0x0 TC654.o
+ .text._ZN5TC6546StatusC2Ec
+                0x00000000        0x6 TC654.o
+ .text._ZN5TC6546Status6GetF1FEv
+                0x00000000        0xc TC654.o
+ .text._ZN5TC65413WriteRegisterERbcc
+                0x00000000       0x48 TC654.o
+ .text._ZN5TC65426WriteConfigurationRegisterERbc
+                0x00000000        0xc TC654.o
+ .text._ZN5TC65425ReadConfigurationRegisterERb
+                0x00000000        0xa TC654.o
+ .text._ZN5TC6549ConfigureERb
+                0x00000000       0x48 TC654.o
+ .text._ZN5TC65412GetFanFault1ERb
+                0x00000000        0xa TC654.o
+ .text._ZN5TC65412GetFanFault2ERb
+                0x00000000        0xa TC654.o
+ .text._ZN5TC65412SetFanFault2ERbh
+                0x00000000        0xc TC654.o
+ .text._ZN5TC65412SetFanFault1ERbh
+                0x00000000        0xc TC654.o
+ .text._ZN5TC65412GetDutyCycleERb
+                0x00000000        0xa TC654.o
+ .text._ZN5TC65412SetDutyCycleERbh
+                0x00000000        0xc TC654.o
+ .text._ZN5TC654D2Ev
+                0x00000000        0x2 TC654.o
+ .group         0x00000000        0x8 TC654Exception.o
+ .text          0x00000000        0x0 TC654Exception.o
+ .data          0x00000000        0x0 TC654Exception.o
+ .bss           0x00000000        0x0 TC654Exception.o
+ .text._ZN14TC654ExceptionD2Ev
+                0x00000000       0x26 TC654Exception.o
+ .group         0x00000000        0x8 Temperatures.o
+ .text          0x00000000        0x0 Temperatures.o
+ .data          0x00000000        0x0 Temperatures.o
+ .bss           0x00000000        0x0 Temperatures.o
+ .text._ZN12Temperatures10InitializeEv
+                0x00000000        0x2 Temperatures.o
+ .text          0x00000000        0x0 Ticker.o
+ .data          0x00000000        0x0 Ticker.o
+ .bss           0x00000000        0x0 Ticker.o
+ .text._ZnajPv  0x00000000        0x4 Ticker.o
+ .text._ZnwjPv  0x00000000        0x4 Ticker.o
+ .text._ZN6Ticker3AddEPFvvE11TickerDelay
+                0x00000000      0x238 Ticker.o
+ .bss._ZZN6Ticker3AddEPFvvE11TickerDelayE11initialized
+                0x00000000        0x1 Ticker.o
+ .text          0x00000000        0x0 tiny-json.o
+ .data          0x00000000        0x0 tiny-json.o
+ .bss           0x00000000        0x0 tiny-json.o
+ .text.json_getPropertyValue
+                0x00000000       0x22 tiny-json.o
+ .group         0x00000000        0x8 UART.o
+ .text          0x00000000        0x0 UART.o
+ .data          0x00000000        0x0 UART.o
+ .bss           0x00000000        0x0 UART.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD CommunicationException.o
+LOAD Controller.o
+LOAD EEPROM.o
+LOAD Endpoint.o
+LOAD Exception.o
+LOAD Exceptions.o
+LOAD Fans.o
+LOAD FanSpeedException.o
+LOAD i2cmaster.o
+LOAD jsmn.o
+LOAD Leds.o
+LOAD LM75.o
+LOAD Message.o
+LOAD Messages.o
+LOAD Outputs.o
+LOAD Cleanup.o
+LOAD Settings.o
+LOAD Stopwatch.o
+LOAD SystemCheck.o
+LOAD TC654.o
+LOAD TC654Exception.o
+LOAD Temperatures.o
+LOAD Ticker.o
+LOAD tiny-json.o
+LOAD UART.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x274c
+ *(.vectors)
+ .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+ .ctors         0x00000068        0x2 Settings.o
+ .ctors         0x0000006a        0x2 SystemCheck.o
+ .ctors         0x0000006c        0x2 Temperatures.o
+ .ctors         0x0000006e        0x2 Ticker.o
+ .ctors         0x00000070        0x2 UART.o
+                0x00000072                __ctors_end = .
+                0x00000072                __dtors_start = .
+ *(.dtors)
+ .dtors         0x00000072        0x2 Ticker.o
+                0x00000074                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000074        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000074                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000074        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000080       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000080                __do_copy_data
+ .init4         0x00000096       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x00000096                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x000000a6       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x000000a6                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000bc        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000c4        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000c4                __vector_22
+                0x000000c4                __vector_1
+                0x000000c4                __vector_24
+                0x000000c4                __vector_12
+                0x000000c4                __bad_interrupt
+                0x000000c4                __vector_6
+                0x000000c4                __vector_3
+                0x000000c4                __vector_23
+                0x000000c4                __vector_25
+                0x000000c4                __vector_11
+                0x000000c4                __vector_13
+                0x000000c4                __vector_17
+                0x000000c4                __vector_19
+                0x000000c4                __vector_7
+                0x000000c4                __vector_5
+                0x000000c4                __vector_4
+                0x000000c4                __vector_9
+                0x000000c4                __vector_2
+                0x000000c4                __vector_21
+                0x000000c4                __vector_15
+                0x000000c4                __vector_8
+                0x000000c4                __vector_10
+                0x000000c4                __vector_16
+                0x000000c4                __vector_20
+ .text          0x000000c8      0x106 i2cmaster.o
+                0x00000110                i2c_init
+                0x0000011a                i2c_start
+                0x00000122                i2c_rep_start
+                0x00000136                i2c_start_wait
+                0x0000014a                i2c_stop
+                0x0000015a                i2c_write
+                0x00000192                i2c_readNak
+                0x00000196                i2c_readAck
+                0x00000198                i2c_read
+                0x000001ce                . = ALIGN (0x2)
+ *(.text.*)
+ .text._ZN22CommunicationException8ToStringEv
+                0x000001ce       0x78 CommunicationException.o
+                0x000001ce                _ZN22CommunicationException8ToStringEv
+ .text._ZN22CommunicationExceptionC2EPKc
+                0x00000246       0x26 CommunicationException.o
+                0x00000246                _ZN22CommunicationExceptionC1EPKc
+                0x00000246                _ZN22CommunicationExceptionC2EPKc
+ .text.main     0x0000026c      0x106 Controller.o
+                0x0000026c                main
+ .text._ZN8EndpointC2EP12IGetMessagesP12ISendMessageP18ISetTemperatureMaxP18IGetTemperatureMaxP9ISetPowerP9IGetPowerP13ITemperaturesP12ISystemCheck
+                0x00000372       0x58 Endpoint.o
+                0x00000372                _ZN8EndpointC1EP12IGetMessagesP12ISendMessageP18ISetTemperatureMaxP18IGetTemperatureMaxP9ISetPowerP9IGetPowerP13ITemperaturesP12ISystemCheck
+                0x00000372                _ZN8EndpointC2EP12IGetMessagesP12ISendMessageP18ISetTemperatureMaxP18IGetTemperatureMaxP9ISetPowerP9IGetPowerP13ITemperaturesP12ISystemCheck
+ .text._ZN8Endpoint8GetPowerEv
+                0x000003ca       0x94 Endpoint.o
+                0x000003ca                _ZN8Endpoint8GetPowerEv
+ .text._ZN8Endpoint17GetTemperatureMaxEv
+                0x0000045e       0x94 Endpoint.o
+                0x0000045e                _ZN8Endpoint17GetTemperatureMaxEv
+ .text._ZN8Endpoint17GetMaxTemperatureEv
+                0x000004f2       0xca Endpoint.o
+                0x000004f2                _ZN8Endpoint17GetMaxTemperatureEv
+ .text._ZN8Endpoint3RunEv
+                0x000005bc      0x266 Endpoint.o
+                0x000005bc                _ZN8Endpoint3RunEv
+ .text._ZN9Exception8ToStringEv
+                0x00000822        0x2 Exception.o
+                0x00000822                _ZN9Exception8ToStringEv
+ .text._ZN9ExceptionC2Ev
+                0x00000824        0xc Exception.o
+                0x00000824                _ZN9ExceptionC1Ev
+                0x00000824                _ZN9ExceptionC2Ev
+ .text._ZN9ExceptionD2Ev
+                0x00000830       0x18 Exception.o
+                0x00000830                _ZN9ExceptionD1Ev
+                0x00000830                _ZN9ExceptionD2Ev
+ .text._ZN10ExceptionsC2Ev
+                0x00000848       0x10 Exceptions.o
+                0x00000848                _ZN10ExceptionsC2Ev
+                0x00000848                _ZN10ExceptionsC1Ev
+ .text._ZN10Exceptions3AddEP9Exception
+                0x00000858       0x94 Exceptions.o
+                0x00000858                _ZN10Exceptions3AddEP9Exception
+ .text._ZN10ExceptionsD2Ev
+                0x000008ec       0x70 Exceptions.o
+                0x000008ec                _ZN10ExceptionsD1Ev
+                0x000008ec                _ZN10ExceptionsD2Ev
+ .text._ZN4Fans11GetInstanceEv
+                0x0000095c        0x2 Fans.o
+                0x0000095c                _ZN4Fans11GetInstanceEv
+ .text._ZN4Fans13SetInterfacesEPP11IGetFanInfohP15IGetFanSpeedMin
+                0x0000095e        0xe Fans.o
+                0x0000095e                _ZN4Fans13SetInterfacesEPP11IGetFanInfohP15IGetFanSpeedMin
+ .text._ZN4Leds4Main6SetRedEv
+                0x0000096c        0xe Leds.o
+                0x0000096c                _ZN4Leds4Main6SetRedEv
+ .text._ZN4Leds4Main8SetGreenEv
+                0x0000097a        0xe Leds.o
+                0x0000097a                _ZN4Leds4Main8SetGreenEv
+ .text._ZN4LM757GetNameEv
+                0x00000988        0x8 LM75.o
+                0x00000988                _ZN4LM757GetNameEv
+ .text._ZN4LM7514GetTemperatureERbR10Exceptions
+                0x00000990       0x6a LM75.o
+                0x00000990                _ZN4LM7514GetTemperatureERbR10Exceptions
+ .text._ZThn2_N4LM757GetNameEv
+                0x000009fa        0x8 LM75.o
+                0x000009fa                _ZThn2_N4LM757GetNameEv
+ .text._ZN4LM75C2EcPc
+                0x00000a02       0x34 LM75.o
+                0x00000a02                _ZN4LM75C2EcPc
+                0x00000a02                _ZN4LM75C1EcPc
+ .text._ZN7MessageC2EPKcj
+                0x00000a36        0xc Message.o
+                0x00000a36                _ZN7MessageC1EPKcj
+                0x00000a36                _ZN7MessageC2EPKcj
+ .text._ZN7MessageD2Ev
+                0x00000a42       0x10 Message.o
+                0x00000a42                _ZN7MessageD2Ev
+                0x00000a42                _ZN7MessageD1Ev
+ .text._ZN8MessagesC2EPP7Messagec
+                0x00000a52       0x64 Messages.o
+                0x00000a52                _ZN8MessagesC1EPP7Messagec
+                0x00000a52                _ZN8MessagesC2EPP7Messagec
+ .text._ZN8MessagesD2Ev
+                0x00000ab6       0x72 Messages.o
+                0x00000ab6                _ZN8MessagesD1Ev
+                0x00000ab6                _ZN8MessagesD2Ev
+ .text._ZN7Outputs10InitializeEv
+                0x00000b28        0x8 Outputs.o
+                0x00000b28                _ZN7Outputs10InitializeEv
+ .text._ZN7Outputs2PD2_26SetLowEv
+                0x00000b30        0x4 Outputs.o
+                0x00000b30                _ZN7Outputs2PD2_26SetLowEv
+ .text._ZN7Outputs2PD2_37SetHighEv
+                0x00000b34        0x4 Outputs.o
+                0x00000b34                _ZN7Outputs2PD2_37SetHighEv
+ .text._ZN7Outputs2PD2_36SetLowEv
+                0x00000b38        0x4 Outputs.o
+                0x00000b38                _ZN7Outputs2PD2_36SetLowEv
+ .text._ZN7Outputs2PD2_47SetHighEv
+                0x00000b3c        0x4 Outputs.o
+                0x00000b3c                _ZN7Outputs2PD2_47SetHighEv
+ .text._ZN7Outputs2PD2_46SetLowEv
+                0x00000b40        0x4 Outputs.o
+                0x00000b40                _ZN7Outputs2PD2_46SetLowEv
+ .text._ZN8Settings17GetTemperatureMaxEv
+                0x00000b44        0x6 Settings.o
+                0x00000b44                _ZN8Settings17GetTemperatureMaxEv
+ .text._ZN8Settings8GetPowerEv
+                0x00000b4a        0x8 Settings.o
+                0x00000b4a                _ZN8Settings8GetPowerEv
+ .text._ZN8Settings14GetFanSpeedMinEv
+                0x00000b52        0x8 Settings.o
+                0x00000b52                _ZN8Settings14GetFanSpeedMinEv
+ .text._ZThn8_N8Settings14GetFanSpeedMinEv
+                0x00000b5a        0x8 Settings.o
+                0x00000b5a                _ZThn8_N8Settings14GetFanSpeedMinEv
+ .text._ZThn4_N8Settings8GetPowerEv
+                0x00000b62        0x8 Settings.o
+                0x00000b62                _ZThn4_N8Settings8GetPowerEv
+ .text._ZN8Settings17CapTemperatureMaxERh
+                0x00000b6a       0x1a Settings.o
+                0x00000b6a                _ZN8Settings17CapTemperatureMaxERh
+ .text._ZN8Settings17SetTemperatureMaxEh
+                0x00000b84       0x36 Settings.o
+                0x00000b84                _ZN8Settings17SetTemperatureMaxEh
+ .text._ZThn2_N8Settings17SetTemperatureMaxEh
+                0x00000bba        0x8 Settings.o
+                0x00000bba                _ZThn2_N8Settings17SetTemperatureMaxEh
+ .text._ZN8Settings8CapPowerERj
+                0x00000bc2       0x2a Settings.o
+                0x00000bc2                _ZN8Settings8CapPowerERj
+ .text._ZN8Settings10InitializeEv
+                0x00000bec       0x58 Settings.o
+                0x00000bec                _ZN8Settings10InitializeEv
+ .text._ZN8Settings11GetInstanceEv
+                0x00000c44       0x1c Settings.o
+                0x00000c44                _ZN8Settings11GetInstanceEv
+ .text._ZN8Settings8SetPowerEj
+                0x00000c60       0x2e Settings.o
+                0x00000c60                _ZN8Settings8SetPowerEj
+ .text._ZThn6_N8Settings8SetPowerEj
+                0x00000c8e        0x8 Settings.o
+                0x00000c8e                _ZThn6_N8Settings8SetPowerEj
+ .text._GLOBAL__sub_I_ADDRESS_TEMPERATURE_MAX
+                0x00000c96       0x42 Settings.o
+ .text._ZN11SystemCheck5CheckERbR10Exceptions
+                0x00000cd8       0x1a SystemCheck.o
+                0x00000cd8                _ZN11SystemCheck5CheckERbR10Exceptions
+ .text._ZN11SystemCheck11GetInstanceEv
+                0x00000cf2       0x14 SystemCheck.o
+                0x00000cf2                _ZN11SystemCheck11GetInstanceEv
+ .text._ZN11SystemCheck13SetInterfacesEP13ITemperaturesP18IGetTemperatureMaxP5IFans
+                0x00000d06       0x10 SystemCheck.o
+                0x00000d06                _ZN11SystemCheck13SetInterfacesEP13ITemperaturesP18IGetTemperatureMaxP5IFans
+ .text._GLOBAL__sub_I__ZN11SystemCheck10_SingletonE
+                0x00000d16        0xe SystemCheck.o
+ .text._ZN5TC6543Fan7GetNameEv
+                0x00000d24        0x8 TC654.o
+                0x00000d24                _ZN5TC6543Fan7GetNameEv
+ .text._ZN5TC6543Fan11GetFanSpeedERbR10Exceptions
+                0x00000d2c       0x5e TC654.o
+                0x00000d2c                _ZN5TC6543Fan11GetFanSpeedERbR10Exceptions
+ .text._ZN5TC6543Fan5CheckERbR10Exceptions
+                0x00000d8a       0x4e TC654.o
+                0x00000d8a                _ZN5TC6543Fan5CheckERbR10Exceptions
+ .text._ZThn4_N5TC6543Fan5CheckERbR10Exceptions
+                0x00000dd8        0x8 TC654.o
+                0x00000dd8                _ZThn4_N5TC6543Fan5CheckERbR10Exceptions
+ .text._ZThn2_N5TC6543Fan7GetNameEv
+                0x00000de0        0x8 TC654.o
+                0x00000de0                _ZThn2_N5TC6543Fan7GetNameEv
+ .text._ZN5TC6546Status6GetF2FEv
+                0x00000de8        0xc TC654.o
+                0x00000de8                _ZN5TC6546Status6GetF2FEv
+ .text._ZN5TC6546Status7GetR1COEv
+                0x00000df4        0xc TC654.o
+                0x00000df4                _ZN5TC6546Status7GetR1COEv
+ .text._ZN5TC6546Status7GetR2COEv
+                0x00000e00        0xc TC654.o
+                0x00000e00                _ZN5TC6546Status7GetR2COEv
+ .text._ZN5TC6543FanC2EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEPc
+                0x00000e0c       0x44 TC654.o
+                0x00000e0c                _ZN5TC6543FanC2EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEPc
+                0x00000e0c                _ZN5TC6543FanC1EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEPc
+ .text._ZN5TC654C2Ecc
+                0x00000e50       0xd0 TC654.o
+                0x00000e50                _ZN5TC654C2Ecc
+                0x00000e50                _ZN5TC654C1Ecc
+ .text._ZN5TC65412ReadRegisterERbc
+                0x00000f20       0x5a TC654.o
+                0x00000f20                _ZN5TC65412ReadRegisterERbc
+ .text._ZN5TC6547GetRPM1ERb
+                0x00000f7a        0xa TC654.o
+                0x00000f7a                _ZN5TC6547GetRPM1ERb
+ .text._ZN5TC6547GetRPM2ERb
+                0x00000f84        0xa TC654.o
+                0x00000f84                _ZN5TC6547GetRPM2ERb
+ .text._ZN5TC6549GetStatusERb
+                0x00000f8e        0xa TC654.o
+                0x00000f8e                _ZN5TC6549GetStatusERb
+ .text._ZN5TC6549CheckFan1ERbR10ExceptionsPKc
+                0x00000f98       0x9e TC654.o
+                0x00000f98                _ZN5TC6549CheckFan1ERbR10ExceptionsPKc
+ .text._ZN5TC6549CheckFan2ERbR10ExceptionsPKc
+                0x00001036       0xa4 TC654.o
+                0x00001036                _ZN5TC6549CheckFan2ERbR10ExceptionsPKc
+ .text._ZN5TC65415GetIGetFan1InfoEv
+                0x000010da        0x4 TC654.o
+                0x000010da                _ZN5TC65415GetIGetFan1InfoEv
+ .text._ZN5TC65415GetIGetFan2InfoEv
+                0x000010de        0x4 TC654.o
+                0x000010de                _ZN5TC65415GetIGetFan2InfoEv
+ .text._ZN14TC654Exception8ToStringEv
+                0x000010e2       0xd8 TC654Exception.o
+                0x000010e2                _ZN14TC654Exception8ToStringEv
+ .text._ZN14TC654ExceptionC2EPKcNS_4TypeE
+                0x000011ba       0x32 TC654Exception.o
+                0x000011ba                _ZN14TC654ExceptionC1EPKcNS_4TypeE
+                0x000011ba                _ZN14TC654ExceptionC2EPKcNS_4TypeE
+ .text._ZN12Temperatures17GetMaxTemperatureERbR10Exceptions
+                0x000011ec       0xe8 Temperatures.o
+                0x000011ec                _ZN12Temperatures17GetMaxTemperatureERbR10Exceptions
+ .text._ZN12Temperatures11GetInstanceEv
+                0x000012d4       0x14 Temperatures.o
+                0x000012d4                _ZN12Temperatures11GetInstanceEv
+ .text._ZN12Temperatures13SetInterfacesEPP19IGetTemperatureInfoh
+                0x000012e8        0xa Temperatures.o
+                0x000012e8                _ZN12Temperatures13SetInterfacesEPP19IGetTemperatureInfoh
+ .text._GLOBAL__sub_I__ZN12Temperatures10_SingletonE
+                0x000012f2        0xe Temperatures.o
+ .text._Znwj    0x00001300        0x6 Ticker.o
+                0x00001300                _Znwj
+ .text._Znaj    0x00001306        0x6 Ticker.o
+                0x00001306                _Znaj
+ .text._ZdlPv   0x0000130c        0x6 Ticker.o
+                0x0000130c                _ZdlPv
+ .text._ZdaPv   0x00001312        0x6 Ticker.o
+                0x00001312                _ZdaPv
+ .text.__vector_14
+                0x00001318       0x96 Ticker.o
+                0x00001318                __vector_14
+ .text._GLOBAL__sub_I__Znwj
+                0x000013ae       0x22 Ticker.o
+ .text._GLOBAL__sub_D__Znwj
+                0x000013d0       0x1a Ticker.o
+ .text._ZL11parseStringPc
+                0x000013ea       0xe4 tiny-json.o
+ .text._ZL11isOneOfThemcPKc
+                0x000014ce       0x14 tiny-json.o
+ .text._ZL7goWhilePcPKc
+                0x000014e2       0x3c tiny-json.o
+ .text._ZL5goNumPc
+                0x0000151e       0x34 tiny-json.o
+ .text._ZL16isEndOfPrimitivec
+                0x00001552       0x26 tiny-json.o
+ .text._ZL14primitiveValuePcP6json_sPKc10jsonType_t
+                0x00001578       0x6a tiny-json.o
+ .text.json_getProperty
+                0x000015e2       0x4a tiny-json.o
+                0x000015e2                json_getProperty
+ .text.json_create
+                0x0000162c      0x3fc tiny-json.o
+                0x0000162c                json_create
+ .text._ZN4UART11GetMessagesEv
+                0x00001a28      0x158 UART.o
+                0x00001a28                _ZN4UART11GetMessagesEv
+ .text._ZThn2_N4UART11GetMessagesEv
+                0x00001b80        0x8 UART.o
+                0x00001b80                _ZThn2_N4UART11GetMessagesEv
+ .text._ZN4UART10InitializeEv
+                0x00001b88       0x4e UART.o
+                0x00001b88                _ZN4UART10InitializeEv
+ .text._ZN4UART11GetInstanceEv
+                0x00001bd6       0x1c UART.o
+                0x00001bd6                _ZN4UART11GetInstanceEv
+ .text._ZN4UART8IncomingEv
+                0x00001bf2      0x156 UART.o
+                0x00001bf2                _ZN4UART8IncomingEv
+ .text.__vector_18
+                0x00001d48       0x50 UART.o
+                0x00001d48                __vector_18
+ .text._ZN4UART4SendEc
+                0x00001d98       0x10 UART.o
+                0x00001d98                _ZN4UART4SendEc
+ .text._ZN4UART11SendMessageEPKcj
+                0x00001da8       0x38 UART.o
+                0x00001da8                _ZN4UART11SendMessageEPKcj
+ .text._GLOBAL__sub_I__ZN4UART10_SingletonE
+                0x00001de0       0x16 UART.o
+ .text.libgcc   0x00001df6        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00001df6                __tablejump2__
+ .text.avr-libc
+                0x00001e02      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00001e02                malloc
+                0x00001f32                free
+ .text.avr-libc
+                0x00002044       0x4e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
+                0x00002044                atol
+ .text.avr-libc
+                0x00002092       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00002092                memcpy
+ .text.avr-libc
+                0x000020a4       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x000020a4                strcmp
+ .text.avr-libc
+                0x000020b6       0x2a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
+                0x000020b6                __mulsi_const_10
+ .text.avr-libc
+                0x000020e0       0x60 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+                0x000020e0                snprintf
+ .text.avr-libc
+                0x00002140      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x00002140                vfprintf
+ .text.avr-libc
+                0x00002502       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00002502                strnlen_P
+ .text.avr-libc
+                0x00002518       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00002518                strnlen
+ .text.avr-libc
+                0x0000252e       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x0000252e                fputc
+ .text.avr-libc
+                0x000025a6       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x000025a6                __ultoa_invert
+ .text.avr-libc
+                0x00002662       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+                0x00002662                eeprom_read_byte
+ .text.avr-libc
+                0x00002672        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+                0x00002672                eeprom_read_word
+ .text.avr-libc
+                0x0000267e       0x1c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+                0x0000267e                eeprom_write_byte
+                0x00002680                eeprom_write_r18
+ .text.avr-libc
+                0x0000269a        0xa C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+                0x0000269a                eeprom_write_word
+ .text.avr-libc
+                0x000026a4       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+                0x000026a4                eeprom_read_block
+                0x000026a8                eeprom_read_blraw
+ .text.libgcc.prologue
+                0x000026c4       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x000026c4                __prologue_saves__
+ .text.libgcc.prologue
+                0x000026fc       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x000026fc                __epilogue_restores__
+                0x00002732                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002732        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00002732                _exit
+                0x00002732                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ .fini6         0x00002732       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00002732                __do_global_dtors
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002748        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000274c                _etext = .
+
+.data           0x00800100      0x290 load address 0x0000274c
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00800100                __malloc_heap_end
+                0x00800102                __malloc_heap_start
+                0x00800104                __malloc_margin
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800106       0x1d CommunicationException.o
+ .rodata._ZTV22CommunicationException
+                0x00800123        0x6 CommunicationException.o
+                0x00800123                _ZTV22CommunicationException
+ .rodata.str1.1
+                0x00800129        0xe Controller.o
+ .rodata.str1.1
+                0x00800137       0xf2 Endpoint.o
+                                0x108 (size before relaxing)
+ .rodata._ZTV9Exception
+                0x00800229        0x6 Exception.o
+                0x00800229                _ZTV9Exception
+ .rodata._ZTV4LM75
+                0x0080022f        0xe LM75.o
+                0x0080022f                _ZTV4LM75
+ .rodata._ZTV8Settings
+                0x0080023d       0x26 Settings.o
+                0x0080023d                _ZTV8Settings
+ .rodata._ZTV11SystemCheck
+                0x00800263        0x6 SystemCheck.o
+                0x00800263                _ZTV11SystemCheck
+ .rodata.str1.1
+                0x00800269       0x10 TC654.o
+ .rodata._ZTVN5TC6543FanE
+                0x00800279       0x16 TC654.o
+                0x00800279                _ZTVN5TC6543FanE
+ .rodata.str1.1
+                0x0080028f       0x81 TC654Exception.o
+ .rodata._ZTV14TC654Exception
+                0x00800310        0x6 TC654Exception.o
+                0x00800310                _ZTV14TC654Exception
+ .rodata.str1.1
+                0x00800316       0x14 Temperatures.o
+ .rodata._ZTV12Temperatures
+                0x0080032a        0x6 Temperatures.o
+                0x0080032a                _ZTV12Temperatures
+ .rodata.str1.1
+                0x00800330       0x19 tiny-json.o
+ .rodata._ZZL8numValuePcP6json_sE3max
+                0x00800349       0x14 tiny-json.o
+ .rodata._ZZL8numValuePcP6json_sE3min
+                0x0080035d       0x15 tiny-json.o
+ .rodata._ZZL9getEscapecE4pair
+                0x00800372       0x10 tiny-json.o
+ .rodata._ZTV4UART
+                0x00800382        0xe UART.o
+                0x00800382                _ZTV4UART
+ *(.gnu.linkonce.d*)
+                0x00800390                . = ALIGN (0x2)
+                0x00800390                _edata = .
+                0x00800390                PROVIDE (__data_end, .)
+
+.bss            0x00800390      0x13f
+                0x00800390                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss._ZZN8Settings11GetInstanceEvE11initialized
+                0x00800390        0x1 Settings.o
+ .bss._ZN8Settings10_SingletonE
+                0x00800391        0xf Settings.o
+                0x00800391                _ZN8Settings10_SingletonE
+ .bss._ZZN11SystemCheck11GetInstanceEvE11initialized
+                0x008003a0        0x1 SystemCheck.o
+ .bss._ZN11SystemCheck10_SingletonE
+                0x008003a1        0x8 SystemCheck.o
+                0x008003a1                _ZN11SystemCheck10_SingletonE
+ .bss._ZZN12Temperatures11GetInstanceEvE11initialized
+                0x008003a9        0x1 Temperatures.o
+ .bss._ZN12Temperatures10_SingletonE
+                0x008003aa        0x5 Temperatures.o
+                0x008003aa                _ZN12Temperatures10_SingletonE
+ .bss._ZN6Ticker22tickerCallbacksSecondsE
+                0x008003af        0x6 Ticker.o
+                0x008003af                _ZN6Ticker22tickerCallbacksSecondsE
+ .bss._ZN6Ticker27tickerCallbacksMillisecondsE
+                0x008003b5        0x6 Ticker.o
+                0x008003b5                _ZN6Ticker27tickerCallbacksMillisecondsE
+ .bss._ZZN4UART11GetInstanceEvE11initialized
+                0x008003bb        0x1 UART.o
+ .bss._ZN4UART10_SingletonE
+                0x008003bc      0x10f UART.o
+                0x008003bc                _ZN4UART10_SingletonE
+ *(COMMON)
+ COMMON         0x008004cb        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008004cb                __brkval
+                0x008004cd                __flp
+                0x008004cf                PROVIDE (__bss_end, .)
+                0x0000274c                __data_load_start = LOADADDR (.data)
+                0x000029dc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008004cf        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008004cf                _end = .
+                0x008004cf                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x3
+ *(.eeprom*)
+ .eeprom        0x00810000        0x3 Settings.o
+                0x00810000                ADDRESS_POWER
+                0x00810002                ADDRESS_TEMPERATURE_MAX
+                0x00810003                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000       0x24
+ *(.stab)
+ .stab          0x00000000       0x24 i2cmaster.o
+
+.stabstr        0x00000000       0x1e
+ *(.stabstr)
+ .stabstr       0x00000000       0x1e i2cmaster.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x5c
+ *(.comment)
+ .comment       0x00000000       0x30 CommunicationException.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Controller.o
+ .comment       0x00000030       0x31 Endpoint.o
+ .comment       0x00000030       0x31 Exception.o
+ .comment       0x00000030       0x31 Exceptions.o
+ .comment       0x00000030       0x31 Fans.o
+ .comment       0x00000030       0x31 Leds.o
+ .comment       0x00000030       0x31 LM75.o
+ .comment       0x00000030       0x31 Message.o
+ .comment       0x00000030       0x31 Messages.o
+ .comment       0x00000030       0x31 Outputs.o
+ .comment       0x00000030       0x31 Settings.o
+ .comment       0x00000030       0x31 SystemCheck.o
+ .comment       0x00000030       0x31 TC654.o
+ .comment       0x00000030       0x31 TC654Exception.o
+ .comment       0x00000030       0x31 Temperatures.o
+ .comment       0x00000030       0x31 Ticker.o
+ .comment       0x00000030       0x31 tiny-json.o
+ .comment       0x00000030       0x31 UART.o
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+ .comment       0x00000030       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                                 0x2d (size before relaxing)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x690
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 CommunicationException.o
+ .debug_aranges
+                0x00000030       0x20 Controller.o
+ .debug_aranges
+                0x00000050       0x50 Endpoint.o
+ .debug_aranges
+                0x000000a0       0x38 Exception.o
+ .debug_aranges
+                0x000000d8       0x40 Exceptions.o
+ .debug_aranges
+                0x00000118       0x30 Fans.o
+ .debug_aranges
+                0x00000148       0x20 i2cmaster.o
+ .debug_aranges
+                0x00000168       0x58 Leds.o
+ .debug_aranges
+                0x000001c0       0x38 LM75.o
+ .debug_aranges
+                0x000001f8       0x28 Message.o
+ .debug_aranges
+                0x00000220       0x28 Messages.o
+ .debug_aranges
+                0x00000248       0x70 Outputs.o
+ .debug_aranges
+                0x000002b8       0x68 Settings.o
+ .debug_aranges
+                0x00000320       0x40 SystemCheck.o
+ .debug_aranges
+                0x00000360      0x100 TC654.o
+ .debug_aranges
+                0x00000460       0x30 TC654Exception.o
+ .debug_aranges
+                0x00000490       0x40 Temperatures.o
+ .debug_aranges
+                0x000004d0       0x68 Ticker.o
+ .debug_aranges
+                0x00000538       0x60 tiny-json.o
+ .debug_aranges
+                0x00000598       0x58 UART.o
+ .debug_aranges
+                0x000005f0       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_aranges
+                0x00000610       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_aranges
+                0x00000630       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_aranges
+                0x00000650       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_aranges
+                0x00000670       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0xb567
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x287 CommunicationException.o
+ .debug_info    0x0000087b     0x1514 Controller.o
+ .debug_info    0x00001d8f     0x1156 Endpoint.o
+ .debug_info    0x00002ee5      0x282 Exception.o
+ .debug_info    0x00003167      0x7cd Exceptions.o
+ .debug_info    0x00003934      0x839 Fans.o
+ .debug_info    0x0000416d       0xba i2cmaster.o
+ .debug_info    0x00004227      0x378 Leds.o
+ .debug_info    0x0000459f      0x9f0 LM75.o
+ .debug_info    0x00004f8f      0x1a7 Message.o
+ .debug_info    0x00005136      0x2ac Messages.o
+ .debug_info    0x000053e2      0x311 Outputs.o
+ .debug_info    0x000056f3      0xbcf Settings.o
+ .debug_info    0x000062c2      0x78c SystemCheck.o
+ .debug_info    0x00006a4e     0x1bfe TC654.o
+ .debug_info    0x0000864c      0x2ca TC654Exception.o
+ .debug_info    0x00008916      0x81d Temperatures.o
+ .debug_info    0x00009133      0x8ea Ticker.o
+ .debug_info    0x00009a1d      0xea2 tiny-json.o
+ .debug_info    0x0000a8bf      0x94b UART.o
+ .debug_info    0x0000b20a       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_info    0x0000b2b6       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_info    0x0000b362       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_info    0x0000b40e       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_info    0x0000b4ba       0xad C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_abbrev   0x00000000     0x373c
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x18d CommunicationException.o
+ .debug_abbrev  0x0000072f      0x36f Controller.o
+ .debug_abbrev  0x00000a9e      0x426 Endpoint.o
+ .debug_abbrev  0x00000ec4      0x16e Exception.o
+ .debug_abbrev  0x00001032      0x2c1 Exceptions.o
+ .debug_abbrev  0x000012f3      0x2df Fans.o
+ .debug_abbrev  0x000015d2       0x14 i2cmaster.o
+ .debug_abbrev  0x000015e6      0x10f Leds.o
+ .debug_abbrev  0x000016f5      0x308 LM75.o
+ .debug_abbrev  0x000019fd      0x102 Message.o
+ .debug_abbrev  0x00001aff      0x141 Messages.o
+ .debug_abbrev  0x00001c40      0x128 Outputs.o
+ .debug_abbrev  0x00001d68      0x322 Settings.o
+ .debug_abbrev  0x0000208a      0x30a SystemCheck.o
+ .debug_abbrev  0x00002394      0x3f2 TC654.o
+ .debug_abbrev  0x00002786      0x1a5 TC654Exception.o
+ .debug_abbrev  0x0000292b      0x36a Temperatures.o
+ .debug_abbrev  0x00002c95      0x32d Ticker.o
+ .debug_abbrev  0x00002fc2      0x34c tiny-json.o
+ .debug_abbrev  0x0000330e      0x3ca UART.o
+ .debug_abbrev  0x000036d8       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_abbrev  0x000036ec       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_abbrev  0x00003700       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_abbrev  0x00003714       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_abbrev  0x00003728       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_line     0x00000000     0x3350
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x133 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_line    0x00000133      0x14d CommunicationException.o
+ .debug_line    0x00000280      0x323 Controller.o
+ .debug_line    0x000005a3      0x386 Endpoint.o
+ .debug_line    0x00000929       0xa3 Exception.o
+ .debug_line    0x000009cc      0x24a Exceptions.o
+ .debug_line    0x00000c16      0x1fb Fans.o
+ .debug_line    0x00000e11      0x34b i2cmaster.o
+ .debug_line    0x0000115c      0x152 Leds.o
+ .debug_line    0x000012ae      0x221 LM75.o
+ .debug_line    0x000014cf       0x70 Message.o
+ .debug_line    0x0000153f       0xce Messages.o
+ .debug_line    0x0000160d      0x121 Outputs.o
+ .debug_line    0x0000172e      0x2b9 Settings.o
+ .debug_line    0x000019e7      0x1d2 SystemCheck.o
+ .debug_line    0x00001bb9      0x5c4 TC654.o
+ .debug_line    0x0000217d      0x155 TC654Exception.o
+ .debug_line    0x000022d2      0x211 Temperatures.o
+ .debug_line    0x000024e3      0x342 Ticker.o
+ .debug_line    0x00002825      0x5a8 tiny-json.o
+ .debug_line    0x00002dcd      0x2fe UART.o
+ .debug_line    0x000030cb       0x7a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_line    0x00003145       0x67 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_line    0x000031ac       0x9e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_line    0x0000324a       0x5b C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_line    0x000032a5       0xab C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_frame    0x00000000     0x10cc
+ *(.debug_frame)
+ .debug_frame   0x00000000       0xa0 CommunicationException.o
+ .debug_frame   0x000000a0       0x34 Controller.o
+ .debug_frame   0x000000d4      0x178 Endpoint.o
+ .debug_frame   0x0000024c       0x54 Exception.o
+ .debug_frame   0x000002a0      0x11c Exceptions.o
+ .debug_frame   0x000003bc       0x9c Fans.o
+ .debug_frame   0x00000458       0x94 Leds.o
+ .debug_frame   0x000004ec       0x84 LM75.o
+ .debug_frame   0x00000570       0x34 Message.o
+ .debug_frame   0x000005a4       0x6c Messages.o
+ .debug_frame   0x00000610       0xc4 Outputs.o
+ .debug_frame   0x000006d4      0x13c Settings.o
+ .debug_frame   0x00000810       0x64 SystemCheck.o
+ .debug_frame   0x00000874      0x310 TC654.o
+ .debug_frame   0x00000b84       0xc0 TC654Exception.o
+ .debug_frame   0x00000c44       0x94 Temperatures.o
+ .debug_frame   0x00000cd8      0x130 Ticker.o
+ .debug_frame   0x00000e08      0x15c tiny-json.o
+ .debug_frame   0x00000f64      0x168 UART.o
+
+.debug_str      0x00000000     0x3049
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x2ed CommunicationException.o
+                                0x347 (size before relaxing)
+ .debug_str     0x000004f5     0x104f Controller.o
+                               0x1391 (size before relaxing)
+ .debug_str     0x00001544      0x1fb Endpoint.o
+                                0xc61 (size before relaxing)
+ .debug_str     0x0000173f       0xcc Exception.o
+                                0x297 (size before relaxing)
+ .debug_str     0x0000180b       0x57 Exceptions.o
+                                0x4d8 (size before relaxing)
+ .debug_str     0x00001862      0x15b Fans.o
+                                0x6fc (size before relaxing)
+ .debug_str     0x000019bd       0xc2 Leds.o
+                                0x3bd (size before relaxing)
+ .debug_str     0x00001a7f      0x271 LM75.o
+                                0x824 (size before relaxing)
+ .debug_str     0x00001cf0       0x60 Message.o
+                                0x22b (size before relaxing)
+ .debug_str     0x00001d50       0x5f Messages.o
+                                0x2ac (size before relaxing)
+ .debug_str     0x00001daf       0x68 Outputs.o
+                                0x377 (size before relaxing)
+ .debug_str     0x00001e17      0x5cb Settings.o
+                                0x8ce (size before relaxing)
+ .debug_str     0x000023e2      0x17a SystemCheck.o
+                                0x7c6 (size before relaxing)
+ .debug_str     0x0000255c      0x1ca TC654.o
+                                0xd7a (size before relaxing)
+ .debug_str     0x00002726       0xee TC654Exception.o
+                                0x32b (size before relaxing)
+ .debug_str     0x00002814      0x1db Temperatures.o
+                                0x7f7 (size before relaxing)
+ .debug_str     0x000029ef      0x2fb Ticker.o
+                                0x614 (size before relaxing)
+ .debug_str     0x00002cea      0x1c4 tiny-json.o
+                                0x48e (size before relaxing)
+ .debug_str     0x00002eae      0x19b UART.o
+                                0x625 (size before relaxing)
+
+.debug_loc      0x00000000     0x46c1
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x1f3 CommunicationException.o
+ .debug_loc     0x000001f3       0x8f Controller.o
+ .debug_loc     0x00000282      0x675 Endpoint.o
+ .debug_loc     0x000008f7       0x5c Exception.o
+ .debug_loc     0x00000953      0x507 Exceptions.o
+ .debug_loc     0x00000e5a      0x20a Fans.o
+ .debug_loc     0x00001064      0x1c9 LM75.o
+ .debug_loc     0x0000122d       0x36 Message.o
+ .debug_loc     0x00001263      0x1aa Messages.o
+ .debug_loc     0x0000140d      0x304 Settings.o
+ .debug_loc     0x00001711       0xab SystemCheck.o
+ .debug_loc     0x000017bc      0xe86 TC654.o
+ .debug_loc     0x00002642      0x2a2 TC654Exception.o
+ .debug_loc     0x000028e4      0x1de Temperatures.o
+ .debug_loc     0x00002ac2      0x431 Ticker.o
+ .debug_loc     0x00002ef3     0x1219 tiny-json.o
+ .debug_loc     0x0000410c      0x5b5 UART.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x6c0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x20 CommunicationException.o
+ .debug_ranges  0x00000020       0x10 Controller.o
+ .debug_ranges  0x00000030       0x70 Endpoint.o
+ .debug_ranges  0x000000a0       0x28 Exception.o
+ .debug_ranges  0x000000c8       0x30 Exceptions.o
+ .debug_ranges  0x000000f8       0x20 Fans.o
+ .debug_ranges  0x00000118       0x48 Leds.o
+ .debug_ranges  0x00000160       0x28 LM75.o
+ .debug_ranges  0x00000188       0x18 Message.o
+ .debug_ranges  0x000001a0       0x18 Messages.o
+ .debug_ranges  0x000001b8       0x60 Outputs.o
+ .debug_ranges  0x00000218       0x58 Settings.o
+ .debug_ranges  0x00000270       0x30 SystemCheck.o
+ .debug_ranges  0x000002a0       0xf0 TC654.o
+ .debug_ranges  0x00000390       0x20 TC654Exception.o
+ .debug_ranges  0x000003b0       0x60 Temperatures.o
+ .debug_ranges  0x00000410       0xb8 Ticker.o
+ .debug_ranges  0x000004c8      0x180 tiny-json.o
+ .debug_ranges  0x00000648       0x78 UART.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Controller.elf elf32-avr)
+LOAD linker stubs

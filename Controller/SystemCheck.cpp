@@ -26,11 +26,6 @@ void SystemCheck::SetInterfaces(ITemperatures* iTemperatures, IGetTemperatureMax
 	this->iGetTemperatureMax=iGetTemperatureMax;
 	this->iFans = iFans;
 }
-bool  SystemCheck::Check(bool& successful, Exceptions&exceptions){
-	int8_t temperature=iTemperatures->GetMaxTemperature(successful, exceptions	;
-
-
-
-
-	return false;
+void SystemCheck::Check(bool& successful, Exceptions&exceptions){
+	int8_t temperature=iTemperatures->GetMaxTemperature(successful, exceptions	);
 }

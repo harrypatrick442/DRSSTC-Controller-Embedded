@@ -8,7 +8,9 @@
 
 #ifndef __IGETFANSPEED_H__
 #define __IGETFANSPEED_H__
+
+#include  "Exceptions.h"
 class IGetFanSpeed{ 
-public: virtual uint16_t GetFanSpeed(bool& successful)=0;
+public: virtual uint16_t GetFanSpeed(bool& successful, Exceptions& exceptions)=0;
 };
 #endif //__IGETFANSPEED_H__

@@ -14,9 +14,11 @@ class Exception
 	public:
 	protected:
 	private:
+	const char* message;
 	//functions
 	public:
 	Exception();
+	Exception(const char* message);
 	~Exception();
 	virtual const char* ToString();
 	protected:

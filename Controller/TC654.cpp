@@ -29,12 +29,12 @@ TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck call
 const char* TC654::Fan::GetName(){
 	return name;
 }
-uint16_t TC654::Fan::GetFanSpeed(bool& successful){
-	return
+uint16_t TC654::Fan::GetFanSpeed(bool& successful, Exceptions& exceptions){
+	return//xxx add in exceptions
 	(tc654->*(callbackGetRPM))(successful)*50;
 }
-bool TC654::Fan::Check(Exceptions&exceptions){
-	return(tc654->*(callbackCheck))(name);
+void TC654::Fan::Check(bool& successful, Exceptions&exceptions){
+	(tc654->*(callbackCheck))(successful, exceptions, name);
 }
 
 
@@ -45,30 +45,28 @@ unsigned char TC654::GetRPM2(bool& successful){
 	return ReadRegister(successful, RPM2_ADDRESS);
 }
 void  TC654::CheckFan1(bool& successful, Exceptions& exceptions, const char* name){
-	bool successful=true;
 	Status status = GetStatus(successful);
 	if(!successful)
 	{
-		exceptions->Add(new CommunicationException(name));
+		exceptions.Add(new CommunicationException(name));
 		return;
 	}
 		if(status.GetF1F())
-		exceptions->Add(new TC654Exception(name, TC654Exception::Fault));
+		exceptions.Add(new TC654Exception(name, TC654Exception::Fault));
 		if(status.GetR1CO())
-		exceptions->Add(new TC654Exception(name, TC654Exception::CounterOverflow));
+		exceptions.Add(new TC654Exception(name, TC654Exception::CounterOverflow));
 }
 void  TC654::CheckFan2(bool& successful, Exceptions& exceptions, const char* name){
-bool successful=true;
 Status status = GetStatus(successful);
 if(!successful)
 {
-	exceptions->Add(new CommunicationException(name));
+	exceptions.Add(new CommunicationException(name));
 	return;
 }
 if(status.GetF2F())
-exceptions->Add(new TC654Exception(name, TC654Exception::Fault));
+exceptions.Add(new TC654Exception(name, TC654Exception::Fault));
 if(status.GetR2CO())
-exceptions->Add(new TC654Exception(name, TC654Exception::CounterOverflow));
+exceptions.Add(new TC654Exception(name, TC654Exception::CounterOverflow));
 }
 TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1,&TC654::CheckFan1, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, &TC654::CheckFan2, "tc654_2"))
 {
