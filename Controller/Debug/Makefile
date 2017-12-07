@@ -51,7 +51,7 @@ C_SRCS +=  \
 ../Message.cpp \
 ../Messages.cpp \
 ../Outputs.cpp \
-../PassFailCleanup.cpp \
+../Cleanup.cpp \
 ../Settings.cpp \
 ../Stopwatch.cpp \
 ../SystemCheck.cpp \
@@ -86,7 +86,7 @@ LM75.o \
 Message.o \
 Messages.o \
 Outputs.o \
-PassFailCleanup.o \
+Cleanup.o \
 Settings.o \
 Stopwatch.o \
 SystemCheck.o \
@@ -113,7 +113,7 @@ LM75.o \
 Message.o \
 Messages.o \
 Outputs.o \
-PassFailCleanup.o \
+Cleanup.o \
 Settings.o \
 Stopwatch.o \
 SystemCheck.o \
@@ -140,7 +140,7 @@ LM75.d \
 Message.d \
 Messages.d \
 Outputs.d \
-PassFailCleanup.d \
+Cleanup.d \
 Settings.d \
 Stopwatch.d \
 SystemCheck.d \
@@ -167,7 +167,7 @@ LM75.d \
 Message.d \
 Messages.d \
 Outputs.d \
-PassFailCleanup.d \
+Cleanup.d \
 Settings.d \
 Stopwatch.d \
 SystemCheck.d \

@@ -48,13 +48,13 @@ class TC654
 		const char* name;
 		TC654* tc654;
 		typedef unsigned char (TC654::*CallbackGetRPM)(bool& successful);
-		typedef PassFailCleanup<Exceptions*>(TC654::*CallbackCheck)(const char* name);
+		typedef void (TC654::*CallbackCheck)(bool& successful, Exceptions& exceptions, const char* name);
 		CallbackGetRPM callbackGetRPM;
 		CallbackCheck callbackCheck;
 		Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, char* name);
 		const char* GetName();
 		uint16_t GetFanSpeed(bool& successful);
-		PassFailCleanup<Exceptions*> Check();
+		void Check(bool& successful, Exceptions& exceptions);
 	};
 	Fan fan1;
 	Fan fan2;
@@ -71,9 +71,9 @@ class TC654
 	IGetFanInfo* GetIGetFan1Info();
 	IGetFanInfo* GetIGetFan2Info();
 	~TC654();
-	PassFailCleanup<Exceptions*> CheckFan1(const char* name);
-	PassFailCleanup<Exceptions*> CheckFan2(const char* name);
-
+	void  CheckFan1(bool& successful, Exceptions& exceptions, const char* name);
+	void  CheckFan2(bool& successful, Exceptions& exceptions, const char* name);
+	
 	protected:
 	private:
 	void WriteConfigurationRegister(bool& successful, char configuration);

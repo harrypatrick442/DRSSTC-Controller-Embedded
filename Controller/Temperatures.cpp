@@ -7,7 +7,8 @@
 //#include "i2cmaster.h"
 #include "Temperatures.h"
 #include "IGetTemperature.h"
-#include "UART.h"
+#include "Exception.h"
+#include "CommunicationException.h"
 Temperatures Temperatures:: _Singleton;
 Temperatures& Temperatures::GetInstance(){
 	static bool initialized=false;
@@ -25,20 +26,22 @@ void Temperatures::SetInterfaces(IGetTemperatureInfo** iGetTemperatureInfos, uns
 void Temperatures::Initialize(){
 
 }
-int8_t Temperatures::GetMaxTemperature(bool& success){
+int8_t Temperatures::GetMaxTemperature(bool& successful, Exceptions& exceptions){
 	if(nIGetTemperatureInfos>0)
 	{
 		//Leds::Main::SetRed();
-		int8_t t=(*iGetTemperatureInfos)->GetTemperature(success);
-		for(int i=1; success&&(i<nIGetTemperatureInfos); i++)
+		
+		int8_t t=(*iGetTemperatureInfos)->GetTemperature(successful, exceptions);
+		for(int i=1; successful&&(i<nIGetTemperatureInfos); i++)
 		{
 			IGetTemperatureInfo* iGetTemperatureInfo = *(iGetTemperatureInfos+i);
-			int8_t n=iGetTemperatureInfo->GetTemperature(success);
+			int8_t n=iGetTemperatureInfo->GetTemperature(successful, exceptions);
 			if(n>t)
 			t=n;
 		}
 		return t;
 	}
-	//success=false;
-	return 11;
+	exceptions.Add(new CommunicationException("temperature sensors"));
+	successful=false;
+	return 0;
 }

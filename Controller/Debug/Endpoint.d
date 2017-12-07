@@ -10,7 +10,9 @@ Endpoint.d Endpoint.o: .././Endpoint.cpp .././Leds.h .././tiny-json.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
  .././IGetTemperatureMax.h .././ISetPower.h .././IGetPower.h \
- .././ISystemCheck.h .././ITemperatures.h .././UART.h .././LM75.h \
+ .././ISystemCheck.h .././Exceptions.h .././simple_vector.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
+ .././Exception.h .././ITemperatures.h .././UART.h .././LM75.h \
  .././i2cmaster.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
@@ -21,8 +23,7 @@ Endpoint.d Endpoint.o: .././Endpoint.cpp .././Leds.h .././tiny-json.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
  .././i2cmaster_constants.h .././IGetTemperatureInfo.h \
- .././IGetTemperature.h .././IGetName.h .././Stopwatch.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h
+ .././IGetTemperature.h .././IGetName.h .././Stopwatch.h
 
 .././Leds.h:
 
@@ -64,6 +65,14 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 .././ISystemCheck.h:
 
+.././Exceptions.h:
+
+.././simple_vector.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
+
+.././Exception.h:
+
 .././ITemperatures.h:
 
 .././UART.h:
@@ -97,5 +106,3 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././IGetName.h:
 
 .././Stopwatch.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:

@@ -19,6 +19,8 @@
 #include "IGetPower.h"
 #include "ISystemCheck.h"
 #include "ITemperatures.h"
+#include "Exception.h"
+#include "Exceptions.h"
 class Endpoint
 {
 	//variables
@@ -28,7 +30,6 @@ class Endpoint
 	IGetMessages* iGetMessages;
 	ISendMessage* iSendMessage;
 	ISetTemperatureMax* iSetTemperatureMax;
-
 	IGetTemperatureMax* iGetTemperatureMax;
 	ISetPower* iSetPower;
 	IGetPower* iGetPower;
@@ -36,7 +37,7 @@ class Endpoint
 	ISystemCheck* iSystemCheck;
 	//functions
 	public:
-	Endpoint(IGetMessages* iGetMessages, ISendMessage* iSendMessage, ISetTemperatureMax*iSetTemperatureMax, IGetTemperatureMax* iGetTemperatureMax, ISetPower* iSetPower, IGetPower* iGetPower, ITemperatures* iTemperatures);
+	Endpoint(IGetMessages* iGetMessages, ISendMessage* iSendMessage, ISetTemperatureMax*iSetTemperatureMax, IGetTemperatureMax* iGetTemperatureMax, ISetPower* iSetPower, IGetPower* iGetPower, ITemperatures* iTemperatures,  ISystemCheck* iSystemCheck);
 	~Endpoint();
 	void Run();
 	protected:
@@ -44,6 +45,8 @@ class Endpoint
 	void GetTemperatureMax();
 	void GetMaxTemperature();//actual 
 	void GetPower();
+	void SendException(Exception& exception);
+	void SendExceptions(Exceptions& exceptions);
 }; //Outputs
 
 #endif //__ENDPOINT_H__

@@ -25,6 +25,7 @@
 #include "i2cmaster.h"
 #include "TC654.h"
 #include "Fans.h"
+#include "SystemCheck.h"
 using namespace std;
 int main(void)
 {
@@ -43,8 +44,10 @@ int main(void)
 	IGetTemperatureInfo* lm75s[] = {lm75_7, lm75_6};
 	Temperatures& temperatures=Temperatures::GetInstance();
 	temperatures.SetInterfaces(lm75s, 0x2);
+	SystemCheck& systemCheck = SystemCheck::GetInstance();
+	systemCheck.SetInterfaces(&temperatures, &settings, &fans);
 	Leds::Main::SetGreen();		
-	Endpoint* endpoint = new Endpoint(&uart, &uart, &settings, &settings, &settings, &settings, &temperatures);
+	Endpoint* endpoint = new Endpoint(&uart, &uart, &settings, &settings, &settings, &settings, &temperatures, &systemCheck);
 	while(1)
 	{
 	    endpoint->Run();

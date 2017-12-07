@@ -347,10 +347,10 @@
     <Compile Include="Outputs.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="PassFailCleanup.cpp">
+    <Compile Include="Cleanup.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="PassFailCleanup.h">
+    <Compile Include="Cleanup.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Settings.cpp">

@@ -8,9 +8,8 @@
 
 #ifndef __ICheck_H__
 #define __ICheck_H__
-#include "PassFailCleanup.h"
 #include "Exceptions.h"
 class ICheck{
-	public:virtual PassFailCleanup<Exceptions*> Check()=0;
+	public:virtual void Check(bool& successful ,Exceptions& exceptions)=0;
 };
 #endif //__ICheck_H__

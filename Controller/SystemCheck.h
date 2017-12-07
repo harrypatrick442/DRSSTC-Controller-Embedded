@@ -9,18 +9,29 @@
 #ifndef __SYSTEMCHECK_H__
 #define __SYSTEMCHECK_H__
 
-
-class SystemCheck
+#include "ITemperatures.h"
+#include "ISystemCheck.h"
+#include "IGetTemperatureMax.h"
+#include "IFans.h"
+#include  "Exceptions.h"	
+class SystemCheck:public ISystemCheck
 {
 	//variables
 	public:
 	protected:
 	private:
 	static SystemCheck _Singleton;
+	ITemperatures* iTemperatures;
+	IGetTemperatureMax* iGetTemperatureMax;
+	IFans* iFans;
+
+
 
 	//functions
 	public:
 	static  SystemCheck& GetInstance();
+	void SetInterfaces(ITemperatures* iTemperatures, IGetTemperatureMax *  iGetTemperatureMax, IFans* iFans);
+	void Check( bool& successful, Exceptions& exceptions);
 	protected:
 	private:
 	void Initialize ();

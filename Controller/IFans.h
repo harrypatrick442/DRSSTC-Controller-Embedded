@@ -9,9 +9,8 @@
 #ifndef __IFANS_H__
 #define __IFANS_H__
 #include "IGetExceptions.h"
-#include "PassFailCleanup.h"
 #include "Exceptions.h"
 class          IFans:   public IGetExceptions { 
-public:virtual  PassFailCleanup<Exceptions*> GetFansWorkingCorrectly()=0;
+public:virtual  bool GetFansWorkingCorrectly(Exceptions& exceptions)=0;
 };
 #endif //__IFANS_H__

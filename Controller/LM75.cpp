@@ -6,6 +6,7 @@
 */
 #include "i2cmaster.h"
 #include "LM75.h"
+#include "CommunicationException.h"
 #include <avr/interrupt.h>
 // default constructor
 LM75::LM75(char address, char* name):name(name)
@@ -17,21 +18,20 @@ LM75::LM75(char address, char* name):name(name)
 const char* LM75::GetName(){
 	return name;
 }
-int8_t LM75::GetTemperature(bool& successful){
+	int8_t LM75::GetTemperature(bool& successful, Exceptions& exceptions){
 	i2c_start_wait(addressWrite);
 	char r=i2c_write(TEMPERATURE_ADDRESS);
 	i2c_stop();
 	if(r!=0){
-		successful=false;
+	exceptions.Add(new CommunicationException(name));
+	return 0;
 	}
-
 	i2c_start_wait(addressRead);
 	char most = i2c_readAck();
 	char least = i2c_readAck();
 	sei();
-	return static_cast<int8_t>(most);
 	i2c_stop();
-	return 0;
+	return static_cast<int8_t>(most);
 }
 // default destructor
 LM75::~LM75()

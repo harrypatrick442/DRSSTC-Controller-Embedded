@@ -11,6 +11,7 @@
 #include "i2cmaster.h"
 #include "IGetTemperatureInfo.h"
 #include "Stopwatch.h"
+#include "Exception.h"
 
 
 
@@ -32,8 +33,8 @@ const char* name;
 
 //functions
 public:
-	LM75(char address, char* name);
-	int8_t GetTemperature(bool& successful);
+    LM75(char address, char* name);
+	int8_t  GetTemperature(bool& successful, Exceptions& exceptions);
 	const char* GetName();
 	~LM75();
 protected:

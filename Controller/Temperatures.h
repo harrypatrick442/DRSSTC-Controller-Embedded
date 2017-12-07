@@ -25,7 +25,7 @@ public ITemperatures
 	public:
 	static  Temperatures& GetInstance();
 	void SetInterfaces(IGetTemperatureInfo** iGetTemperatureInfos, unsigned char nIGetTemperatureInfos);
-	int8_t GetMaxTemperature(bool& successful);
+	int8_t GetMaxTemperature(bool& successful, Exceptions& exceptions);
 	protected:
 	private:
 	void Initialize ();

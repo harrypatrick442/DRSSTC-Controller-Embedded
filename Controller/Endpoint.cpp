@@ -13,7 +13,7 @@
 #include "UART.h"
 #include "LM75.h"
 #include <string.h>
-Endpoint::Endpoint(IGetMessages* iGetMessages, ISendMessage* iSendMessage, ISetTemperatureMax*iSetTemperatureMax, IGetTemperatureMax* iGetTemperatureMax, ISetPower* iSetPower, IGetPower* iGetPower, ITemperatures* iTemperatures):iGetMessages(iGetMessages), iSendMessage(iSendMessage), iSetTemperatureMax(iSetTemperatureMax), iGetTemperatureMax(iGetTemperatureMax), iSetPower(iSetPower), iGetPower(iGetPower), iTemperatures(iTemperatures){
+Endpoint::Endpoint(IGetMessages* iGetMessages, ISendMessage* iSendMessage, ISetTemperatureMax*iSetTemperatureMax, IGetTemperatureMax* iGetTemperatureMax, ISetPower* iSetPower, IGetPower* iGetPower, ITemperatures* iTemperatures, ISystemCheck* iSystemCheck):iGetMessages(iGetMessages), iSendMessage(iSendMessage), iSetTemperatureMax(iSetTemperatureMax), iGetTemperatureMax(iGetTemperatureMax), iSetPower(iSetPower), iGetPower(iGetPower), iTemperatures(iTemperatures), iSystemCheck(iSystemCheck){
 	
 }
 void Endpoint::Run(){
@@ -33,7 +33,9 @@ void Endpoint::Run(){
 					const char* type = json_getValue(jObjectType);
 					UART::GetInstance().SendMessage(type, strlen(type));
 					if(strcmp(type, "system_check")==0){
-						iSystemCheck->Check();
+					Exceptions exceptions;
+						  bool successful=true;
+						   iSystemCheck->Check(successful, exceptions);
 						}else{
 						if(strcmp(type,"run")==0){
 							
@@ -92,9 +94,20 @@ iSendMessage->SendMessage(buf, 48);}
 
 void Endpoint::GetMaxTemperature(){
 	bool successful=true;
-	uint8_t temperature = iTemperatures->GetMaxTemperature(successful);
+	Exceptions exceptions;
+	 
+	int8_t temperature = iTemperatures->GetMaxTemperature(successful, exceptions);
 	if(successful){
 		Leds::Main::SetRed();
 		char buf[45];
 		snprintf(buf,45,"{\"type\":\"max_temperature\",\"temperature\":%03d}",temperature);
-	iSendMessage->SendMessage(buf, 44);}}
+	iSendMessage->SendMessage(buf, 44);}
+	else
+	SendExceptions(exceptions);
+	}
+	void Endpoint::SendException(Exception& exception){
+
+	}
+	    void Endpoint::SendExceptions(Exceptions& exceptions){
+		
+	}

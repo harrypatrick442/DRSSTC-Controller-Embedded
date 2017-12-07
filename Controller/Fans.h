@@ -13,7 +13,6 @@
 #include "IGetExceptions.h"
 #include "IGetFanSpeedMin.h"
 #include "Exceptions.h"
-#include "PassFailCleanup.h"
 class Fans:
 public   IFans
 {
@@ -30,7 +29,7 @@ public   IFans
 	public:
 	static  Fans& GetInstance();
 	void SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin* iGetFanSpeedMin);
-	PassFailCleanup<Exceptions*> GetFansWorkingCorrectly();
+	bool GetFansWorkingCorrectly(Exceptions& exceptions);
 	Exceptions* GetExceptions();
 	protected:
 	private:

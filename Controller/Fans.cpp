@@ -15,7 +15,6 @@
 #include "FanSpeedException.h"
 #include "CommunicationException.h"
 #include "Exceptions.h"
-#include "PassFailCleanup.h"
 
 Fans& Fans::GetInstance(){
 	
@@ -26,34 +25,28 @@ Fans& Fans::GetInstance(){
 	this->iGetFanSpeedMin = iGetFanSpeedMin;
 
 }
-PassFailCleanup<Exceptions*> Fans::GetFansWorkingCorrectly(){
-	bool working=true;
+bool Fans::GetFansWorkingCorrectly(Exceptions& exceptions){
 	uint16_t minSpeed = iGetFanSpeedMin->GetFanSpeedMin();
-	Exceptions* exceptions = new Exceptions();
 	for(char i=0; i<nIGetFanInfos; i++    ){
 		IGetFanInfo* iGetFanInfo = iGetFanInfos[i];
 		bool successful=true;
-		PassFailCleanup<Exceptions*> passFailCleanup=iGetFanInfo->Check();
-		if(passFailCleanup.successful){
-			uint16_t speed = iGetFanInfo->GetFanSpeed(successful);
+		iGetFanInfo->Check(successful, exceptions);
+		if(successful){
+			uint16_t speed = iGetFanInfo->GetFanSpeed(successful, exceptions);
 			if(successful){
 				if(minSpeed>speed){
 						exceptions->Add(new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed));
 				}
+				else
+				return true;
 			}
 			else
 			{
 					exceptions->Add(new CommunicationException("TC654"));
 			}
 		}
-		else
-		{
-			exceptions->Consume(passFailCleanup.payload);
-		}
 	}
-if(exceptions->Count()>0){
-return PassFailCleanup<Exceptions*>(exceptions);
-}
-delete exceptions; 
-return PassFailCleanup<Exceptions*>();
+	if(nIGetFanInfos<=0)
+		exceptions->Add(new Exception("There are no fans"));
+	return false;
 }

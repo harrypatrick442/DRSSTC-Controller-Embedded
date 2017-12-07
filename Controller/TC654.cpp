@@ -9,7 +9,6 @@
 #include "IGetFanInfo.h"
 #include "CommunicationException.h"
 #include "Exceptions.h"
-#include "PassFailCleanup.h"
 #include "TC654Exception.h"
 // default constructor
 TC654::Status::Status(char value):value(value){
@@ -27,8 +26,6 @@ bool TC654::Status::GetR1CO(){
 bool TC654::Status::GetR2CO(){
 return ((value&0x10)>>4)>0;}
 TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, char* name):name(name), callbackGetRPM(callbackGetRPM), callbackCheck(callbackCheck), tc654(tc654){}
-
-
 const char* TC654::Fan::GetName(){
 	return name;
 }
@@ -36,9 +33,8 @@ uint16_t TC654::Fan::GetFanSpeed(bool& successful){
 	return
 	(tc654->*(callbackGetRPM))(successful)*50;
 }
-PassFailCleanup<Exceptions*> TC654::Fan::Check(){
-	return
-	(tc654->*(callbackCheck))(name);
+bool TC654::Fan::Check(Exceptions&exceptions){
+	return(tc654->*(callbackCheck))(name);
 }
 
 
@@ -48,47 +44,31 @@ unsigned char TC654::GetRPM1(bool& successful){
 unsigned char TC654::GetRPM2(bool& successful){
 	return ReadRegister(successful, RPM2_ADDRESS);
 }
-PassFailCleanup<Exceptions*> TC654::CheckFan1(const char* name){
+void  TC654::CheckFan1(bool& successful, Exceptions& exceptions, const char* name){
 	bool successful=true;
 	Status status = GetStatus(successful);
 	if(!successful)
 	{
-		Exceptions* exceptions = new Exceptions();
 		exceptions->Add(new CommunicationException(name));
-		return PassFailCleanup<Exceptions*>(exceptions);
+		return;
 	}
-	if(status.GetF1F()||status.GetR1CO())
-	{
-		Exceptions* exceptions = new Exceptions();
 		if(status.GetF1F())
 		exceptions->Add(new TC654Exception(name, TC654Exception::Fault));
 		if(status.GetR1CO())
 		exceptions->Add(new TC654Exception(name, TC654Exception::CounterOverflow));
-		return PassFailCleanup<Exceptions*>(exceptions);
-
-	}
-	return PassFailCleanup<Exceptions*>();
 }
-PassFailCleanup<Exceptions*> TC654::CheckFan2(const char* name){
-	bool successful=true;
-	Status status = GetStatus(successful);
-	if(!successful)
-	{
-		Exceptions* exceptions = new Exceptions();
-		exceptions->Add(new CommunicationException(name));
-		return PassFailCleanup<Exceptions*>(exceptions);
-	}
-	if(status.GetF2F()||status.GetR2CO())
-	{
-		Exceptions* exceptions = new Exceptions();
-		if(status.GetF2F())
-		exceptions->Add(new TC654Exception(name, TC654Exception::Fault));
-		if(status.GetR2CO())
-		exceptions->Add(new TC654Exception(name, TC654Exception::CounterOverflow));
-		return PassFailCleanup<Exceptions*>(exceptions);
-
-	}
-	return PassFailCleanup<Exceptions*>();
+void  TC654::CheckFan2(bool& successful, Exceptions& exceptions, const char* name){
+bool successful=true;
+Status status = GetStatus(successful);
+if(!successful)
+{
+	exceptions->Add(new CommunicationException(name));
+	return;
+}
+if(status.GetF2F())
+exceptions->Add(new TC654Exception(name, TC654Exception::Fault));
+if(status.GetR2CO())
+exceptions->Add(new TC654Exception(name, TC654Exception::CounterOverflow));
 }
 TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1,&TC654::CheckFan1, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, &TC654::CheckFan2, "tc654_2"))
 {
