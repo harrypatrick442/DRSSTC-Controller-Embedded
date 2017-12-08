@@ -14,6 +14,7 @@
 #include <util/delay.h>
 #include <time.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include "Outputs.h"
 #include "LM75.h"
 #include "UART.h"

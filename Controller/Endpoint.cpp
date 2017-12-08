@@ -36,6 +36,12 @@ void Endpoint::Run(){
 					Exceptions exceptions;
 						  bool successful=true;
 						   iSystemCheck->Check(successful, exceptions);
+						   if(successful){
+						   iSendMessage->SendMessage("{\"type\":\"system_check\",\"passed\":true}\n", 38);
+						   }
+						   else{
+						   iSendMessage->SendMessage("{\"type\":\"system_check\",\"passed\":false}\n", 39);
+						   }
 						}else{
 						if(strcmp(type,"run")==0){
 							
@@ -82,15 +88,15 @@ void Endpoint::Run(){
 
 void Endpoint::GetPower(){
 	uint16_t power = iGetPower->GetPower();
-	char buf[30];
-	snprintf(buf,30,"{\"type\":\"power\",\"power\":%04d}",power);
-	iSendMessage->SendMessage(buf, 29);
+	char buf[31];
+	snprintf(buf,31,"{\"type\":\"power\",\"power\":%04d}\n",power);
+	iSendMessage->SendMessage(buf, 30);
 }
 void Endpoint::GetTemperatureMax(){
 	uint8_t temperatureMax = iGetTemperatureMax->GetTemperatureMax();
-	char buf[49];
-	snprintf(buf,49,"{\"type\":\"temperature_max\",\"temperature_max\":%03d}",temperatureMax);
-iSendMessage->SendMessage(buf, 48);}
+	char buf[50];
+	snprintf(buf,50,"{\"type\":\"temperature_max\",\"temperature_max\":%03d}\n",temperatureMax);
+iSendMessage->SendMessage(buf, 49);}
 
 void Endpoint::GetMaxTemperature(){
 	bool successful=true;
@@ -99,9 +105,9 @@ void Endpoint::GetMaxTemperature(){
 	int8_t temperature = iTemperatures->GetMaxTemperature(successful, exceptions);
 	if(successful){
 		Leds::Main::SetRed();
-		char buf[45];
-		snprintf(buf,45,"{\"type\":\"max_temperature\",\"temperature\":%03d}",temperature);
-	iSendMessage->SendMessage(buf, 44);}
+		char buf[46];
+		snprintf(buf,46,"{\"type\":\"max_temperature\",\"temperature\":%03d}\n",temperature);
+	iSendMessage->SendMessage(buf, 45);}
 	else
 	SendExceptions(exceptions);
 	}

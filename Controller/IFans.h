@@ -10,7 +10,8 @@
 #define __IFANS_H__
 #include "IGetExceptions.h"
 #include "Exceptions.h"
-class          IFans:   public IGetExceptions { 
-public:virtual  bool GetFansWorkingCorrectly(Exceptions& exceptions)=0;
+#include <stdbool.h>
+class          IFans { 
+public:virtual  void GetFansWorkingCorrectly(bool& successful,  Exceptions& exceptions)=0;
 };
 #endif //__IFANS_H__

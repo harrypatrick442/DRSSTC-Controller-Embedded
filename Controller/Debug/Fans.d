@@ -17,8 +17,11 @@ Fans.d Fans.o: .././Fans.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
  .././Fans.h .././IGetFanInfo.h .././IGetFanSpeed.h .././Exceptions.h \
  .././simple_vector.h .././Exception.h .././ICheck.h .././IGetName.h \
- .././IFans.h .././IGetExceptions.h .././IGetFanSpeedMin.h \
- .././FanSpeedException.h .././CommunicationException.h
+ .././IFans.h .././IGetExceptions.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
+ .././IGetFanSpeedMin.h .././FanSpeedException.h \
+ .././CommunicationException.h .././UART.h .././Messages.h .././Message.h \
+ .././IGetMessages.h .././ISendMessage.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
 
@@ -72,8 +75,20 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 .././IGetExceptions.h:
 
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
+
 .././IGetFanSpeedMin.h:
 
 .././FanSpeedException.h:
 
 .././CommunicationException.h:
+
+.././UART.h:
+
+.././Messages.h:
+
+.././Message.h:
+
+.././IGetMessages.h:
+
+.././ISendMessage.h:

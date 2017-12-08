@@ -16,8 +16,10 @@ TC654.d TC654.o: .././TC654.cpp .././i2cmaster.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  .././Exception.h .././ICheck.h .././IGetName.h .././IFans.h \
- .././IGetExceptions.h .././CommunicationException.h \
- .././TC654Exception.h
+ .././IGetExceptions.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
+ .././CommunicationException.h .././UART.h .././Messages.h .././Message.h \
+ .././IGetMessages.h .././ISendMessage.h .././TC654Exception.h
 
 .././i2cmaster.h:
 
@@ -71,6 +73,18 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 .././IGetExceptions.h:
 
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
+
 .././CommunicationException.h:
+
+.././UART.h:
+
+.././Messages.h:
+
+.././Message.h:
+
+.././IGetMessages.h:
+
+.././ISendMessage.h:
 
 .././TC654Exception.h:

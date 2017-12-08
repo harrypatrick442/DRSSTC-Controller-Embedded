@@ -9,6 +9,7 @@
 #include "IGetFanInfo.h"
 #include "CommunicationException.h"
 #include "Exceptions.h"
+#include "UART.h"
 #include "TC654Exception.h"
 // default constructor
 TC654::Status::Status(char value):value(value){
@@ -25,16 +26,29 @@ bool TC654::Status::GetR1CO(){
 }
 bool TC654::Status::GetR2CO(){
 return ((value&0x10)>>4)>0;}
-TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, char* name):name(name), callbackGetRPM(callbackGetRPM), callbackCheck(callbackCheck), tc654(tc654){}
+TC654::Fan::Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, CallbackConfigureIfNotDone callbackConfigureIfNotDone, char* name):name(name), callbackGetRPM(callbackGetRPM), callbackCheck(callbackCheck), tc654(tc654), callbackConfigureIfNotDone(callbackConfigureIfNotDone){}
+
 const char* TC654::Fan::GetName(){
 	return name;
 }
 uint16_t TC654::Fan::GetFanSpeed(bool& successful, Exceptions& exceptions){
-	return//xxx add in exceptions
-	(tc654->*(callbackGetRPM))(successful)*50;
+	(tc654->*(callbackConfigureIfNotDone))(successful);
+	if(successful){
+		uint16_t speed=(tc654->*(callbackGetRPM))(successful)*50;
+		if(!successful)exceptions.Add(new CommunicationException(name));
+		return speed;
+	}
+	else
+	exceptions.Add(new TC654Exception(name, TC654Exception::Configuration));
+	return 0;
 }
 void TC654::Fan::Check(bool& successful, Exceptions&exceptions){
-	(tc654->*(callbackCheck))(successful, exceptions, name);
+	(tc654->*(callbackConfigureIfNotDone))(successful);
+	if(successful){
+		(tc654->*(callbackCheck))(successful, exceptions, name);
+	}
+	else
+	exceptions.Add(new TC654Exception(name, TC654Exception::Configuration));
 }
 
 
@@ -51,24 +65,24 @@ void  TC654::CheckFan1(bool& successful, Exceptions& exceptions, const char* nam
 		exceptions.Add(new CommunicationException(name));
 		return;
 	}
-		if(status.GetF1F())
-		exceptions.Add(new TC654Exception(name, TC654Exception::Fault));
-		if(status.GetR1CO())
-		exceptions.Add(new TC654Exception(name, TC654Exception::CounterOverflow));
+	if(status.GetF1F())
+	exceptions.Add(new TC654Exception(name, TC654Exception::Fault));
+	if(status.GetR1CO())
+	exceptions.Add(new TC654Exception(name, TC654Exception::CounterOverflow));
 }
 void  TC654::CheckFan2(bool& successful, Exceptions& exceptions, const char* name){
-Status status = GetStatus(successful);
-if(!successful)
-{
-	exceptions.Add(new CommunicationException(name));
-	return;
+	Status status = GetStatus(successful);
+	if(!successful)
+	{
+		exceptions.Add(new CommunicationException(name));
+		return;
+	}
+	if(status.GetF2F())
+	exceptions.Add(new TC654Exception(name, TC654Exception::Fault));
+	if(status.GetR2CO())
+	exceptions.Add(new TC654Exception(name, TC654Exception::CounterOverflow));
 }
-if(status.GetF2F())
-exceptions.Add(new TC654Exception(name, TC654Exception::Fault));
-if(status.GetR2CO())
-exceptions.Add(new TC654Exception(name, TC654Exception::CounterOverflow));
-}
-TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1,&TC654::CheckFan1, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, &TC654::CheckFan2, "tc654_2"))
+TC654::TC654(char F1PPR, char F2PPR):fan1(Fan(this, &TC654::GetRPM1,&TC654::CheckFan1, &TC654::ConfigureIfNotDone, "tc654_1")), fan2(Fan(this, &TC654::GetRPM2, &TC654::CheckFan2, &TC654::ConfigureIfNotDone, "tc654_2"))
 {
 	this->F1PPR=(0x0f&F1PPR)<<2;
 	this->F2PPR=(0x0f&F2PPR)<<6;
@@ -112,14 +126,21 @@ unsigned char TC654::ReadRegister(bool& successful, char address){
 	i2c_stop();
 	return r;
 }
-void TC654::Configure(bool& successful){
-	char configuration = 0x20|F1PPR|F2PPR;
-	WriteConfigurationRegister(successful, configuration);
-	if(successful)
-	{
-		char r = ReadConfigurationRegister(successful);
+void TC654::ConfigureIfNotDone(bool& successful){
+	if(!configured){
+		char configuration = 0x20|F1PPR|F2PPR;
+		WriteConfigurationRegister(successful, configuration);
 		if(successful)
-		if(r!=configuration)successful = false;
+		{
+			char r = ReadConfigurationRegister(successful);
+			if(successful)
+			{
+			if(r!=configuration)successful = false;
+			else{
+				configured=true;
+				}
+			}
+		}
 	}
 }
 unsigned char TC654::GetFanFault1(bool& successful){

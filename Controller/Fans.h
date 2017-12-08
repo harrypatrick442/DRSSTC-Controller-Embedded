@@ -29,8 +29,7 @@ public   IFans
 	public:
 	static  Fans& GetInstance();
 	void SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin* iGetFanSpeedMin);
-	bool GetFansWorkingCorrectly(Exceptions& exceptions);
-	Exceptions* GetExceptions();
+	void GetFansWorkingCorrectly(bool& successful, Exceptions& exceptions);
 	protected:
 	private:
 	void operator=(Fans const&) = delete; // Don't implement

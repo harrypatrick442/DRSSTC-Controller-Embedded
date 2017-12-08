@@ -15,38 +15,48 @@
 #include "FanSpeedException.h"
 #include "CommunicationException.h"
 #include "Exceptions.h"
+#include "UART.h"
 
+Fans Fans:: _Singleton;
 Fans& Fans::GetInstance(){
-	
-} void Fans::SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin*iGetFanSpeedMin)
+	static bool initialized=false;
+	if(!initialized)
+	{
+		initialized=true;
+	}
+	return _Singleton;
+}
+ void Fans::SetInterfaces(IGetFanInfo** iGetFanInfos, unsigned char nIGetFanInfos, IGetFanSpeedMin*iGetFanSpeedMin)
 {
 	this->iGetFanInfos=iGetFanInfos;
 	this->nIGetFanInfos=nIGetFanInfos;
 	this->iGetFanSpeedMin = iGetFanSpeedMin;
 
 }
-bool Fans::GetFansWorkingCorrectly(Exceptions& exceptions){
+void Fans::GetFansWorkingCorrectly(bool& successful, Exceptions& exceptions){
+if(nIGetFanInfos<=0){
+	exceptions.Add(new Exception("There are no fans"));
+successful= false;
+return;}
 	uint16_t minSpeed = iGetFanSpeedMin->GetFanSpeedMin();
 	for(char i=0; i<nIGetFanInfos; i++    ){
 		IGetFanInfo* iGetFanInfo = iGetFanInfos[i];
-		bool successful=true;
 		iGetFanInfo->Check(successful, exceptions);
+		return;
 		if(successful){
 			uint16_t speed = iGetFanInfo->GetFanSpeed(successful, exceptions);
 			if(successful){
 				if(minSpeed>speed){
 						exceptions.Add(new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed));
-				}
-				else
-				return true;
+				
+				return;}
 			}
 			else
 			{
 					exceptions.Add(new CommunicationException("TC654"));
-			}
-		}
+			
+			return;}
 	}
-	if(nIGetFanInfos<=0)
-		exceptions.Add(new Exception("There are no fans"));
-	return false;
+	else break;
+	}
 }

@@ -31,6 +31,7 @@ class TC654
 	const char VER_ID_ADDRESS=0x08;
 	unsigned char F1PPR;
 	unsigned char F2PPR;
+	bool configured = false;
 	//functions
 	public:
 	class Status{
@@ -49,9 +50,11 @@ class TC654
 		TC654* tc654;
 		typedef unsigned char (TC654::*CallbackGetRPM)(bool& successful);
 		typedef void (TC654::*CallbackCheck)(bool& successful, Exceptions& exceptions, const char* name);
+		typedef void (TC654::*CallbackConfigureIfNotDone)(bool& successful);
 		CallbackGetRPM callbackGetRPM;
 		CallbackCheck callbackCheck;
-		Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, char* name);
+		CallbackConfigureIfNotDone callbackConfigureIfNotDone;
+		Fan(TC654* tc654, CallbackGetRPM callbackGetRRPM, CallbackCheck callbackCheck, CallbackConfigureIfNotDone callbackConfigureIfNotDone, char* name);
 		const char* GetName();
 		uint16_t GetFanSpeed(bool& successful, Exceptions& exceptions);
 		void Check(bool& successful, Exceptions& exceptions);
@@ -80,7 +83,7 @@ class TC654
 	void WriteRegister(bool& successful, char address, char value);
 	unsigned char ReadConfigurationRegister(bool& successful);
 	unsigned char ReadRegister(bool& successful, char address);
-	void Configure(bool& successful);
+	void ConfigureIfNotDone(bool& successful);
 
 };
 

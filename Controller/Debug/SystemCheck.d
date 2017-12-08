@@ -10,7 +10,10 @@ SystemCheck.d SystemCheck.o: .././SystemCheck.cpp .././SystemCheck.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  .././Exception.h .././ISystemCheck.h .././IGetTemperatureMax.h \
- .././IFans.h .././IGetExceptions.h
+ .././IFans.h .././IGetExceptions.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
+ .././UART.h .././Messages.h .././Message.h .././IGetMessages.h \
+ .././ISendMessage.h
 
 .././SystemCheck.h:
 
@@ -45,3 +48,15 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././IFans.h:
 
 .././IGetExceptions.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
+
+.././UART.h:
+
+.././Messages.h:
+
+.././Message.h:
+
+.././IGetMessages.h:
+
+.././ISendMessage.h:

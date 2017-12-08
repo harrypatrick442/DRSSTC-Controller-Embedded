@@ -13,7 +13,7 @@ class TC654Exception:public Exception
 {
 	//variables
 	public:
-	typedef enum Type{Fault, CounterOverflow};
+	typedef enum Type{Fault, CounterOverflow, Configuration};
 	protected:
 	private:
 	const Type type;

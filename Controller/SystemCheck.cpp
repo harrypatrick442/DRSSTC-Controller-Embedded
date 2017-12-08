@@ -7,6 +7,8 @@
 
 
 #include "SystemCheck.h"
+#include "UART.h"
+#include <stdbool.h>
 
 SystemCheck SystemCheck:: _Singleton;
 SystemCheck& SystemCheck::GetInstance(){
@@ -27,5 +29,8 @@ void SystemCheck::SetInterfaces(ITemperatures* iTemperatures, IGetTemperatureMax
 	this->iFans = iFans;
 }
 void SystemCheck::Check(bool& successful, Exceptions&exceptions){
-	int8_t temperature=iTemperatures->GetMaxTemperature(successful, exceptions	);
+	int8_t temperature=iTemperatures->GetMaxTemperature(successful, exceptions	 );
+	if(successful){
+	iFans->GetFansWorkingCorrectly(successful, exceptions);
+	}
 }
