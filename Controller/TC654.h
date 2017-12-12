@@ -62,8 +62,8 @@ class TC654
 	Fan fan1;
 	Fan fan2;
 	TC654(char F1PPR, char F2PPR);
-	unsigned char GetRPM1(bool& successful);
-	unsigned char GetRPM2(bool& successful);
+	 unsigned char GetRPM1(bool& successful);
+	 unsigned char GetRPM2(bool& successful);
 	unsigned char GetFanFault1(bool& successful);
 	unsigned char GetFanFault2(bool& successful);
 	void SetFanFault2(bool& successful, unsigned char value);

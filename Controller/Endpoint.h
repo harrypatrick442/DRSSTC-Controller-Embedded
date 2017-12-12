@@ -45,8 +45,8 @@ class Endpoint
 	void GetTemperatureMax();
 	void GetMaxTemperature();//actual 
 	void GetPower();
-	void SendException(Exception& exception);
-	void SendExceptions(Exceptions& exceptions);
+	void SendException(Exception* exception);
+	void SendExceptions(Exceptions* exceptions);
 }; //Outputs
 
 #endif //__ENDPOINT_H__

@@ -37,14 +37,15 @@ void Fans::GetFansWorkingCorrectly(bool& successful, Exceptions& exceptions){
 if(nIGetFanInfos<=0){
 	exceptions.Add(new Exception("There are no fans"));
 successful= false;
-return;}
+return;
+}
 	uint16_t minSpeed = iGetFanSpeedMin->GetFanSpeedMin();
 	for(char i=0; i<nIGetFanInfos; i++    ){
 		IGetFanInfo* iGetFanInfo = iGetFanInfos[i];
 		iGetFanInfo->Check(successful, exceptions);
-		return;
 		if(successful){
 			uint16_t speed = iGetFanInfo->GetFanSpeed(successful, exceptions);
+			return;
 			if(successful){
 				if(minSpeed>speed){
 						exceptions.Add(new FanSpeedException(iGetFanInfo->GetName(), speed, minSpeed));

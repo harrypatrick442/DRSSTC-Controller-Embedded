@@ -34,7 +34,8 @@ const char* TC654::Fan::GetName(){
 uint16_t TC654::Fan::GetFanSpeed(bool& successful, Exceptions& exceptions){
 	(tc654->*(callbackConfigureIfNotDone))(successful);
 	if(successful){
-		uint16_t speed=(tc654->*(callbackGetRPM))(successful)*50;
+		uint16_t speed=((tc654->*(callbackGetRPM))(successful))*50;
+		return 0;
 		if(!successful)exceptions.Add(new CommunicationException(name));
 		return speed;
 	}
@@ -111,17 +112,12 @@ unsigned char TC654::ReadConfigurationRegister(bool& successful){
 unsigned char TC654::ReadRegister(bool& successful, char address){
 	i2c_start_wait(ADDRESS_WRITE);
 	char r=i2c_write(address);
+	i2c_stop();
 	if(r!=0){
 		successful=false;
-		i2c_stop();
 		return 0;
-	}
-	r=i2c_rep_start(ADDRESS_READ);
-	if(r!=0){
-		successful=false;
-		i2c_stop();
-		return 0;
-	}
+}
+	i2c_start_wait(ADDRESS_READ);
 	r = i2c_readNak();
 	i2c_stop();
 	return r;

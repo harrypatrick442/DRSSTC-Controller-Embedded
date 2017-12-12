@@ -92,10 +92,6 @@ Discarded input sections
  .text          0x00000000        0x0 Endpoint.o
  .data          0x00000000        0x0 Endpoint.o
  .bss           0x00000000        0x0 Endpoint.o
- .text._ZN8Endpoint13SendExceptionER9Exception
-                0x00000000        0x2 Endpoint.o
- .text._ZN8Endpoint14SendExceptionsER10Exceptions
-                0x00000000        0x2 Endpoint.o
  .group         0x00000000        0x8 Exception.o
  .text          0x00000000        0x0 Exception.o
  .data          0x00000000        0x0 Exception.o
@@ -103,8 +99,6 @@ Discarded input sections
  .text          0x00000000        0x0 Exceptions.o
  .data          0x00000000        0x0 Exceptions.o
  .bss           0x00000000        0x0 Exceptions.o
- .text._ZN10Exceptions5CountEv
-                0x00000000        0x8 Exceptions.o
  .text._ZN10Exceptions7ConsumeEPS_
                 0x00000000      0x12a Exceptions.o
  .group         0x00000000        0x8 Fans.o
@@ -616,7 +610,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2afc
+.text           0x00000000     0x2bb0
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -739,371 +733,380 @@ END GROUP
  .text._ZN8Endpoint17GetTemperatureMaxEv
                 0x0000046a       0x94 Endpoint.o
                 0x0000046a                _ZN8Endpoint17GetTemperatureMaxEv
+ .text._ZN8Endpoint13SendExceptionEP9Exception
+                0x000004fe       0xb4 Endpoint.o
+                0x000004fe                _ZN8Endpoint13SendExceptionEP9Exception
+ .text._ZN8Endpoint14SendExceptionsEP10Exceptions
+                0x000005b2       0x50 Endpoint.o
+                0x000005b2                _ZN8Endpoint14SendExceptionsEP10Exceptions
  .text._ZN8Endpoint17GetMaxTemperatureEv
-                0x000004fe       0xca Endpoint.o
-                0x000004fe                _ZN8Endpoint17GetMaxTemperatureEv
+                0x00000602       0xd8 Endpoint.o
+                0x00000602                _ZN8Endpoint17GetMaxTemperatureEv
  .text._ZN8Endpoint3RunEv
-                0x000005c8      0x2b0 Endpoint.o
-                0x000005c8                _ZN8Endpoint3RunEv
+                0x000006da      0x2bc Endpoint.o
+                0x000006da                _ZN8Endpoint3RunEv
  .text._ZN9Exception8ToStringEv
-                0x00000878        0x2 Exception.o
-                0x00000878                _ZN9Exception8ToStringEv
+                0x00000996        0x2 Exception.o
+                0x00000996                _ZN9Exception8ToStringEv
  .text._ZN9ExceptionC2Ev
-                0x0000087a        0xc Exception.o
-                0x0000087a                _ZN9ExceptionC1Ev
-                0x0000087a                _ZN9ExceptionC2Ev
+                0x00000998        0xc Exception.o
+                0x00000998                _ZN9ExceptionC1Ev
+                0x00000998                _ZN9ExceptionC2Ev
  .text._ZN9ExceptionC2EPKc
-                0x00000886       0x10 Exception.o
-                0x00000886                _ZN9ExceptionC1EPKc
-                0x00000886                _ZN9ExceptionC2EPKc
+                0x000009a4       0x10 Exception.o
+                0x000009a4                _ZN9ExceptionC1EPKc
+                0x000009a4                _ZN9ExceptionC2EPKc
  .text._ZN9ExceptionD2Ev
-                0x00000896       0x18 Exception.o
-                0x00000896                _ZN9ExceptionD1Ev
-                0x00000896                _ZN9ExceptionD2Ev
+                0x000009b4       0x18 Exception.o
+                0x000009b4                _ZN9ExceptionD1Ev
+                0x000009b4                _ZN9ExceptionD2Ev
  .text._ZN10ExceptionsC2Ev
-                0x000008ae       0x10 Exceptions.o
-                0x000008ae                _ZN10ExceptionsC2Ev
-                0x000008ae                _ZN10ExceptionsC1Ev
+                0x000009cc       0x10 Exceptions.o
+                0x000009cc                _ZN10ExceptionsC2Ev
+                0x000009cc                _ZN10ExceptionsC1Ev
  .text._ZN10Exceptions3AddEP9Exception
-                0x000008be       0x94 Exceptions.o
-                0x000008be                _ZN10Exceptions3AddEP9Exception
+                0x000009dc       0x94 Exceptions.o
+                0x000009dc                _ZN10Exceptions3AddEP9Exception
+ .text._ZN10Exceptions5CountEv
+                0x00000a70        0x8 Exceptions.o
+                0x00000a70                _ZN10Exceptions5CountEv
  .text._ZN10ExceptionsD2Ev
-                0x00000952       0x70 Exceptions.o
-                0x00000952                _ZN10ExceptionsD1Ev
-                0x00000952                _ZN10ExceptionsD2Ev
+                0x00000a78       0x70 Exceptions.o
+                0x00000a78                _ZN10ExceptionsD1Ev
+                0x00000a78                _ZN10ExceptionsD2Ev
  .text._ZN4Fans23GetFansWorkingCorrectlyERbR10Exceptions
-                0x000009c2       0x7e Fans.o
-                0x000009c2                _ZN4Fans23GetFansWorkingCorrectlyERbR10Exceptions
+                0x00000ae8       0x94 Fans.o
+                0x00000ae8                _ZN4Fans23GetFansWorkingCorrectlyERbR10Exceptions
  .text._ZN4Fans11GetInstanceEv
-                0x00000a40       0x14 Fans.o
-                0x00000a40                _ZN4Fans11GetInstanceEv
+                0x00000b7c       0x14 Fans.o
+                0x00000b7c                _ZN4Fans11GetInstanceEv
  .text._ZN4Fans13SetInterfacesEPP11IGetFanInfohP15IGetFanSpeedMin
-                0x00000a54        0xe Fans.o
-                0x00000a54                _ZN4Fans13SetInterfacesEPP11IGetFanInfohP15IGetFanSpeedMin
+                0x00000b90        0xe Fans.o
+                0x00000b90                _ZN4Fans13SetInterfacesEPP11IGetFanInfohP15IGetFanSpeedMin
  .text._GLOBAL__sub_I__ZN4Fans10_SingletonE
-                0x00000a62        0xe Fans.o
+                0x00000b9e        0xe Fans.o
  .text._ZN4Leds4Main6SetRedEv
-                0x00000a70        0xe Leds.o
-                0x00000a70                _ZN4Leds4Main6SetRedEv
+                0x00000bac        0xe Leds.o
+                0x00000bac                _ZN4Leds4Main6SetRedEv
  .text._ZN4Leds4Main8SetGreenEv
-                0x00000a7e        0xe Leds.o
-                0x00000a7e                _ZN4Leds4Main8SetGreenEv
+                0x00000bba        0xe Leds.o
+                0x00000bba                _ZN4Leds4Main8SetGreenEv
  .text._ZN4LM757GetNameEv
-                0x00000a8c        0x8 LM75.o
-                0x00000a8c                _ZN4LM757GetNameEv
+                0x00000bc8        0x8 LM75.o
+                0x00000bc8                _ZN4LM757GetNameEv
  .text._ZN4LM7514GetTemperatureERbR10Exceptions
-                0x00000a94       0x6a LM75.o
-                0x00000a94                _ZN4LM7514GetTemperatureERbR10Exceptions
+                0x00000bd0       0x6a LM75.o
+                0x00000bd0                _ZN4LM7514GetTemperatureERbR10Exceptions
  .text._ZThn2_N4LM757GetNameEv
-                0x00000afe        0x8 LM75.o
-                0x00000afe                _ZThn2_N4LM757GetNameEv
+                0x00000c3a        0x8 LM75.o
+                0x00000c3a                _ZThn2_N4LM757GetNameEv
  .text._ZN4LM75C2EcPc
-                0x00000b06       0x34 LM75.o
-                0x00000b06                _ZN4LM75C2EcPc
-                0x00000b06                _ZN4LM75C1EcPc
+                0x00000c42       0x34 LM75.o
+                0x00000c42                _ZN4LM75C2EcPc
+                0x00000c42                _ZN4LM75C1EcPc
  .text._ZN7MessageC2EPKcj
-                0x00000b3a        0xc Message.o
-                0x00000b3a                _ZN7MessageC1EPKcj
-                0x00000b3a                _ZN7MessageC2EPKcj
+                0x00000c76        0xc Message.o
+                0x00000c76                _ZN7MessageC1EPKcj
+                0x00000c76                _ZN7MessageC2EPKcj
  .text._ZN7MessageD2Ev
-                0x00000b46       0x10 Message.o
-                0x00000b46                _ZN7MessageD2Ev
-                0x00000b46                _ZN7MessageD1Ev
+                0x00000c82       0x10 Message.o
+                0x00000c82                _ZN7MessageD2Ev
+                0x00000c82                _ZN7MessageD1Ev
  .text._ZN8MessagesC2EPP7Messagec
-                0x00000b56       0x64 Messages.o
-                0x00000b56                _ZN8MessagesC1EPP7Messagec
-                0x00000b56                _ZN8MessagesC2EPP7Messagec
+                0x00000c92       0x64 Messages.o
+                0x00000c92                _ZN8MessagesC1EPP7Messagec
+                0x00000c92                _ZN8MessagesC2EPP7Messagec
  .text._ZN8MessagesD2Ev
-                0x00000bba       0x72 Messages.o
-                0x00000bba                _ZN8MessagesD1Ev
-                0x00000bba                _ZN8MessagesD2Ev
+                0x00000cf6       0x72 Messages.o
+                0x00000cf6                _ZN8MessagesD1Ev
+                0x00000cf6                _ZN8MessagesD2Ev
  .text._ZN7Outputs10InitializeEv
-                0x00000c2c        0x8 Outputs.o
-                0x00000c2c                _ZN7Outputs10InitializeEv
+                0x00000d68        0x8 Outputs.o
+                0x00000d68                _ZN7Outputs10InitializeEv
  .text._ZN7Outputs2PD2_26SetLowEv
-                0x00000c34        0x4 Outputs.o
-                0x00000c34                _ZN7Outputs2PD2_26SetLowEv
+                0x00000d70        0x4 Outputs.o
+                0x00000d70                _ZN7Outputs2PD2_26SetLowEv
  .text._ZN7Outputs2PD2_37SetHighEv
-                0x00000c38        0x4 Outputs.o
-                0x00000c38                _ZN7Outputs2PD2_37SetHighEv
+                0x00000d74        0x4 Outputs.o
+                0x00000d74                _ZN7Outputs2PD2_37SetHighEv
  .text._ZN7Outputs2PD2_36SetLowEv
-                0x00000c3c        0x4 Outputs.o
-                0x00000c3c                _ZN7Outputs2PD2_36SetLowEv
+                0x00000d78        0x4 Outputs.o
+                0x00000d78                _ZN7Outputs2PD2_36SetLowEv
  .text._ZN7Outputs2PD2_47SetHighEv
-                0x00000c40        0x4 Outputs.o
-                0x00000c40                _ZN7Outputs2PD2_47SetHighEv
+                0x00000d7c        0x4 Outputs.o
+                0x00000d7c                _ZN7Outputs2PD2_47SetHighEv
  .text._ZN7Outputs2PD2_46SetLowEv
-                0x00000c44        0x4 Outputs.o
-                0x00000c44                _ZN7Outputs2PD2_46SetLowEv
+                0x00000d80        0x4 Outputs.o
+                0x00000d80                _ZN7Outputs2PD2_46SetLowEv
  .text._ZN8Settings17GetTemperatureMaxEv
-                0x00000c48        0x6 Settings.o
-                0x00000c48                _ZN8Settings17GetTemperatureMaxEv
+                0x00000d84        0x6 Settings.o
+                0x00000d84                _ZN8Settings17GetTemperatureMaxEv
  .text._ZN8Settings8GetPowerEv
-                0x00000c4e        0x8 Settings.o
-                0x00000c4e                _ZN8Settings8GetPowerEv
+                0x00000d8a        0x8 Settings.o
+                0x00000d8a                _ZN8Settings8GetPowerEv
  .text._ZN8Settings14GetFanSpeedMinEv
-                0x00000c56        0x8 Settings.o
-                0x00000c56                _ZN8Settings14GetFanSpeedMinEv
- .text._ZThn8_N8Settings14GetFanSpeedMinEv
-                0x00000c5e        0x8 Settings.o
-                0x00000c5e                _ZThn8_N8Settings14GetFanSpeedMinEv
- .text._ZThn4_N8Settings8GetPowerEv
-                0x00000c66        0x8 Settings.o
-                0x00000c66                _ZThn4_N8Settings8GetPowerEv
- .text._ZN8Settings17CapTemperatureMaxERh
-                0x00000c6e       0x1a Settings.o
-                0x00000c6e                _ZN8Settings17CapTemperatureMaxERh
- .text._ZN8Settings17SetTemperatureMaxEh
-                0x00000c88       0x36 Settings.o
-                0x00000c88                _ZN8Settings17SetTemperatureMaxEh
- .text._ZThn2_N8Settings17SetTemperatureMaxEh
-                0x00000cbe        0x8 Settings.o
-                0x00000cbe                _ZThn2_N8Settings17SetTemperatureMaxEh
- .text._ZN8Settings8CapPowerERj
-                0x00000cc6       0x2a Settings.o
-                0x00000cc6                _ZN8Settings8CapPowerERj
- .text._ZN8Settings10InitializeEv
-                0x00000cf0       0x58 Settings.o
-                0x00000cf0                _ZN8Settings10InitializeEv
- .text._ZN8Settings11GetInstanceEv
-                0x00000d48       0x1c Settings.o
-                0x00000d48                _ZN8Settings11GetInstanceEv
- .text._ZN8Settings8SetPowerEj
-                0x00000d64       0x2e Settings.o
-                0x00000d64                _ZN8Settings8SetPowerEj
- .text._ZThn6_N8Settings8SetPowerEj
                 0x00000d92        0x8 Settings.o
-                0x00000d92                _ZThn6_N8Settings8SetPowerEj
+                0x00000d92                _ZN8Settings14GetFanSpeedMinEv
+ .text._ZThn8_N8Settings14GetFanSpeedMinEv
+                0x00000d9a        0x8 Settings.o
+                0x00000d9a                _ZThn8_N8Settings14GetFanSpeedMinEv
+ .text._ZThn4_N8Settings8GetPowerEv
+                0x00000da2        0x8 Settings.o
+                0x00000da2                _ZThn4_N8Settings8GetPowerEv
+ .text._ZN8Settings17CapTemperatureMaxERh
+                0x00000daa       0x1a Settings.o
+                0x00000daa                _ZN8Settings17CapTemperatureMaxERh
+ .text._ZN8Settings17SetTemperatureMaxEh
+                0x00000dc4       0x36 Settings.o
+                0x00000dc4                _ZN8Settings17SetTemperatureMaxEh
+ .text._ZThn2_N8Settings17SetTemperatureMaxEh
+                0x00000dfa        0x8 Settings.o
+                0x00000dfa                _ZThn2_N8Settings17SetTemperatureMaxEh
+ .text._ZN8Settings8CapPowerERj
+                0x00000e02       0x2a Settings.o
+                0x00000e02                _ZN8Settings8CapPowerERj
+ .text._ZN8Settings10InitializeEv
+                0x00000e2c       0x58 Settings.o
+                0x00000e2c                _ZN8Settings10InitializeEv
+ .text._ZN8Settings11GetInstanceEv
+                0x00000e84       0x1c Settings.o
+                0x00000e84                _ZN8Settings11GetInstanceEv
+ .text._ZN8Settings8SetPowerEj
+                0x00000ea0       0x2e Settings.o
+                0x00000ea0                _ZN8Settings8SetPowerEj
+ .text._ZThn6_N8Settings8SetPowerEj
+                0x00000ece        0x8 Settings.o
+                0x00000ece                _ZThn6_N8Settings8SetPowerEj
  .text._GLOBAL__sub_I_ADDRESS_TEMPERATURE_MAX
-                0x00000d9a       0x42 Settings.o
+                0x00000ed6       0x42 Settings.o
  .text._ZN11SystemCheck5CheckERbR10Exceptions
-                0x00000ddc       0x56 SystemCheck.o
-                0x00000ddc                _ZN11SystemCheck5CheckERbR10Exceptions
+                0x00000f18       0x56 SystemCheck.o
+                0x00000f18                _ZN11SystemCheck5CheckERbR10Exceptions
  .text._ZN11SystemCheck11GetInstanceEv
-                0x00000e32       0x14 SystemCheck.o
-                0x00000e32                _ZN11SystemCheck11GetInstanceEv
+                0x00000f6e       0x14 SystemCheck.o
+                0x00000f6e                _ZN11SystemCheck11GetInstanceEv
  .text._ZN11SystemCheck13SetInterfacesEP13ITemperaturesP18IGetTemperatureMaxP5IFans
-                0x00000e46       0x10 SystemCheck.o
-                0x00000e46                _ZN11SystemCheck13SetInterfacesEP13ITemperaturesP18IGetTemperatureMaxP5IFans
+                0x00000f82       0x10 SystemCheck.o
+                0x00000f82                _ZN11SystemCheck13SetInterfacesEP13ITemperaturesP18IGetTemperatureMaxP5IFans
  .text._GLOBAL__sub_I__ZN11SystemCheck10_SingletonE
-                0x00000e56        0xe SystemCheck.o
+                0x00000f92        0xe SystemCheck.o
  .text._ZN5TC6543Fan7GetNameEv
-                0x00000e64        0x8 TC654.o
-                0x00000e64                _ZN5TC6543Fan7GetNameEv
+                0x00000fa0        0x8 TC654.o
+                0x00000fa0                _ZN5TC6543Fan7GetNameEv
  .text._ZN5TC6543Fan11GetFanSpeedERbR10Exceptions
-                0x00000e6c      0x106 TC654.o
-                0x00000e6c                _ZN5TC6543Fan11GetFanSpeedERbR10Exceptions
+                0x00000fa8       0xca TC654.o
+                0x00000fa8                _ZN5TC6543Fan11GetFanSpeedERbR10Exceptions
  .text._ZN5TC6543Fan5CheckERbR10Exceptions
-                0x00000f72      0x10a TC654.o
-                0x00000f72                _ZN5TC6543Fan5CheckERbR10Exceptions
+                0x00001072       0xcc TC654.o
+                0x00001072                _ZN5TC6543Fan5CheckERbR10Exceptions
  .text._ZThn4_N5TC6543Fan5CheckERbR10Exceptions
-                0x0000107c        0x8 TC654.o
-                0x0000107c                _ZThn4_N5TC6543Fan5CheckERbR10Exceptions
+                0x0000113e        0x8 TC654.o
+                0x0000113e                _ZThn4_N5TC6543Fan5CheckERbR10Exceptions
  .text._ZThn2_N5TC6543Fan7GetNameEv
-                0x00001084        0x8 TC654.o
-                0x00001084                _ZThn2_N5TC6543Fan7GetNameEv
+                0x00001146        0x8 TC654.o
+                0x00001146                _ZThn2_N5TC6543Fan7GetNameEv
  .text._ZN5TC6546Status6GetF2FEv
-                0x0000108c        0xc TC654.o
-                0x0000108c                _ZN5TC6546Status6GetF2FEv
+                0x0000114e        0xc TC654.o
+                0x0000114e                _ZN5TC6546Status6GetF2FEv
  .text._ZN5TC6546Status7GetR1COEv
-                0x00001098        0xc TC654.o
-                0x00001098                _ZN5TC6546Status7GetR1COEv
+                0x0000115a        0xc TC654.o
+                0x0000115a                _ZN5TC6546Status7GetR1COEv
  .text._ZN5TC6546Status7GetR2COEv
-                0x000010a4        0xc TC654.o
-                0x000010a4                _ZN5TC6546Status7GetR2COEv
+                0x00001166        0xc TC654.o
+                0x00001166                _ZN5TC6546Status7GetR2COEv
  .text._ZN5TC6543FanC2EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEMS_FvS2_EPc
-                0x000010b0       0x68 TC654.o
-                0x000010b0                _ZN5TC6543FanC2EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEMS_FvS2_EPc
-                0x000010b0                _ZN5TC6543FanC1EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEMS_FvS2_EPc
+                0x00001172       0x68 TC654.o
+                0x00001172                _ZN5TC6543FanC2EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEMS_FvS2_EPc
+                0x00001172                _ZN5TC6543FanC1EPS_MS_FhRbEMS_FvS2_R10ExceptionsPKcEMS_FvS2_EPc
  .text._ZN5TC654C2Ecc
-                0x00001118      0x102 TC654.o
-                0x00001118                _ZN5TC654C2Ecc
-                0x00001118                _ZN5TC654C1Ecc
+                0x000011da      0x102 TC654.o
+                0x000011da                _ZN5TC654C2Ecc
+                0x000011da                _ZN5TC654C1Ecc
  .text._ZN5TC65413WriteRegisterERbcc
-                0x0000121a       0x48 TC654.o
-                0x0000121a                _ZN5TC65413WriteRegisterERbcc
+                0x000012dc       0x48 TC654.o
+                0x000012dc                _ZN5TC65413WriteRegisterERbcc
  .text._ZN5TC65426WriteConfigurationRegisterERbc
-                0x00001262        0xc TC654.o
-                0x00001262                _ZN5TC65426WriteConfigurationRegisterERbc
+                0x00001324        0xc TC654.o
+                0x00001324                _ZN5TC65426WriteConfigurationRegisterERbc
  .text._ZN5TC65412ReadRegisterERbc
-                0x0000126e       0x5a TC654.o
-                0x0000126e                _ZN5TC65412ReadRegisterERbc
+                0x00001330       0x4c TC654.o
+                0x00001330                _ZN5TC65412ReadRegisterERbc
  .text._ZN5TC6547GetRPM1ERb
-                0x000012c8        0xa TC654.o
-                0x000012c8                _ZN5TC6547GetRPM1ERb
+                0x0000137c        0xa TC654.o
+                0x0000137c                _ZN5TC6547GetRPM1ERb
  .text._ZN5TC6547GetRPM2ERb
-                0x000012d2        0xa TC654.o
-                0x000012d2                _ZN5TC6547GetRPM2ERb
+                0x00001386        0xa TC654.o
+                0x00001386                _ZN5TC6547GetRPM2ERb
  .text._ZN5TC65425ReadConfigurationRegisterERb
-                0x000012dc        0xa TC654.o
-                0x000012dc                _ZN5TC65425ReadConfigurationRegisterERb
+                0x00001390        0xa TC654.o
+                0x00001390                _ZN5TC65425ReadConfigurationRegisterERb
  .text._ZN5TC65418ConfigureIfNotDoneERb
-                0x000012e6       0x58 TC654.o
-                0x000012e6                _ZN5TC65418ConfigureIfNotDoneERb
+                0x0000139a       0x58 TC654.o
+                0x0000139a                _ZN5TC65418ConfigureIfNotDoneERb
  .text._ZN5TC6549GetStatusERb
-                0x0000133e        0xa TC654.o
-                0x0000133e                _ZN5TC6549GetStatusERb
+                0x000013f2        0xa TC654.o
+                0x000013f2                _ZN5TC6549GetStatusERb
  .text._ZN5TC6549CheckFan1ERbR10ExceptionsPKc
-                0x00001348       0x9e TC654.o
-                0x00001348                _ZN5TC6549CheckFan1ERbR10ExceptionsPKc
+                0x000013fc       0x9e TC654.o
+                0x000013fc                _ZN5TC6549CheckFan1ERbR10ExceptionsPKc
  .text._ZN5TC6549CheckFan2ERbR10ExceptionsPKc
-                0x000013e6       0xa4 TC654.o
-                0x000013e6                _ZN5TC6549CheckFan2ERbR10ExceptionsPKc
+                0x0000149a       0xa4 TC654.o
+                0x0000149a                _ZN5TC6549CheckFan2ERbR10ExceptionsPKc
  .text._ZN5TC65415GetIGetFan1InfoEv
-                0x0000148a        0x4 TC654.o
-                0x0000148a                _ZN5TC65415GetIGetFan1InfoEv
+                0x0000153e        0x4 TC654.o
+                0x0000153e                _ZN5TC65415GetIGetFan1InfoEv
  .text._ZN5TC65415GetIGetFan2InfoEv
-                0x0000148e        0x4 TC654.o
-                0x0000148e                _ZN5TC65415GetIGetFan2InfoEv
+                0x00001542        0x4 TC654.o
+                0x00001542                _ZN5TC65415GetIGetFan2InfoEv
  .text._ZN14TC654Exception8ToStringEv
-                0x00001492       0xd8 TC654Exception.o
-                0x00001492                _ZN14TC654Exception8ToStringEv
+                0x00001546       0xd8 TC654Exception.o
+                0x00001546                _ZN14TC654Exception8ToStringEv
  .text._ZN14TC654ExceptionC2EPKcNS_4TypeE
-                0x0000156a       0x32 TC654Exception.o
-                0x0000156a                _ZN14TC654ExceptionC1EPKcNS_4TypeE
-                0x0000156a                _ZN14TC654ExceptionC2EPKcNS_4TypeE
+                0x0000161e       0x32 TC654Exception.o
+                0x0000161e                _ZN14TC654ExceptionC1EPKcNS_4TypeE
+                0x0000161e                _ZN14TC654ExceptionC2EPKcNS_4TypeE
  .text._ZN12Temperatures17GetMaxTemperatureERbR10Exceptions
-                0x0000159c       0xe8 Temperatures.o
-                0x0000159c                _ZN12Temperatures17GetMaxTemperatureERbR10Exceptions
+                0x00001650       0xe8 Temperatures.o
+                0x00001650                _ZN12Temperatures17GetMaxTemperatureERbR10Exceptions
  .text._ZN12Temperatures11GetInstanceEv
-                0x00001684       0x14 Temperatures.o
-                0x00001684                _ZN12Temperatures11GetInstanceEv
+                0x00001738       0x14 Temperatures.o
+                0x00001738                _ZN12Temperatures11GetInstanceEv
  .text._ZN12Temperatures13SetInterfacesEPP19IGetTemperatureInfoh
-                0x00001698        0xa Temperatures.o
-                0x00001698                _ZN12Temperatures13SetInterfacesEPP19IGetTemperatureInfoh
+                0x0000174c        0xa Temperatures.o
+                0x0000174c                _ZN12Temperatures13SetInterfacesEPP19IGetTemperatureInfoh
  .text._GLOBAL__sub_I__ZN12Temperatures10_SingletonE
-                0x000016a2        0xe Temperatures.o
- .text._Znwj    0x000016b0        0x6 Ticker.o
-                0x000016b0                _Znwj
- .text._Znaj    0x000016b6        0x6 Ticker.o
-                0x000016b6                _Znaj
- .text._ZdlPv   0x000016bc        0x6 Ticker.o
-                0x000016bc                _ZdlPv
- .text._ZdaPv   0x000016c2        0x6 Ticker.o
-                0x000016c2                _ZdaPv
+                0x00001756        0xe Temperatures.o
+ .text._Znwj    0x00001764        0x6 Ticker.o
+                0x00001764                _Znwj
+ .text._Znaj    0x0000176a        0x6 Ticker.o
+                0x0000176a                _Znaj
+ .text._ZdlPv   0x00001770        0x6 Ticker.o
+                0x00001770                _ZdlPv
+ .text._ZdaPv   0x00001776        0x6 Ticker.o
+                0x00001776                _ZdaPv
  .text.__vector_14
-                0x000016c8       0x96 Ticker.o
-                0x000016c8                __vector_14
+                0x0000177c       0x96 Ticker.o
+                0x0000177c                __vector_14
  .text._GLOBAL__sub_I__Znwj
-                0x0000175e       0x22 Ticker.o
+                0x00001812       0x22 Ticker.o
  .text._GLOBAL__sub_D__Znwj
-                0x00001780       0x1a Ticker.o
+                0x00001834       0x1a Ticker.o
  .text._ZL11parseStringPc
-                0x0000179a       0xe4 tiny-json.o
+                0x0000184e       0xe4 tiny-json.o
  .text._ZL11isOneOfThemcPKc
-                0x0000187e       0x14 tiny-json.o
+                0x00001932       0x14 tiny-json.o
  .text._ZL7goWhilePcPKc
-                0x00001892       0x3c tiny-json.o
+                0x00001946       0x3c tiny-json.o
  .text._ZL5goNumPc
-                0x000018ce       0x34 tiny-json.o
+                0x00001982       0x34 tiny-json.o
  .text._ZL16isEndOfPrimitivec
-                0x00001902       0x26 tiny-json.o
+                0x000019b6       0x26 tiny-json.o
  .text._ZL14primitiveValuePcP6json_sPKc10jsonType_t
-                0x00001928       0x6a tiny-json.o
+                0x000019dc       0x6a tiny-json.o
  .text.json_getProperty
-                0x00001992       0x4a tiny-json.o
-                0x00001992                json_getProperty
+                0x00001a46       0x4a tiny-json.o
+                0x00001a46                json_getProperty
  .text.json_create
-                0x000019dc      0x3fc tiny-json.o
-                0x000019dc                json_create
+                0x00001a90      0x3fc tiny-json.o
+                0x00001a90                json_create
  .text._ZN4UART11GetMessagesEv
-                0x00001dd8      0x158 UART.o
-                0x00001dd8                _ZN4UART11GetMessagesEv
+                0x00001e8c      0x158 UART.o
+                0x00001e8c                _ZN4UART11GetMessagesEv
  .text._ZThn2_N4UART11GetMessagesEv
-                0x00001f30        0x8 UART.o
-                0x00001f30                _ZThn2_N4UART11GetMessagesEv
+                0x00001fe4        0x8 UART.o
+                0x00001fe4                _ZThn2_N4UART11GetMessagesEv
  .text._ZN4UART10InitializeEv
-                0x00001f38       0x4e UART.o
-                0x00001f38                _ZN4UART10InitializeEv
+                0x00001fec       0x4e UART.o
+                0x00001fec                _ZN4UART10InitializeEv
  .text._ZN4UART11GetInstanceEv
-                0x00001f86       0x1c UART.o
-                0x00001f86                _ZN4UART11GetInstanceEv
+                0x0000203a       0x1c UART.o
+                0x0000203a                _ZN4UART11GetInstanceEv
  .text._ZN4UART8IncomingEv
-                0x00001fa2      0x156 UART.o
-                0x00001fa2                _ZN4UART8IncomingEv
+                0x00002056      0x156 UART.o
+                0x00002056                _ZN4UART8IncomingEv
  .text.__vector_18
-                0x000020f8       0x50 UART.o
-                0x000020f8                __vector_18
+                0x000021ac       0x50 UART.o
+                0x000021ac                __vector_18
  .text._ZN4UART4SendEc
-                0x00002148       0x10 UART.o
-                0x00002148                _ZN4UART4SendEc
+                0x000021fc       0x10 UART.o
+                0x000021fc                _ZN4UART4SendEc
  .text._ZN4UART11SendMessageEPKcj
-                0x00002158       0x38 UART.o
-                0x00002158                _ZN4UART11SendMessageEPKcj
+                0x0000220c       0x38 UART.o
+                0x0000220c                _ZN4UART11SendMessageEPKcj
  .text._GLOBAL__sub_I__ZN4UART10_SingletonE
-                0x00002190       0x16 UART.o
- .text.libgcc   0x000021a6        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x000021a6                __tablejump2__
+                0x00002244       0x16 UART.o
+ .text.libgcc   0x0000225a        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000225a                __tablejump2__
  .text.avr-libc
-                0x000021b2      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x000021b2                malloc
-                0x000022e2                free
+                0x00002266      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00002266                malloc
+                0x00002396                free
  .text.avr-libc
-                0x000023f4       0x4e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
-                0x000023f4                atol
+                0x000024a8       0x4e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(atol.o)
+                0x000024a8                atol
  .text.avr-libc
-                0x00002442       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00002442                memcpy
+                0x000024f6       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x000024f6                memcpy
  .text.avr-libc
-                0x00002454       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
-                0x00002454                strcmp
+                0x00002508       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcmp.o)
+                0x00002508                strcmp
  .text.avr-libc
-                0x00002466       0x2a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
-                0x00002466                __mulsi_const_10
+                0x0000251a       0x2a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(mulsi10.o)
+                0x0000251a                __mulsi_const_10
  .text.avr-libc
-                0x00002490       0x60 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
-                0x00002490                snprintf
+                0x00002544       0x60 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(snprintf.o)
+                0x00002544                snprintf
  .text.avr-libc
-                0x000024f0      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x000024f0                vfprintf
+                0x000025a4      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x000025a4                vfprintf
  .text.avr-libc
-                0x000028b2       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x000028b2                strnlen_P
+                0x00002966       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00002966                strnlen_P
  .text.avr-libc
-                0x000028c8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x000028c8                strnlen
+                0x0000297c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x0000297c                strnlen
  .text.avr-libc
-                0x000028de       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x000028de                fputc
+                0x00002992       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00002992                fputc
  .text.avr-libc
-                0x00002956       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00002956                __ultoa_invert
+                0x00002a0a       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00002a0a                __ultoa_invert
  .text.avr-libc
-                0x00002a12       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
-                0x00002a12                eeprom_read_byte
+                0x00002ac6       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+                0x00002ac6                eeprom_read_byte
  .text.avr-libc
-                0x00002a22        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
-                0x00002a22                eeprom_read_word
+                0x00002ad6        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+                0x00002ad6                eeprom_read_word
  .text.avr-libc
-                0x00002a2e       0x1c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
-                0x00002a2e                eeprom_write_byte
-                0x00002a30                eeprom_write_r18
+                0x00002ae2       0x1c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+                0x00002ae2                eeprom_write_byte
+                0x00002ae4                eeprom_write_r18
  .text.avr-libc
-                0x00002a4a        0xa C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
-                0x00002a4a                eeprom_write_word
+                0x00002afe        0xa C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+                0x00002afe                eeprom_write_word
  .text.avr-libc
-                0x00002a54       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
-                0x00002a54                eeprom_read_block
-                0x00002a58                eeprom_read_blraw
+                0x00002b08       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+                0x00002b08                eeprom_read_block
+                0x00002b0c                eeprom_read_blraw
  .text.libgcc.prologue
-                0x00002a74       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00002a74                __prologue_saves__
+                0x00002b28       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00002b28                __prologue_saves__
  .text.libgcc.prologue
-                0x00002aac       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00002aac                __epilogue_restores__
-                0x00002ae2                . = ALIGN (0x2)
+                0x00002b60       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00002b60                __epilogue_restores__
+                0x00002b96                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002ae2        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00002ae2                _exit
-                0x00002ae2                exit
+ .fini9         0x00002b96        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00002b96                _exit
+                0x00002b96                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00002ae2       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x00002ae2                __do_global_dtors
+ .fini6         0x00002b96       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00002b96                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1116,11 +1119,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002af8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002bac        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002afc                _etext = .
+                0x00002bb0                _etext = .
 
-.data           0x00800100      0x334 load address 0x00002afc
+.data           0x00800100      0x320 load address 0x00002bb0
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
@@ -1138,106 +1141,106 @@ END GROUP
  .rodata.str1.1
                 0x00800129        0xe Controller.o
  .rodata.str1.1
-                0x00800137      0x144 Endpoint.o
-                                0x15a (size before relaxing)
+                0x00800137      0x169 Endpoint.o
+                                0x17f (size before relaxing)
  .rodata._ZTV9Exception
-                0x0080027b        0x6 Exception.o
-                0x0080027b                _ZTV9Exception
+                0x008002a0        0x6 Exception.o
+                0x008002a0                _ZTV9Exception
  .rodata.str1.1
-                0x00800281       0x12 Fans.o
+                0x008002a6       0x12 Fans.o
  .rodata._ZTV4Fans
-                0x00800293        0x6 Fans.o
-                0x00800293                _ZTV4Fans
+                0x008002b8        0x6 Fans.o
+                0x008002b8                _ZTV4Fans
  .rodata._ZTV4LM75
-                0x00800299        0xe LM75.o
-                0x00800299                _ZTV4LM75
+                0x008002be        0xe LM75.o
+                0x008002be                _ZTV4LM75
  .rodata._ZTV8Settings
-                0x008002a7       0x26 Settings.o
-                0x008002a7                _ZTV8Settings
+                0x008002cc       0x26 Settings.o
+                0x008002cc                _ZTV8Settings
  .rodata._ZTV11SystemCheck
-                0x008002cd        0x6 SystemCheck.o
-                0x008002cd                _ZTV11SystemCheck
+                0x008002f2        0x6 SystemCheck.o
+                0x008002f2                _ZTV11SystemCheck
  .rodata.str1.1
-                0x008002d3       0x49 TC654.o
+                0x008002f8       0x10 TC654.o
  .rodata._ZTVN5TC6543FanE
-                0x0080031c       0x16 TC654.o
-                0x0080031c                _ZTVN5TC6543FanE
+                0x00800308       0x16 TC654.o
+                0x00800308                _ZTVN5TC6543FanE
  .rodata.str1.1
-                0x00800332       0x81 TC654Exception.o
+                0x0080031e       0x81 TC654Exception.o
  .rodata._ZTV14TC654Exception
-                0x008003b3        0x6 TC654Exception.o
-                0x008003b3                _ZTV14TC654Exception
+                0x0080039f        0x6 TC654Exception.o
+                0x0080039f                _ZTV14TC654Exception
  .rodata.str1.1
-                0x008003b9       0x14 Temperatures.o
+                0x008003a5       0x14 Temperatures.o
  .rodata._ZTV12Temperatures
-                0x008003cd        0x6 Temperatures.o
-                0x008003cd                _ZTV12Temperatures
+                0x008003b9        0x6 Temperatures.o
+                0x008003b9                _ZTV12Temperatures
  .rodata.str1.1
-                0x008003d3       0x19 tiny-json.o
+                0x008003bf       0x19 tiny-json.o
  .rodata._ZZL8numValuePcP6json_sE3max
-                0x008003ec       0x14 tiny-json.o
+                0x008003d8       0x14 tiny-json.o
  .rodata._ZZL8numValuePcP6json_sE3min
-                0x00800400       0x15 tiny-json.o
+                0x008003ec       0x15 tiny-json.o
  .rodata._ZZL9getEscapecE4pair
-                0x00800415       0x10 tiny-json.o
+                0x00800401       0x10 tiny-json.o
  .rodata._ZTV4UART
-                0x00800425        0xe UART.o
-                0x00800425                _ZTV4UART
+                0x00800411        0xe UART.o
+                0x00800411                _ZTV4UART
  *(.gnu.linkonce.d*)
-                0x00800434                . = ALIGN (0x2)
- *fill*         0x00800433        0x1 
-                0x00800434                _edata = .
-                0x00800434                PROVIDE (__data_end, .)
+                0x00800420                . = ALIGN (0x2)
+ *fill*         0x0080041f        0x1 
+                0x00800420                _edata = .
+                0x00800420                PROVIDE (__data_end, .)
 
-.bss            0x00800434      0x149
-                0x00800434                PROVIDE (__bss_start, .)
+.bss            0x00800420      0x149
+                0x00800420                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss._ZZN4Fans11GetInstanceEvE11initialized
-                0x00800434        0x1 Fans.o
+                0x00800420        0x1 Fans.o
  .bss._ZN4Fans10_SingletonE
-                0x00800435        0x9 Fans.o
-                0x00800435                _ZN4Fans10_SingletonE
+                0x00800421        0x9 Fans.o
+                0x00800421                _ZN4Fans10_SingletonE
  .bss._ZZN8Settings11GetInstanceEvE11initialized
-                0x0080043e        0x1 Settings.o
+                0x0080042a        0x1 Settings.o
  .bss._ZN8Settings10_SingletonE
-                0x0080043f        0xf Settings.o
-                0x0080043f                _ZN8Settings10_SingletonE
+                0x0080042b        0xf Settings.o
+                0x0080042b                _ZN8Settings10_SingletonE
  .bss._ZZN11SystemCheck11GetInstanceEvE11initialized
-                0x0080044e        0x1 SystemCheck.o
+                0x0080043a        0x1 SystemCheck.o
  .bss._ZN11SystemCheck10_SingletonE
-                0x0080044f        0x8 SystemCheck.o
-                0x0080044f                _ZN11SystemCheck10_SingletonE
+                0x0080043b        0x8 SystemCheck.o
+                0x0080043b                _ZN11SystemCheck10_SingletonE
  .bss._ZZN12Temperatures11GetInstanceEvE11initialized
-                0x00800457        0x1 Temperatures.o
+                0x00800443        0x1 Temperatures.o
  .bss._ZN12Temperatures10_SingletonE
-                0x00800458        0x5 Temperatures.o
-                0x00800458                _ZN12Temperatures10_SingletonE
+                0x00800444        0x5 Temperatures.o
+                0x00800444                _ZN12Temperatures10_SingletonE
  .bss._ZN6Ticker22tickerCallbacksSecondsE
-                0x0080045d        0x6 Ticker.o
-                0x0080045d                _ZN6Ticker22tickerCallbacksSecondsE
+                0x00800449        0x6 Ticker.o
+                0x00800449                _ZN6Ticker22tickerCallbacksSecondsE
  .bss._ZN6Ticker27tickerCallbacksMillisecondsE
-                0x00800463        0x6 Ticker.o
-                0x00800463                _ZN6Ticker27tickerCallbacksMillisecondsE
+                0x0080044f        0x6 Ticker.o
+                0x0080044f                _ZN6Ticker27tickerCallbacksMillisecondsE
  .bss._ZZN4UART11GetInstanceEvE11initialized
-                0x00800469        0x1 UART.o
+                0x00800455        0x1 UART.o
  .bss._ZN4UART10_SingletonE
-                0x0080046a      0x10f UART.o
-                0x0080046a                _ZN4UART10_SingletonE
+                0x00800456      0x10f UART.o
+                0x00800456                _ZN4UART10_SingletonE
  *(COMMON)
- COMMON         0x00800579        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x00800579                __brkval
-                0x0080057b                __flp
-                0x0080057d                PROVIDE (__bss_end, .)
-                0x00002afc                __data_load_start = LOADADDR (.data)
-                0x00002e30                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800565        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00800565                __brkval
+                0x00800567                __flp
+                0x00800569                PROVIDE (__bss_end, .)
+                0x00002bb0                __data_load_start = LOADADDR (.data)
+                0x00002ed0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080057d        0x0
+.noinit         0x00800569        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x0080057d                _end = .
-                0x0080057d                PROVIDE (__heap_start, .)
+                0x00800569                _end = .
+                0x00800569                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x3
  *(.eeprom*)
@@ -1385,176 +1388,176 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xb7c2
+.debug_info     0x00000000     0xb88f
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_info    0x000005f4      0x287 CommunicationException.o
- .debug_info    0x0000087b     0x1526 Controller.o
- .debug_info    0x00001da1     0x119c Endpoint.o
- .debug_info    0x00002f3d      0x282 Exception.o
- .debug_info    0x000031bf      0x7cd Exceptions.o
- .debug_info    0x0000398c      0x7dc Fans.o
- .debug_info    0x00004168       0xba i2cmaster.o
- .debug_info    0x00004222      0x378 Leds.o
- .debug_info    0x0000459a      0x9f0 LM75.o
- .debug_info    0x00004f8a      0x1a7 Message.o
- .debug_info    0x00005131      0x2ac Messages.o
- .debug_info    0x000053dd      0x311 Outputs.o
- .debug_info    0x000056ee      0xbcf Settings.o
- .debug_info    0x000062bd      0x7a3 SystemCheck.o
- .debug_info    0x00006a60     0x1e41 TC654.o
- .debug_info    0x000088a1      0x2d0 TC654Exception.o
- .debug_info    0x00008b71      0x81d Temperatures.o
- .debug_info    0x0000938e      0x8ea Ticker.o
- .debug_info    0x00009c78      0xea2 tiny-json.o
- .debug_info    0x0000ab1a      0x94b UART.o
- .debug_info    0x0000b465       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
- .debug_info    0x0000b511       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
- .debug_info    0x0000b5bd       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_info    0x0000b669       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
- .debug_info    0x0000b715       0xad C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .debug_info    0x0000087b     0x1520 Controller.o
+ .debug_info    0x00001d9b     0x12ee Endpoint.o
+ .debug_info    0x00003089      0x282 Exception.o
+ .debug_info    0x0000330b      0x7cd Exceptions.o
+ .debug_info    0x00003ad8      0x827 Fans.o
+ .debug_info    0x000042ff       0xba i2cmaster.o
+ .debug_info    0x000043b9      0x378 Leds.o
+ .debug_info    0x00004731      0x9f0 LM75.o
+ .debug_info    0x00005121      0x1a7 Message.o
+ .debug_info    0x000052c8      0x2ac Messages.o
+ .debug_info    0x00005574      0x311 Outputs.o
+ .debug_info    0x00005885      0xbcf Settings.o
+ .debug_info    0x00006454      0x7a3 SystemCheck.o
+ .debug_info    0x00006bf7     0x1d77 TC654.o
+ .debug_info    0x0000896e      0x2d0 TC654Exception.o
+ .debug_info    0x00008c3e      0x81d Temperatures.o
+ .debug_info    0x0000945b      0x8ea Ticker.o
+ .debug_info    0x00009d45      0xea2 tiny-json.o
+ .debug_info    0x0000abe7      0x94b UART.o
+ .debug_info    0x0000b532       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_info    0x0000b5de       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_info    0x0000b68a       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_info    0x0000b736       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_info    0x0000b7e2       0xad C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
 
-.debug_abbrev   0x00000000     0x37d3
+.debug_abbrev   0x00000000     0x37b6
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_abbrev  0x000005a2      0x18d CommunicationException.o
  .debug_abbrev  0x0000072f      0x36f Controller.o
- .debug_abbrev  0x00000a9e      0x426 Endpoint.o
- .debug_abbrev  0x00000ec4      0x16e Exception.o
- .debug_abbrev  0x00001032      0x2c1 Exceptions.o
- .debug_abbrev  0x000012f3      0x375 Fans.o
- .debug_abbrev  0x00001668       0x14 i2cmaster.o
- .debug_abbrev  0x0000167c      0x10f Leds.o
- .debug_abbrev  0x0000178b      0x308 LM75.o
- .debug_abbrev  0x00001a93      0x102 Message.o
- .debug_abbrev  0x00001b95      0x141 Messages.o
- .debug_abbrev  0x00001cd6      0x128 Outputs.o
- .debug_abbrev  0x00001dfe      0x322 Settings.o
- .debug_abbrev  0x00002120      0x31a SystemCheck.o
- .debug_abbrev  0x0000243a      0x3e3 TC654.o
- .debug_abbrev  0x0000281d      0x1a5 TC654Exception.o
- .debug_abbrev  0x000029c2      0x36a Temperatures.o
- .debug_abbrev  0x00002d2c      0x32d Ticker.o
- .debug_abbrev  0x00003059      0x34c tiny-json.o
- .debug_abbrev  0x000033a5      0x3ca UART.o
- .debug_abbrev  0x0000376f       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
- .debug_abbrev  0x00003783       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
- .debug_abbrev  0x00003797       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_abbrev  0x000037ab       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
- .debug_abbrev  0x000037bf       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .debug_abbrev  0x00000a9e      0x41b Endpoint.o
+ .debug_abbrev  0x00000eb9      0x16e Exception.o
+ .debug_abbrev  0x00001027      0x2c1 Exceptions.o
+ .debug_abbrev  0x000012e8      0x375 Fans.o
+ .debug_abbrev  0x0000165d       0x14 i2cmaster.o
+ .debug_abbrev  0x00001671      0x10f Leds.o
+ .debug_abbrev  0x00001780      0x308 LM75.o
+ .debug_abbrev  0x00001a88      0x102 Message.o
+ .debug_abbrev  0x00001b8a      0x141 Messages.o
+ .debug_abbrev  0x00001ccb      0x128 Outputs.o
+ .debug_abbrev  0x00001df3      0x322 Settings.o
+ .debug_abbrev  0x00002115      0x31a SystemCheck.o
+ .debug_abbrev  0x0000242f      0x3d1 TC654.o
+ .debug_abbrev  0x00002800      0x1a5 TC654Exception.o
+ .debug_abbrev  0x000029a5      0x36a Temperatures.o
+ .debug_abbrev  0x00002d0f      0x32d Ticker.o
+ .debug_abbrev  0x0000303c      0x34c tiny-json.o
+ .debug_abbrev  0x00003388      0x3ca UART.o
+ .debug_abbrev  0x00003752       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_abbrev  0x00003766       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_abbrev  0x0000377a       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_abbrev  0x0000378e       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_abbrev  0x000037a2       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
 
-.debug_line     0x00000000     0x3402
+.debug_line     0x00000000     0x342a
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_line    0x00000133      0x14d CommunicationException.o
  .debug_line    0x00000280      0x323 Controller.o
- .debug_line    0x000005a3      0x397 Endpoint.o
- .debug_line    0x0000093a       0xa3 Exception.o
- .debug_line    0x000009dd      0x24a Exceptions.o
- .debug_line    0x00000c27      0x1d7 Fans.o
- .debug_line    0x00000dfe      0x34b i2cmaster.o
- .debug_line    0x00001149      0x152 Leds.o
- .debug_line    0x0000129b      0x221 LM75.o
- .debug_line    0x000014bc       0x70 Message.o
- .debug_line    0x0000152c       0xce Messages.o
- .debug_line    0x000015fa      0x121 Outputs.o
- .debug_line    0x0000171b      0x2b9 Settings.o
- .debug_line    0x000019d4      0x1e4 SystemCheck.o
- .debug_line    0x00001bb8      0x677 TC654.o
- .debug_line    0x0000222f      0x155 TC654Exception.o
- .debug_line    0x00002384      0x211 Temperatures.o
- .debug_line    0x00002595      0x342 Ticker.o
- .debug_line    0x000028d7      0x5a8 tiny-json.o
- .debug_line    0x00002e7f      0x2fe UART.o
- .debug_line    0x0000317d       0x7a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
- .debug_line    0x000031f7       0x67 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
- .debug_line    0x0000325e       0x9e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
- .debug_line    0x000032fc       0x5b C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
- .debug_line    0x00003357       0xab C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .debug_line    0x000005a3      0x403 Endpoint.o
+ .debug_line    0x000009a6       0xa3 Exception.o
+ .debug_line    0x00000a49      0x24a Exceptions.o
+ .debug_line    0x00000c93      0x1e3 Fans.o
+ .debug_line    0x00000e76      0x34b i2cmaster.o
+ .debug_line    0x000011c1      0x152 Leds.o
+ .debug_line    0x00001313      0x221 LM75.o
+ .debug_line    0x00001534       0x70 Message.o
+ .debug_line    0x000015a4       0xce Messages.o
+ .debug_line    0x00001672      0x121 Outputs.o
+ .debug_line    0x00001793      0x2b9 Settings.o
+ .debug_line    0x00001a4c      0x1e4 SystemCheck.o
+ .debug_line    0x00001c30      0x627 TC654.o
+ .debug_line    0x00002257      0x155 TC654Exception.o
+ .debug_line    0x000023ac      0x211 Temperatures.o
+ .debug_line    0x000025bd      0x342 Ticker.o
+ .debug_line    0x000028ff      0x5a8 tiny-json.o
+ .debug_line    0x00002ea7      0x2fe UART.o
+ .debug_line    0x000031a5       0x7a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_byte.o)
+ .debug_line    0x0000321f       0x67 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_word.o)
+ .debug_line    0x00003286       0x9e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_byte.o)
+ .debug_line    0x00003324       0x5b C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eewr_word.o)
+ .debug_line    0x0000337f       0xab C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
 
-.debug_frame    0x00000000     0x1134
+.debug_frame    0x00000000     0x119c
  *(.debug_frame)
  .debug_frame   0x00000000       0xa0 CommunicationException.o
  .debug_frame   0x000000a0       0x34 Controller.o
- .debug_frame   0x000000d4      0x178 Endpoint.o
- .debug_frame   0x0000024c       0x54 Exception.o
- .debug_frame   0x000002a0      0x11c Exceptions.o
- .debug_frame   0x000003bc       0x74 Fans.o
- .debug_frame   0x00000430       0x94 Leds.o
- .debug_frame   0x000004c4       0x84 LM75.o
- .debug_frame   0x00000548       0x34 Message.o
- .debug_frame   0x0000057c       0x6c Messages.o
- .debug_frame   0x000005e8       0xc4 Outputs.o
- .debug_frame   0x000006ac      0x13c Settings.o
- .debug_frame   0x000007e8       0x84 SystemCheck.o
- .debug_frame   0x0000086c      0x380 TC654.o
- .debug_frame   0x00000bec       0xc0 TC654Exception.o
- .debug_frame   0x00000cac       0x94 Temperatures.o
- .debug_frame   0x00000d40      0x130 Ticker.o
- .debug_frame   0x00000e70      0x15c tiny-json.o
- .debug_frame   0x00000fcc      0x168 UART.o
+ .debug_frame   0x000000d4      0x1e8 Endpoint.o
+ .debug_frame   0x000002bc       0x54 Exception.o
+ .debug_frame   0x00000310      0x11c Exceptions.o
+ .debug_frame   0x0000042c       0x74 Fans.o
+ .debug_frame   0x000004a0       0x94 Leds.o
+ .debug_frame   0x00000534       0x84 LM75.o
+ .debug_frame   0x000005b8       0x34 Message.o
+ .debug_frame   0x000005ec       0x6c Messages.o
+ .debug_frame   0x00000658       0xc4 Outputs.o
+ .debug_frame   0x0000071c      0x13c Settings.o
+ .debug_frame   0x00000858       0x84 SystemCheck.o
+ .debug_frame   0x000008dc      0x378 TC654.o
+ .debug_frame   0x00000c54       0xc0 TC654Exception.o
+ .debug_frame   0x00000d14       0x94 Temperatures.o
+ .debug_frame   0x00000da8      0x130 Ticker.o
+ .debug_frame   0x00000ed8      0x15c tiny-json.o
+ .debug_frame   0x00001034      0x168 UART.o
 
-.debug_str      0x00000000     0x30c1
+.debug_str      0x00000000     0x30b3
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.132/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_str     0x00000208      0x2ed CommunicationException.o
                                 0x347 (size before relaxing)
  .debug_str     0x000004f5     0x105a Controller.o
                                0x13af (size before relaxing)
- .debug_str     0x0000154f      0x1fb Endpoint.o
-                                0xc61 (size before relaxing)
- .debug_str     0x0000174a       0xcc Exception.o
+ .debug_str     0x0000154f      0x207 Endpoint.o
+                                0xc6d (size before relaxing)
+ .debug_str     0x00001756       0xcc Exception.o
                                 0x297 (size before relaxing)
- .debug_str     0x00001816       0x57 Exceptions.o
+ .debug_str     0x00001822       0x4b Exceptions.o
                                 0x4d8 (size before relaxing)
- .debug_str     0x0000186d      0x1bc Fans.o
-                                0x756 (size before relaxing)
- .debug_str     0x00001a29       0xc2 Leds.o
+ .debug_str     0x0000186d      0x1c2 Fans.o
+                                0x75c (size before relaxing)
+ .debug_str     0x00001a2f       0xc2 Leds.o
                                 0x3bd (size before relaxing)
- .debug_str     0x00001aeb      0x271 LM75.o
+ .debug_str     0x00001af1      0x271 LM75.o
                                 0x824 (size before relaxing)
- .debug_str     0x00001d5c       0x60 Message.o
+ .debug_str     0x00001d62       0x60 Message.o
                                 0x22b (size before relaxing)
- .debug_str     0x00001dbc       0x5f Messages.o
+ .debug_str     0x00001dc2       0x5f Messages.o
                                 0x2ac (size before relaxing)
- .debug_str     0x00001e1b       0x68 Outputs.o
+ .debug_str     0x00001e21       0x68 Outputs.o
                                 0x377 (size before relaxing)
- .debug_str     0x00001e83      0x57b Settings.o
+ .debug_str     0x00001e89      0x57b Settings.o
                                 0x8ce (size before relaxing)
- .debug_str     0x000023fe      0x17a SystemCheck.o
+ .debug_str     0x00002404      0x17a SystemCheck.o
                                 0x7c6 (size before relaxing)
- .debug_str     0x00002578      0x218 TC654.o
-                                0xde6 (size before relaxing)
- .debug_str     0x00002790       0xfc TC654Exception.o
+ .debug_str     0x0000257e      0x204 TC654.o
+                                0xdd2 (size before relaxing)
+ .debug_str     0x00002782       0xfc TC654Exception.o
                                 0x339 (size before relaxing)
- .debug_str     0x0000288c      0x1db Temperatures.o
+ .debug_str     0x0000287e      0x1db Temperatures.o
                                 0x7f7 (size before relaxing)
- .debug_str     0x00002a67      0x2fb Ticker.o
+ .debug_str     0x00002a59      0x2fb Ticker.o
                                 0x614 (size before relaxing)
- .debug_str     0x00002d62      0x1c4 tiny-json.o
+ .debug_str     0x00002d54      0x1c4 tiny-json.o
                                 0x48e (size before relaxing)
- .debug_str     0x00002f26      0x19b UART.o
+ .debug_str     0x00002f18      0x19b UART.o
                                 0x625 (size before relaxing)
 
-.debug_loc      0x00000000     0x48c2
+.debug_loc      0x00000000     0x4afd
  *(.debug_loc)
  .debug_loc     0x00000000      0x1f3 CommunicationException.o
  .debug_loc     0x000001f3       0x90 Controller.o
- .debug_loc     0x00000283      0x675 Endpoint.o
- .debug_loc     0x000008f8       0x5c Exception.o
- .debug_loc     0x00000954      0x507 Exceptions.o
- .debug_loc     0x00000e5b      0x188 Fans.o
- .debug_loc     0x00000fe3      0x1c9 LM75.o
- .debug_loc     0x000011ac       0x36 Message.o
- .debug_loc     0x000011e2      0x1aa Messages.o
- .debug_loc     0x0000138c      0x304 Settings.o
- .debug_loc     0x00001690      0x12e SystemCheck.o
- .debug_loc     0x000017be     0x1085 TC654.o
- .debug_loc     0x00002843      0x2a2 TC654Exception.o
- .debug_loc     0x00002ae5      0x1de Temperatures.o
- .debug_loc     0x00002cc3      0x431 Ticker.o
- .debug_loc     0x000030f4     0x1219 tiny-json.o
- .debug_loc     0x0000430d      0x5b5 UART.o
+ .debug_loc     0x00000283      0x95f Endpoint.o
+ .debug_loc     0x00000be2       0x5c Exception.o
+ .debug_loc     0x00000c3e      0x507 Exceptions.o
+ .debug_loc     0x00001145      0x178 Fans.o
+ .debug_loc     0x000012bd      0x1c9 LM75.o
+ .debug_loc     0x00001486       0x36 Message.o
+ .debug_loc     0x000014bc      0x1aa Messages.o
+ .debug_loc     0x00001666      0x304 Settings.o
+ .debug_loc     0x0000196a      0x12e SystemCheck.o
+ .debug_loc     0x00001a98      0xfe6 TC654.o
+ .debug_loc     0x00002a7e      0x2a2 TC654Exception.o
+ .debug_loc     0x00002d20      0x1de Temperatures.o
+ .debug_loc     0x00002efe      0x431 Ticker.o
+ .debug_loc     0x0000332f     0x1219 tiny-json.o
+ .debug_loc     0x00004548      0x5b5 UART.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1574,7 +1577,7 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x6e0
+.debug_ranges   0x00000000      0x6c8
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x20 CommunicationException.o
  .debug_ranges  0x00000020       0x10 Controller.o
@@ -1589,12 +1592,12 @@ END GROUP
  .debug_ranges  0x000001c0       0x60 Outputs.o
  .debug_ranges  0x00000220       0x58 Settings.o
  .debug_ranges  0x00000278       0x30 SystemCheck.o
- .debug_ranges  0x000002a8      0x108 TC654.o
- .debug_ranges  0x000003b0       0x20 TC654Exception.o
- .debug_ranges  0x000003d0       0x60 Temperatures.o
- .debug_ranges  0x00000430       0xb8 Ticker.o
- .debug_ranges  0x000004e8      0x180 tiny-json.o
- .debug_ranges  0x00000668       0x78 UART.o
+ .debug_ranges  0x000002a8       0xf0 TC654.o
+ .debug_ranges  0x00000398       0x20 TC654Exception.o
+ .debug_ranges  0x000003b8       0x60 Temperatures.o
+ .debug_ranges  0x00000418       0xb8 Ticker.o
+ .debug_ranges  0x000004d0      0x180 tiny-json.o
+ .debug_ranges  0x00000650       0x78 UART.o
 
 .debug_macro
  *(.debug_macro)

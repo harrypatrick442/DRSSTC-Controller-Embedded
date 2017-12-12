@@ -40,6 +40,7 @@ void Endpoint::Run(){
 						   iSendMessage->SendMessage("{\"type\":\"system_check\",\"passed\":true}\n", 38);
 						   }
 						   else{
+						   SendExceptions(&exceptions);
 						   iSendMessage->SendMessage("{\"type\":\"system_check\",\"passed\":false}\n", 39);
 						   }
 						}else{
@@ -109,11 +110,19 @@ void Endpoint::GetMaxTemperature(){
 		snprintf(buf,46,"{\"type\":\"max_temperature\",\"temperature\":%03d}\n",temperature);
 	iSendMessage->SendMessage(buf, 45);}
 	else
-	SendExceptions(exceptions);
+	SendExceptions(&exceptions);
 	}
-	void Endpoint::SendException(Exception& exception){
-
+	void Endpoint::SendException(Exception* exception){
+	const char* message = exception->ToString();
+		unsigned int length = strlen(message) + 35;
+		char* buf  = (char*) malloc(length);
+		snprintf(buf,length,"{\"type\":\"exception\",\"message\":\"%s\"}\n",message);
+		iSendMessage->SendMessage(buf, length-1);
+		free(buf);
 	}
-	    void Endpoint::SendExceptions(Exceptions& exceptions){
-		
+	    void Endpoint::SendExceptions(Exceptions* exceptions){
+		for(unsigned int i=0; i<exceptions->Count(); i++){
+			Exception* exception = exceptions->exceptions[i];
+			SendException(exception);
+		}
 	}
