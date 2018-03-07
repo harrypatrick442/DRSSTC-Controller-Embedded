@@ -1,19 +1,20 @@
-Endpoint.d Endpoint.o: .././Endpoint.cpp .././Leds.h .././tiny-json.h \
+Endpoint.d Endpoint.o: .././Endpoint.cpp .././Leds.h .././ILed.h \
+ ../extern/tiny-json.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
- .././Endpoint.h .././Messages.h .././Message.h .././IGetMessages.h \
- .././ISendMessage.h .././ISetTemperatureMax.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
- .././IGetTemperatureMax.h .././ISetPower.h .././IGetPower.h \
- .././ISystemCheck.h .././Exceptions.h .././simple_vector.h \
+ .././Endpoint.h ../extern/Exception.h ../stl/cstddef \
+ ../extern/Exceptions.h ../extern/simple_vector.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
- .././Exception.h .././ITemperatures.h .././UART.h .././LM75.h \
- .././i2cmaster.h \
+ ../extern/Exception.h ../extern/IGetMessages.h ../extern/Messages.h \
+ ../extern/Message.h ../extern/ISendMessage.h .././IGetRGBC.h .././RGBC.h \
+ ../extern/Cleanup.h .././ISetFastMode.h .././ISystemCheck.h \
+ ../extern/ITests.h ../extern/Exceptions.h .././Sender.h .././ISendRGBC.h \
+ ../extern/UART.h ../extern/IGetMessages.h ../extern/ISendMessage.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  C:\Program\ Files\ (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\include/avr/iom328p.h \
@@ -22,12 +23,14 @@ Endpoint.d Endpoint.o: .././Endpoint.cpp .././Leds.h .././tiny-json.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- .././i2cmaster_constants.h .././IGetTemperatureInfo.h \
- .././IGetTemperature.h .././IGetName.h .././Stopwatch.h
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h
 
 .././Leds.h:
 
-.././tiny-json.h:
+.././ILed.h:
+
+../extern/tiny-json.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h:
 
@@ -41,45 +44,53 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 .././Endpoint.h:
 
-.././Messages.h:
+../extern/Exception.h:
 
-.././Message.h:
+../stl/cstddef:
 
-.././IGetMessages.h:
+../extern/Exceptions.h:
 
-.././ISendMessage.h:
-
-.././ISetTemperatureMax.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:
-
-.././IGetTemperatureMax.h:
-
-.././ISetPower.h:
-
-.././IGetPower.h:
-
-.././ISystemCheck.h:
-
-.././Exceptions.h:
-
-.././simple_vector.h:
+../extern/simple_vector.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
 
-.././Exception.h:
+../extern/Exception.h:
 
-.././ITemperatures.h:
+../extern/IGetMessages.h:
 
-.././UART.h:
+../extern/Messages.h:
 
-.././LM75.h:
+../extern/Message.h:
 
-.././i2cmaster.h:
+../extern/ISendMessage.h:
+
+.././IGetRGBC.h:
+
+.././RGBC.h:
+
+../extern/Cleanup.h:
+
+.././ISetFastMode.h:
+
+.././ISystemCheck.h:
+
+../extern/ITests.h:
+
+../extern/Exceptions.h:
+
+.././Sender.h:
+
+.././ISendRGBC.h:
+
+../extern/UART.h:
+
+../extern/IGetMessages.h:
+
+../extern/ISendMessage.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -97,12 +108,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-.././i2cmaster_constants.h:
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h:
 
-.././IGetTemperatureInfo.h:
-
-.././IGetTemperature.h:
-
-.././IGetName.h:
-
-.././Stopwatch.h:
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h:

@@ -21,18 +21,24 @@ Controller.d Controller.o: .././Controller.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdio.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdarg.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdbool.h \
- .././Outputs.h .././LM75.h .././i2cmaster.h .././i2cmaster_constants.h \
- .././IGetTemperatureInfo.h .././IGetTemperature.h .././Exceptions.h \
- .././simple_vector.h \
+ .././Outputs.h ../extern/UART.h ../extern/Messages.h ../extern/Message.h \
+ ../extern/IGetMessages.h ../extern/ISendMessage.h .././Stopwatch.h \
+ .././Settings.h .././Leds.h .././ILed.h .././Endpoint.h \
+ ../extern/Exception.h ../stl/cstddef ../extern/Exceptions.h \
+ ../extern/simple_vector.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
- .././Exception.h .././IGetName.h .././Stopwatch.h .././UART.h \
- .././Messages.h .././Message.h .././IGetMessages.h .././ISendMessage.h \
- .././Settings.h .././IGetTemperatureMax.h .././ISetTemperatureMax.h \
- .././IGetPower.h .././ISetPower.h .././IGetFanSpeedMin.h .././Leds.h \
- .././Endpoint.h .././ISystemCheck.h .././ITemperatures.h \
- .././Temperatures.h .././TC654.h .././IGetFanInfo.h .././IGetFanSpeed.h \
- .././ICheck.h .././IFans.h .././IGetExceptions.h .././Fans.h \
- .././SystemCheck.h
+ ../extern/Exception.h ../extern/IGetMessages.h ../extern/ISendMessage.h \
+ .././IGetRGBC.h .././RGBC.h ../extern/Cleanup.h .././ISetFastMode.h \
+ .././ISystemCheck.h ../extern/ITests.h ../extern/Exceptions.h \
+ .././Sender.h .././ISendRGBC.h ../extern/i2cmaster.h \
+ ../extern/i2cmaster_constants.h .././SystemCheck.h .././TCS34725.h \
+ .././ColourSensorTCS34725.h .././IColourSensor.h \
+ .././ISubscriptionRunner.h .././ISubscriptionRunnable.h .././IRunnable.h \
+ .././TCS34725Helper.h .././SubscriptionRunner.h .././simple_vector.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h \
+ ../tests/Tests.h ../tests/TCS34725UnitTests.h ../tests/Test.h \
+ ../extern/PHelper.h ../extern/Cleanup.h ../tests/../IGetRGBC.h \
+ ../extern/ITest.h
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -80,72 +86,96 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\
 
 .././Outputs.h:
 
-.././LM75.h:
+../extern/UART.h:
 
-.././i2cmaster.h:
+../extern/Messages.h:
 
-.././i2cmaster_constants.h:
+../extern/Message.h:
 
-.././IGetTemperatureInfo.h:
+../extern/IGetMessages.h:
 
-.././IGetTemperature.h:
-
-.././Exceptions.h:
-
-.././simple_vector.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
-
-.././Exception.h:
-
-.././IGetName.h:
+../extern/ISendMessage.h:
 
 .././Stopwatch.h:
 
-.././UART.h:
-
-.././Messages.h:
-
-.././Message.h:
-
-.././IGetMessages.h:
-
-.././ISendMessage.h:
-
 .././Settings.h:
-
-.././IGetTemperatureMax.h:
-
-.././ISetTemperatureMax.h:
-
-.././IGetPower.h:
-
-.././ISetPower.h:
-
-.././IGetFanSpeedMin.h:
 
 .././Leds.h:
 
+.././ILed.h:
+
 .././Endpoint.h:
+
+../extern/Exception.h:
+
+../stl/cstddef:
+
+../extern/Exceptions.h:
+
+../extern/simple_vector.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
+
+../extern/Exception.h:
+
+../extern/IGetMessages.h:
+
+../extern/ISendMessage.h:
+
+.././IGetRGBC.h:
+
+.././RGBC.h:
+
+../extern/Cleanup.h:
+
+.././ISetFastMode.h:
 
 .././ISystemCheck.h:
 
-.././ITemperatures.h:
+../extern/ITests.h:
 
-.././Temperatures.h:
+../extern/Exceptions.h:
 
-.././TC654.h:
+.././Sender.h:
 
-.././IGetFanInfo.h:
+.././ISendRGBC.h:
 
-.././IGetFanSpeed.h:
+../extern/i2cmaster.h:
 
-.././ICheck.h:
-
-.././IFans.h:
-
-.././IGetExceptions.h:
-
-.././Fans.h:
+../extern/i2cmaster_constants.h:
 
 .././SystemCheck.h:
+
+.././TCS34725.h:
+
+.././ColourSensorTCS34725.h:
+
+.././IColourSensor.h:
+
+.././ISubscriptionRunner.h:
+
+.././ISubscriptionRunnable.h:
+
+.././IRunnable.h:
+
+.././TCS34725Helper.h:
+
+.././SubscriptionRunner.h:
+
+.././simple_vector.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\pgmspace.h:
+
+../tests/Tests.h:
+
+../tests/TCS34725UnitTests.h:
+
+../tests/Test.h:
+
+../extern/PHelper.h:
+
+../extern/Cleanup.h:
+
+../tests/../IGetRGBC.h:
+
+../extern/ITest.h:

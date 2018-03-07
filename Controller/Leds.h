@@ -8,24 +8,38 @@
 
 #ifndef __LEDS_H__
 #define __LEDS_H__
-
-
+#include "ILed.h"
 class Leds
 {
 	//variables
 	public:
-	class Main{
+	class Led:public ILed{
 		public:
-			static void SetOff();
-			static void SetRed();
-			static void SetGreen();
-			static void SetBlue();
-			static void SetYellow();
-			static void SetOrange();
-			static void SetPurple();
-			static void SetWhite();
-
+		typedef void (Leds::*OnOff)();
+		OnOff on;
+		OnOff off;
+		private:
+		Leds* leds;
+		public:
+		Led(Leds* leds, OnOff on, OnOff off);
+		void TurnOn();
+		void TurnOff();
 	};
+	private:
+	static Leds _Singleton;
+	Led*backlight;
+	Led* main;
+	//methods
+	private:
+	Leds();
+	public:
+	static Leds& GetInstance();
+	void SetMainOn();
+	void SetMainOff();
+	void SetBacklightOn();
+	void SetBacklightOff();
+	ILed* GetBacklight();
+	ILed* GetMain();
 	protected:
 	private:
 }; //Leds

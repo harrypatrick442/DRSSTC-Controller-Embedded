@@ -36,11 +36,6 @@ class Outputs
 			static void SetHigh();
 			static void SetLow();
 		};
-		class _4{
-			public:
-			static void SetHigh();
-			static void SetLow();
-		};
 
 	};
 	protected:

@@ -2,53 +2,61 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-CommunicationException.cpp
+extern\Cleanup.cpp
+
+extern\PHelper.cpp
+
+ColourSensorTCS34725.cpp
 
 Controller.cpp
 
-EEPROM.cpp
-
 Endpoint.cpp
 
-Exception.cpp
+extern\Assert.cpp
 
-Exceptions.cpp
+extern\CommunicationException.cpp
 
-Fans.cpp
+extern\Exception.cpp
 
-FanSpeedException.cpp
+extern\Exceptions.cpp
 
-i2cmaster.S
+extern\i2cmaster.S
 
-jsmn.cpp
+extern\jsmn.cpp
+
+extern\Message.cpp
+
+extern\Messages.cpp
+
+extern\NoTests.cpp
+
+extern\Stopwatch.cpp
+
+extern\Ticker.cpp
+
+extern\tiny-json.cpp
+
+extern\UART.cpp
 
 Leds.cpp
 
-LM75.cpp
-
-Message.cpp
-
-Messages.cpp
-
 Outputs.cpp
 
-Cleanup.cpp
+RGBC.cpp
 
-Settings.cpp
+Sender.cpp
 
-Stopwatch.cpp
+SubscriptionRunner.cpp
 
 SystemCheck.cpp
 
-TC654.cpp
+TCS34725.cpp
 
-TC654Exception.cpp
+TCS34725Exception.cpp
 
-Temperatures.cpp
+TCS34725Helper.cpp
 
-Ticker.cpp
+tests\TCS34725UnitTests.cpp
 
-tiny-json.cpp
-
-UART.cpp
+tests\Tests.cpp
 

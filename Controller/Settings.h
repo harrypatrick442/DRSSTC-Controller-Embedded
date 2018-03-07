@@ -9,16 +9,11 @@
 #ifndef __SETTINGS_H__
 #define __SETTINGS_H__
 
-#include "IGetTemperatureMax.h"
-#include "ISetTemperatureMax.h"
-#include "IGetPower.h"
-#include "ISetPower.h"
-#include "IGetFanSpeedMin.h"
 #define TEMPERATURE_MAX_MAX 125
 #define TEMPERTURE_MAX_MIN 40
 #define POWER_MIN 30
 #define POWER_MAX 1500
-class Settings:public  IGetTemperatureMax, public  ISetTemperatureMax, public  IGetPower, public  ISetPower, public IGetFanSpeedMin
+class Settings
 {
 //variables
 public:
